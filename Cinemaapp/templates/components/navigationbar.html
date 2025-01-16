@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% load static %}
+<nav>
+    <div class="nav-right">
+        <img src="{% static 'images/MBO_Cinema_logo_breed.png' %}">
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="#">Films</a> <a href="#"><i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">Events and Specials</a><a href="#"><i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Info</a></li>
+        </ul>
+    </div>
+    <div class="nav-left">
+        <a><i class="fas fa-shopping-cart"></i></a>
+        <button>Register</button>
+        <button>Login</button>
+    </div>
+</nav>

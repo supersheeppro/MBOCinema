@@ -1,10 +1,67 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
 </head>
 <body>
-<h1>ALlo</h1>
+    <header>
+        {% include 'components/navigationbar.html' %}
+    </header>
+    <main>
+        <section id="hero-slideshow" class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Voeg hier je slides toe -->
+                <div class="swiper-slide">
+                    <img src="{% static 'images/hero-slide1.png' %}" alt="Slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{% static 'images/hero-slide1.png' %}" alt="Slide 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{% static 'images/hero-slide1.png' %}" alt="Slide 3">
+                </div>
+            </div>
+        </section>
+        <section class="films-sectie">
+            <h1>Nu in de bioscoop</h1>
+            <div class="films-container">
+                {% for movie in movies %}
+                <div class="movie-item">
+                    <img src="{{ movie.poster.url }}" alt="{{ movie.title }} poster">
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <section class="events-sectie">
+            <h1>Events</h1>
+            <div class="events-container">
+                {% for event in events %}
+                <div class="event-item">
+                    <img src="{{ event.poster.url }}" alt="{{ event.title }} poster">
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <section class="comingsoon-sectie">
+            <h1>Komt eraan</h1>
+            <div class="comingsoon-container">
+                {% for coming in coming_soon_releases %}
+                <div class="comingsoon-item">
+                    <img src="{{ coming.poster.url }}" alt="{{ coming.title }} poster">
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+    <footer>
+        {% include 'components/footer.html' %}
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

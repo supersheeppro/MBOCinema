@@ -6562,3 +6562,2268 @@ Not Found: /flutter_service_worker.js
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 Not Found: /flutter_service_worker.js
 "GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 190
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2271
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 9, in index
+    return render(request, 'index.html')
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 135118
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 248
+"GET /static/css/style.css HTTP/1.1" 200 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 248
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 248
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 248
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 248
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 414
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 414
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 414
+"GET / HTTP/1.1" 200 414
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 450
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 450
+"GET / HTTP/1.1" 200 450
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 450
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 450
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 450
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 450
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 450
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 450
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 284
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 285
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 285
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 256
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 256
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 445
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 386
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 330
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 253
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 287
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 451
+"GET /static/css/style1.css HTTP/1.1" 200 305
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 429
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 429
+"GET /static/css/style1.css HTTP/1.1" 200 334
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 429
+"GET /static/css/style1.css HTTP/1.1" 200 352
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 9, in index
+    return render(request, 'index.html')
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\engine.py", line 206, in select_template
+    return self.get_template(template_name)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2: 'static'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 160053
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 469
+"GET /static/css/style1.css HTTP/1.1" 200 372
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 9, in index
+    return render(request, 'index.html')
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'about' not found. 'about' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 145756
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 407
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 486
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 486
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 486
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 486
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 486
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 486
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 486
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 486
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 486
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 487
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 539
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 541
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 566
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 566
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 570
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 571
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 642
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 652
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 200 669
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 606
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 699
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 680
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 852
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 852
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 514
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 512
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 887
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 566
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 626
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 695
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 693
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 697
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1476
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1476
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1442
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1316
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1258
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1069
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1221
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1236
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 200 1867
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 887
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1033
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 200 1867
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 200 1869
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 200 1883
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 200 1843
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 200 1869
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 200 1871
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 200 1873
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1033
+"GET /static/css/style1.css HTTP/1.1" 200 1875
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 1913
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 1914
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 1918
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 1913
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 1916
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 1883
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 1883
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 1883
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2878
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2698
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2696
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2696
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2696
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2434
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2432
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2434
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2432
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2462
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2374
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1040
+"GET /static/css/style1.css HTTP/1.1" 200 2432
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1112
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1112
+"GET /static/css/style1.css HTTP/1.1" 200 2348
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1112
+"GET /static/css/style1.css HTTP/1.1" 200 2395
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2411
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/css/style1.css HTTP/1.1" 200 2311
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/css/style1.css HTTP/1.1" 200 2214
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/css/style1.css HTTP/1.1" 200 2258
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/css/style1.css HTTP/1.1" 200 2258
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/css/style1.css HTTP/1.1" 200 2308
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/css/style1.css HTTP/1.1" 200 2341
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1143
+"GET /static/css/style1.css HTTP/1.1" 200 2341
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2390
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 200 575680
+"GET /static/js/script.js HTTP/1.1" 200 718
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2485
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2507
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2559
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2559
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2271
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1399
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1399
+"GET /static/css/style1.css HTTP/1.1" 200 2559
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1399
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2593
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1399
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2616
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1399
+"GET /static/css/style1.css HTTP/1.1" 200 2615
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1399
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2615
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2615
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2584
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2584
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2770
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 200 2770
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/js/script.js HTTP/1.1" 200 719
+"GET /static/css/style1.css HTTP/1.1" 200 2720
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 718
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1427
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1340
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET / HTTP/1.1" 200 1656
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2749
+"GET /static/js/script.js HTTP/1.1" 200 664
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1656
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1536
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/css/style1.css HTTP/1.1" 200 2819
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/css/style1.css HTTP/1.1" 200 2841
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1906
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2746
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1897
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1642
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1743
+"GET /static/css/style1.css HTTP/1.1" 200 2847
+"GET /static/js/script.js HTTP/1.1" 200 1913
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1743
+"GET /static/css/style1.css HTTP/1.1" 200 2779
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1743
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1914
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1743
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1743
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1914
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1743
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1922
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 2887
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 200 3012
+"GET /static/js/script.js HTTP/1.1" 200 3446
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 3548
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 200 3057
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 200 3065
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 3133
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 3682
+"GET / HTTP/1.1" 200 1742
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 4729
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 3240
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1742
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 156
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/js/script.js HTTP/1.1" 200 292
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1270
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 259
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1270
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 415
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1270
+"GET /static/js/script.js HTTP/1.1" 200 517
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1270
+"GET /static/js/script.js HTTP/1.1" 200 548
+"GET / HTTP/1.1" 200 1270
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1270
+"GET /static/js/script.js HTTP/1.1" 200 566
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1270
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 464
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/js/script.js HTTP/1.1" 200 474
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET / HTTP/1.1" 200 1334
+"GET /static/js/script.js HTTP/1.1" 200 457
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 482
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/js/script.js HTTP/1.1" 200 483
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/js/script.js HTTP/1.1" 200 541
+Not Found: /img/hero/hero-slide1.png
+"GET /img/hero/hero-slide1.png HTTP/1.1" 404 2310
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/js/script.js HTTP/1.1" 200 554
+Not Found: /{% static 'images/hero-slide1.png' %}
+"GET /%7B%%20static%20'images/hero-slide1.png'%20%%7D HTTP/1.1" 404 2393
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1334
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /{% static 'images/hero-slide1.png' %}
+"GET /%7B%%20static%20'images/hero-slide1.png'%20%%7D HTTP/1.1" 404 2393
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 2326
+"GET /static/css/style1.css HTTP/1.1" 200 3438
+"GET /static/js/script.js HTTP/1.1" 200 390
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1990
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1990
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1990
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1990
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 213
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1990
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 213
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1990
+"GET /static/js/script.js HTTP/1.1" 200 213
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1792
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 2013
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 2013
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 1963
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 2013
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 2962
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 2013
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 2013
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 3438
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style1.css HTTP/1.1" 200 3337
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 200 3440
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 200 3031
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 200 2952
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 200 2927
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 200 2950
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1963
+"GET /static/css/style1.css HTTP/1.1" 200 2949
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET / HTTP/1.1" 200 1971
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinema\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2033
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/base.css HTTP/1.1" 200 21310
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 6220
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 8689
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2033
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/ HTTP/1.1" 200 7539
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 200 11454
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/movie/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8317
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 9603
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/movie/add/ HTTP/1.1" 200 13060
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"POST /admin/Cinemaapp/movie/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11806
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 200 11490
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"POST /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 11865
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/movielist/ HTTP/1.1" 200 8722
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/movielist/add/ HTTP/1.1" 200 11224
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /admin/Cinemaapp/movielist/add/
+"GET /admin/Cinemaapp/movielist/add/ HTTP/1.1" 404 4889
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/ HTTP/1.1" 200 7732
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 200 11181
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"POST /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 11918
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11299
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/1/change/ HTTP/1.1" 200 13369
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+"POST /admin/Cinemaapp/movie/1/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11499
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2325
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11299
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /new-releases HTTP/1.1" 200 575
+Not Found: /posters/hero-slide1.png
+"GET /posters/hero-slide1.png HTTP/1.1" 404 2498
+Not Found: /posters/hero-slide1.png
+"GET /posters/hero-slide1.png HTTP/1.1" 404 2498
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /new-releases HTTP/1.1" 200 575
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinema\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinema\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /new-releases HTTP/1.1" 200 587
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /admin/ HTTP/1.1" 200 8340
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /admin/Cinemaapp/movie/add/ HTTP/1.1" 200 12993
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+- Broken pipe from ('127.0.0.1', 50267)
+"POST /admin/Cinemaapp/movie/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11874
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /new-releases HTTP/1.1" 200 587
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /new-releases HTTP/1.1" 200 587
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+"GET /new-releases HTTP/1.1" 200 587
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /admin/ HTTP/1.1" 200 8622
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 200 11215
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"POST /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 12275
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /new-releases HTTP/1.1" 200 807
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+"GET /new-releases HTTP/1.1" 200 807
+Not Found: /media/posters/hero-slide1.png
+"GET /media/posters/hero-slide1.png HTTP/1.1" 404 2516
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2516
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinema\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinema\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinema\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /media/posters/hero-slide1.png HTTP/1.1" 200 575680
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2642
+"GET /new-releases HTTP/1.1" 200 807
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2642
+- Broken pipe from ('127.0.0.1', 50861)
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2889
+"GET /static/css/style1.css HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /media/posters/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2889
+"GET /media/posters/hero-slide1.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 2889
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2889
+"GET / HTTP/1.1" 200 2889
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2889
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2889
+"GET /media/posters/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style2.css HTTP/1.1" 200 2220
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2889
+"GET /static/css/style2.css HTTP/1.1" 200 2275
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/ HTTP/1.1" 200 8941
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 200 11215
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 200 11367
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 12634
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/newrelease/?o=1.2 HTTP/1.1" 200 13027
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/newrelease/?o=1.2 HTTP/1.1" 200 8366
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/Cinemaapp/newrelease/?o=1.2 HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/?o=1.2 HTTP/1.1" 200 12391
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 200 11215
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 12271
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 200 11215
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/newrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 12630
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /new-releases
+"GET /new-releases HTTP/1.1" 404 2400
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3149
+"GET /static/css/style2.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3188
+"GET /media/posters/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style2.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /static/css/style2.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /static/css/style2.css HTTP/1.1" 200 2319
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /media/posters/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style2.css HTTP/1.1" 200 2366
+"GET / HTTP/1.1" 200 3266
+"GET /static/css/style2.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /static/css/style2.css HTTP/1.1" 200 2410
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /static/css/style2.css HTTP/1.1" 200 2408
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /static/css/style2.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /static/css/style2.css HTTP/1.1" 200 2445
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /media/posters/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style2.css HTTP/1.1" 200 2445
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3266
+"GET /static/css/style2.css HTTP/1.1" 200 2446
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2922
+"GET /static/css/style2.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/ HTTP/1.1" 200 10158
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11678
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/movie/ HTTP/1.1" 200 8128
+"POST /admin/Cinemaapp/movie/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11432
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/2/change/ HTTP/1.1" 200 13363
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/movie/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11495
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2898
+"GET /static/css/style2.css HTTP/1.1" 304 0
+"GET /media/posters/thumb.png HTTP/1.1" 200 96972
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2898
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style2.css HTTP/1.1" 200 2468
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2766
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style2.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 2766
+"GET /static/css/style2.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 2766
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2932
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style2.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/ HTTP/1.1" 200 10041
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/add/ HTTP/1.1" 200 12593
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/event/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 11408
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3063
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style2.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 13, in index
+    return render(request, 'index.html', {'movies': movies, 'events': events})
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'poster' attribute has no file associated with it.
+"GET / HTTP/1.1" 500 150695
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/ HTTP/1.1" 200 10075
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/add/ HTTP/1.1" 200 13207
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 11173
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/1/change/ HTTP/1.1" 200 13592
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/event/1/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 11410
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style2.css HTTP/1.1" 304 0
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /media/posters/download.png HTTP/1.1" 200 75362
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 3090
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2605
+"GET /media/posters/download.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2624
+"GET /media/posters/download.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2624
+"GET /media/posters/download.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 3090
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2662
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2665
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2652
+"GET /media/posters/download.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2689
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2690
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2690
+"GET /media/posters/download.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2690
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2690
+"GET /media/posters/download.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2690
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2733
+"GET /media/posters/download.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2733
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3090
+"GET /static/css/style3.css HTTP/1.1" 200 2714
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/ HTTP/1.1" 200 10117
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 11173
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/add/ HTTP/1.1" 200 13207
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/event/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 11750
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3257
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 200 75362
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3257
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3257
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2729
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/ HTTP/1.1" 200 10120
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 11514
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/add/ HTTP/1.1" 200 13207
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/event/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 12103
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 200 75362
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2752
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+"GET /media/posters/download.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /static/css/style3.css HTTP/1.1" 200 2783
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2782
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /static/css/style3.css HTTP/1.1" 200 2771
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /static/css/style3.css HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2795
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1430
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2798
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3429
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 200 1579
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/ HTTP/1.1" 200 10128
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/event/add/ HTTP/1.1" 200 13207
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/event/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 12443
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3599
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /media/posters/download_PyqnkM2.png HTTP/1.1" 200 75362
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3599
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 2822
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+"GET /media/posters/download_PyqnkM2.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3599
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /media/posters/download_PyqnkM2.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3599
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/images/hero-slide1.png HTTP/1.1" 304 0
+"GET /media/posters/download_PyqnkM2.png HTTP/1.1" 304 0
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/ HTTP/1.1" 200 10667
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 200 11581
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 11639
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/2/change/ HTTP/1.1" 200 13693
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 9861
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 10003
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 200 11913
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 10003
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 200 11913
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"POST /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 12119
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 11868
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3599
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/posters/download_PyqnkM2.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3958
+"GET /static/js/script.js HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 304 0
+"GET /media/posters/download_LZtlYFX.png HTTP/1.1" 304 0
+"GET /media/posters/download_iXo7g46.png HTTP/1.1" 304 0
+"GET /media/posters/download_PyqnkM2.png HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/thumb.png HTTP/1.1" 200 96972
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3951
+"GET /media/posters/download.png HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/thumb.png HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3951
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+"GET / HTTP/1.1" 200 3951
+"GET /media/posters/thumb.png HTTP/1.1" 304 0
+"GET /static/css/style3.css HTTP/1.1" 200 3144
+"GET /media/posters/download_PyqnkM2.png HTTP/1.1" 304 0
+"GET /static/js/script.js HTTP/1.1" 304 0
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451
+Not Found: /flutter_service_worker.js
+"GET /flutter_service_worker.js?v=467955255 HTTP/1.1" 404 2451

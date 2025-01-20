@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Inloggen / Registreren</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style10.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header>
+    {% include 'components/navigationbar.html' %}
+</header>
+<main>
+    <section>
+        <div class="locations-title-container">
+            <h1>Locations</h1>
+        </div>
+        <div id="locations-container">
+            <!-- Rechterkolom: lijst van locaties -->
+            <div id="location-list">
+                <ul>
+                    {% for location in locations %}
+                    <li class="location-item" data-id="{{ location.id }}">
+                        {{ location.name }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <hr>
+
+            <!-- Linkerkolom: gedetailleerde weergave van locatie -->
+            <div id="location-detail">
+                <div>
+                    <h1>Selecteer een locatie</h1>
+                    <p>Klik op een locatie om de details te zien.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    // AJAX functie om locatiegegevens te laden
+    $(document).ready(function(){
+        $('.location-item').on('click', function() {
+            var locationId = $(this).data('id');  // Verkrijg het ID van de geselecteerde locatie
+
+            // Voer een AJAX-aanroep uit naar de server om locatiegegevens op te halen
+            $.ajax({
+                url: '/locations/' + locationId + '/',
+                method: 'GET',
+                success: function(data) {
+                    // Werk de linkerkolom bij met de gegevens van de locatie
+                    $('#location-detail').html(
+                        '<div class="location-detail-content-container">' +
+                        '<div>' +
+                        '<h1>' + data.name + '</h1>' +
+                        '<p class="location-detail-content-address-text">' + data.address + '</p>' +
+                        '</div>' +
+                        '<p class="location-detail-content-text">' + data.description + '</p>' +
+                        '</div>' +
+                        '<div class="location-image-button-container">' +
+                        (data.photo_url ? '<img src="' + data.photo_url + '" alt="Foto" style="max-width: 100%; height: auto;">' : '') +
+                        '<a href="/search?location=' + data.name + '"><button>Zie Films</button></a>' +
+                        '</div>'
+
+                    );
+                }
+            });
+        });
+    });
+</script>
+<footer>
+    {% include 'components/footer.html' %}
+</footer>
+
+</body>
+</html>

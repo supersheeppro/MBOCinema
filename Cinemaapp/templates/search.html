@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{% static 'css/style10.css' %}">
+</head>
+<body data-is-authenticated="{{ user.is_authenticated|yesno:'true,false' }}">
+<header>
+  {% include 'components/navigationbar.html' %}
+</header>
+<main>
+  <section>
+    <div class="title-and-days-container">
+      <h1>Films</h1>
+      <ul>
+        <a id="all-link" href="/search"><button>All</button></a>
+        <a id="today-link" href="#"><button>Today</button></a>
+        <a id="tomorrow-link" href="#"><button>Tomorrow</button></a>
+        <a id="monday-link" href="#"><button>Wednesday</button></a>
+        <a id="tuesday-link" href="#"><button>Wednesday</button></a>
+        <a id="wednesday-link" href="#"><button>Wednesday</button></a>
+        <a id="thursday-link" href="#"><button>Thursday</button></a>
+        <a id="friday-link" href="#"><button>Friday</button></a>
+        <a id="saturday-link" href="#"><button>Saturday</button></a>
+        <a id="sunday-link" href="#"><button>Sunday</button></a>
+      </ul>
+    </div>
+    <div class="searchbar-and-filters-container">
+      <div class="searchbar">
+        <input type="text" placeholder="Zoeken..." id="search-input-search">
+        <i id="searchbutton-search" class="fas fa-search" onclick="searchMovies()"></i>
+      </div>
+      <button id="filters-button"><i class="fas fa-filter"></i> Filters</button>
+    </div>
+    <div id="filters-container">
+      <h2>Filters</h2>
+      <div class="dropdown-filter-container">
+        <div class="filter-group">
+          <label for="genre">Genre</label>
+          <select name="genre" id="genre">
+            <option value="">Kies een genre</option>
+            <option value="Action" {% if genre_filter == "Action" %}selected{% endif %}>Actie</option>
+            <option value="Drama" {% if genre_filter == "Drama" %}selected{% endif %}>Drama</option>
+            <option value="Comedy" {% if genre_filter == "Comedy" %}selected{% endif %}>Komedie</option>
+            <option value="Horror" {% if genre_filter == "Horror" %}selected{% endif %}>Horror</option>
+            <option value="Sci-Fi" {% if genre_filter == "Sci-Fi" %}selected{% endif %}>Science Fiction</option>
+            <option value="Romance" {% if genre_filter == "Romance" %}selected{% endif %}>Romantiek</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="pegi_rating">PEGI Rating</label>
+          <select name="pegi_rating" id="pegi_rating">
+            <option value="">Kies PEGI Rating</option>
+            <option value="3" {% if pegi_filter == "3" %}selected{% endif %}>PEGI 3</option>
+            <option value="7" {% if pegi_filter == "7" %}selected{% endif %}>PEGI 7</option>
+            <option value="12" {% if pegi_filter == "12" %}selected{% endif %}>PEGI 12</option>
+            <option value="16" {% if pegi_filter == "16" %}selected{% endif %}>PEGI 16</option>
+            <option value="18" {% if pegi_filter == "18" %}selected{% endif %}>PEGI 18</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="rating">Rating</label>
+          <select name="rating" id="rating">
+            <option value="">Kies Rating</option>
+            <option value="1" {% if rating_filter == "1" %}selected{% endif %}>1</option>
+            <option value="2" {% if rating_filter == "2" %}selected{% endif %}>2</option>
+            <option value="3" {% if rating_filter == "3" %}selected{% endif %}>3</option>
+            <option value="4" {% if rating_filter == "4" %}selected{% endif %}>4</option>
+            <option value="5" {% if rating_filter == "5" %}selected{% endif %}>5</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="zaal">Zaal</label>
+          <select name="zaal" id="zaal">
+            <option value="">Kies een zaal</option>
+            {% for zaal in zalen %}
+            <option value="{{ zaal.title }}" {% if zaal_filter == zaal.id|stringformat:"s" %}selected{% endif %}>{{ zaal.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="location">Locatie</label>
+          <select name="location" id="location">
+            <option value="">Kies een locatie</option>
+            {% for locatie in locaties %}
+            <option value="{{ locatie.name }}" {% if location_filter == locatie.id|stringformat:"s" %}selected{% endif %}>{{ locatie.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button id="submit-button-filters">Filteren</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    {% for movie in movies %}
+    <div class="search-movie-item">
+      <img src="{{ movie.poster.url }}" alt="{{ movie.title }} poster">
+      <div class="search-movie-item-info-container">
+        <div class="title-and-save-button-container">
+            <h1>{{ movie.title }}</h1>
+            <a class="save-button
+              {% if movie.id in watchlist_movie_ids %}added{% endif %}"
+               data-movie-id="{{ movie.id }}">
+              <i class="fas fa-heart {% if movie.id in watchlist_movie_ids %}active{% endif %}"></i>
+            </a>
+        </div>
+        <div class="genre-features-pegi-container">
+            <h2>{{ movie.genre }}</h2>
+            <div class="movie-pegi-rating">
+              {% if movie.pegi_rating == '3' %}
+              <button><i class="fas fa">3</i></button>
+              {% elif movie.pegi_rating == '7' %}
+              <button><i class="fas fa">7</i></button>
+              {% elif movie.pegi_rating == '12' %}
+              <button><i class="fas fa">12</i></button>
+              {% elif movie.pegi_rating == '16' %}
+              <button><i class="fas fa">16</i></button>
+              {% elif movie.pegi_rating == '18' %}
+              <button><i class="fas fa">18</i></button>
+              {% endif %}
+              {% for feature in movie.features.all %}
+              {% if feature.name == 'Scary' %}
+              <button><i class="fas fa-ghost"></i></button>
+              {% elif feature.name == 'Sex' %}
+              <button><i class="fas fa-bed"></i></button>
+              {% elif feature.name == 'Violence' %}
+              <button><i class="fas fa-fist-raised"></i></button>
+              {% elif feature.name == 'Language' %}
+              <button><i class="fas fa-comment-dots"></i></button>
+              {% endif %}
+              {% endfor %}
+            </div>
+        </div>
+        <ul>
+          {% for showtime in movie.showtimes.all %}
+          <li><div><p>{{ showtime.start_time|date:"H:i" }} - {{ showtime.end_time|date:"H:i" }}</p><i class="fas fa-info"></i></div><a href="{% url 'movie_detail' movie.id %}"><i class="fas fa-arrow-right"></i></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    {% if not forloop.last %}
+    <hr>
+    {% endif %}
+    {% endfor %}
+  </section>
+</main>
+<footer>
+  {% include 'components/footer.html' %}
+</footer>
+<script src="{% static 'js/search.js' %}"></script>
+</body>
+</html>

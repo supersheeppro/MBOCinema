@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="{% static 'css/style10.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+  {% include 'components/navigationbar.html' %}
+</header>
+<h1>Winkelmand</h1>
+
+{% if tickets %}
+  <ul>
+    {% for ticket in tickets %}
+      <li>
+        <p>{{ ticket.film.title }} - {{ ticket.ticket_type }} - €{{ ticket.price }}</p>
+        <p>Aangekocht op: {{ ticket.purchased_on|date:"D, d M Y H:i" }}</p>
+        <h3>Totaal: €{{ total_price }}</h3>
+        <button onclick="window.location.href='{% url 'checkout' %}'">Doorgaan naar afrekenen</button>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Je hebt nog geen tickets in je winkelmand.</p>
+{% endif %}
+
+
+<footer>
+  {% include 'components/footer.html' %}
+</footer>
+</body>
+</html>

@@ -1,0 +1,1068 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --text-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+body {
+    width:80%;
+    background-color: #000;
+    color: #fff;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+
+button:focus {
+    outline: none;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    background-color: #272727;
+    width: 80vw;
+    left:0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 3vh;
+}
+
+.footer-container2 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40vw;
+}
+
+.footer-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40vw;
+}
+
+.footer-container2 h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-container2 p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-container2 input {
+    width: 46%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+
+
+}
+.footer-container2 input:focus {
+    border: none;
+    outline: none;
+}
+
+.footer-container2 button:hover {
+    background-color: #e05500;
+}
+
+.footer-socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding: 20px 0;
+}
+
+.footer-socials-container a {
+    font-size: 2rem;
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-socials-container a:hover {
+    color: yellow;
+}
+
+.footer-socials-container .social-icon i {
+    display: inline-block;
+}
+
+.footer-nav-text-container {
+    display: flex;
+    gap: 3vw;
+}
+
+.footer-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-list h3{
+    margin-bottom: 1vh;
+    color: #fff;
+}
+
+.footer-nav-list li {
+    font-size: 1rem;
+
+}
+
+.footer-nav-list a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-nav-list a:hover {
+    color: orange;
+}
+
+
+.footer-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info-list h3{
+    margin-bottom: 1vh;
+    color: #fff;
+}
+
+.footer-info-list li {
+    font-size: 1rem;
+
+}
+
+.footer-info-list a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-info-list a:hover {
+    color: orange;
+}
+
+.footer-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+nav {
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.nav-right img{
+    width: 250px;
+    height: auto;
+}
+
+.nav-right ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1vw;
+}
+
+.nav-right ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-right ul li i {
+    color: orange;
+}
+
+.nav-right ul li a:hover {
+    color: orange;
+}
+
+
+.nav-right ul li a:focus {
+    outline: none;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a{
+    cursor: pointer;
+    color: white
+}
+
+.nav-left a i{
+    font-size: 1.4em;
+    transition: font-size 0.2s;
+}
+
+.nav-left a i:hover{
+    font-size: 1.5em;
+}
+
+
+#hero-slideshow {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 7vh;
+}
+
+
+#hero-slideshow-content {
+    display: flex;
+}
+
+
+.swiper-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.films-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+.films-container img{
+    width: 19vw;
+}
+
+.films-sectie {
+    margin-top: 7vh;
+}
+
+.films-sectie h1{
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.movie-item {
+    width: 19vw;
+}
+
+
+.events-sectie {
+    margin-top: 7vh;
+}
+
+.events-sectie h1{
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.events-container {
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    gap: 2vw;
+    cursor: grab;
+}
+.event-item img{
+    height: 40vh;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.comingsoon-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+.comingsoon-container img{
+    width: 19vw;
+}
+
+.comingsoon-sectie {
+    margin-top: 7vh;
+}
+
+.comingsoon-sectie h1{
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.kinder-sectie {
+    margin-top: 7vh;
+    display: flex;
+    gap: 2vw;
+    height: 60vh;
+}
+
+.kinder-article-buttons-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kinder-verwijs-buttons-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.kinder-sectie div article{
+    margin-bottom: 4vh;
+}
+
+.kinder-sectie img{
+    max-height: 55vh;
+    width: 50%;
+    object-fit: cover;
+}
+
+.kinder-sectie h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.kinder-sectie p{
+   font-size: 1.2rem;
+   font-family: "Roboto", serif;
+}
+
+#kinder-plan-bezoek {
+    background-color: green;
+}
+
+
+.title-and-days-container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-and-days-container ul{
+    display: flex;
+    list-style: none;
+}
+
+.title-and-days-container ul button{
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+
+
+.title-and-days-container h1{
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.searchbar-and-filters-container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchbar input {
+    width: 60vw;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.searchbar i {
+    position: relative;
+    left: -40px;
+    color: black;
+    cursor: pointer;
+}
+.searchbar input:focus {
+    border: none;
+    outline: none;
+}
+
+.searchbar-and-filters-container button {
+    width: 18vw;
+    text-align: start;
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+}
+
+#filters-container {
+    display: none;
+    flex-direction: column;
+    background-color: #272727;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5vh;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-filter-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+#filters-container h2{
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.filter-group select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    border: 2px solid #272727;
+    outline: none;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+    background-color: #888888;
+    color: black;
+}
+
+.dropdown-filter-container button{
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.filter-group select:hover{
+    border: 2px solid orange;
+}
+
+.filter-group label{
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.search-movie-item {
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.title-and-save-button-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 0.5vw;
+
+}
+
+.title-and-save-button-container h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.genre-features-pegi-container h2{
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.save-button {
+    font-size: 1.6rem;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.save-button i.active {
+    color: red; /* Actieve kleur */
+}
+
+.save-button i.pop {
+    animation: pop 0.3s ease;
+}
+
+
+.search-movie-item-info-container ul{
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+}
+
+.search-movie-item-info-container ul li{
+    display: flex;
+    gap: 2vw;
+}
+
+.search-movie-item-info-container ul li div{
+    display: flex;
+    gap: 0.5vw;
+}
+
+.fa-arrow-right {
+    color: orange;
+}
+
+.fa-info {
+    color: #fff;
+}
+
+.fa-info:hover{
+    color: orange;
+}
+.search-movie-item-info-container ul li{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid gray;
+    padding: 15px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: scale 0.3s ease;
+}
+
+.search-movie-item-info-container ul li:hover{
+    border: 1px solid orange;
+    scale: 1.1;
+}
+
+.genre-features-pegi-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    margin-top: 1vh;
+    margin-bottom: 7vh;
+}
+.genre-features-pegi-container button {
+    background-color: #888888;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin:0;
+    color: #333333;
+    text-align: center;
+}
+
+.genre-features-pegi-container button i{
+    font-size: 1.2rem;
+}
+
+.account-title-container h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+
+.auth-buttons {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 0;
+    border: 2px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2vh;
+    width: 22vw;
+}
+
+#login-btn {
+    margin: 0;
+    font-size: 18px;
+    border-radius: 0 5px 5px 0;
+    width: 50%;
+}
+
+#register-btn {
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 18px;
+    width: 50%;
+}
+
+.form-container input{
+    width: 96%;
+    padding: 10px 2%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+    background-color: gray;
+    color: white;
+}
+
+
+.label-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 22vw;
+}
+
+.label-input-container label{
+    font-family: "Open Sans", sans-serif;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.register-form-content-container{
+    display: flex;
+    justify-content: space-between;
+    width: 44vw;
+    gap: 2vw;
+}
+
+.wachtwoord-vergeten-container {
+    text-align: center;
+}
+
+.wachtwoord-vergeten-container a{
+    cursor: pointer;
+}
+
+.label-input-container select{
+    width: 100%;
+    padding: 10px 2%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+    background-color: gray;
+    color: white;
+}
+
+
+.account-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.account-form-content label{
+    font-family: "Open Sans", sans-serif;
+}
+
+.register-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.flatpickr-calendar {
+    left: auto !important;
+    right: 0 !important; /* Zorg dat de kalender rechts opent */
+}
+
+.account-checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    width: 22vw;
+}
+
+.account-checkbox-container input{
+    width: 1vw;
+}
+
+.content-text-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.account-text-container {
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 5vw;
+    transition: ease 1s;
+}
+
+.account-text-container.moveright {
+    margin-right: 0;
+}
+
+.account-text-container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin: 2vh 5px;
+}
+
+.login-form-subit-button {
+    margin: 0;
+    width: 22vw;
+    padding: 10px 25px;
+}
+
+.event-hero-image {
+    position: relative; /* Maak de container een positioneringsreferentie */
+    height: 40vh;
+    margin-top: 3vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.event-hero-image::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 40vh;
+    width:100%;
+    background:
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 1) 120%), /* Zwart sterker naar beneden */
+            linear-gradient(to right, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.9) 100%), /* Links naar rechts sterker */
+            linear-gradient(to left, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.9) 100%); /* Rechts naar links sterker */
+
+}
+
+.event-hero-image article {
+    width: 50%;
+    position: relative;
+    top: 15vh;
+}
+
+.event-hero-image article h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.event-hero-image article p{
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.event-hero-image article {
+    position: relative; /* Maak de tekst zichtbaar boven de pseudo-element */
+    z-index: 2;
+    color: white; /* Tekst wit voor contrast */
+    text-align: center;
+    margin: 0; /* Optioneel, afhankelijk van gewenste plaatsing */
+    padding: 10px; /* Voor wat afstand van de randen */
+}
+
+.event-hero-image h1 {
+    margin: 0;
+    padding-top: 20%; /* Pas aan naar wens om de tekst te centreren */
+}
+
+#filters-container2 {
+    display: none;
+    background-color: #888888;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+
+.events h1 {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.andere-events-lijst {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.andere-events-lijst img{
+    width: 19vw;
+}
+
+.events-lijst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    gap: 5vh;
+}
+
+.event-container {
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid gray;
+    display: flex;
+    gap: 1vw;
+}
+
+.event-container img{
+    border-radius: 10px 0 0 10px;
+}
+
+.event-info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    width: 100%;
+    margin-right: 2vw;
+}
+
+.event-info-container h2{
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.event-info-container p{
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.event-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1vh;
+    margin-bottom: 2vh;
+}
+
+.event-button-container button{
+    width: 10vw;
+    margin: 0
+}
+
+.event-button-container a{
+    cursor: pointer;
+    color: white;
+}
+
+.title-description-datum-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+.info-page-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.info-page-section img{
+    width: 60%;
+}
+
+.info-title-container{
+    width: 40%;
+}
+
+.info-title-container h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 2vh;
+}
+
+.info-title-container p{
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Voor een simpele layout */
+#locations-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 7vh;
+}
+#location-list {
+    width: 20%;
+}
+
+#location-list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#location-detail{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.location-image-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1vh;
+    width: 100%;
+}
+
+.location-image-button-container img{
+    width: 100%;
+}
+
+
+
+#location-detail h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.location-detail-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    width: 60%;
+}
+
+.location-detail-content-text {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.location-item {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.location-item:hover {
+    border-color: orange;
+}
+
+.locations-title-container h1 {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+}
+
+.location-detail-content-address-text {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+hr {
+    background-color: #333333;
+}
+

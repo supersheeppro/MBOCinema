@@ -3,16 +3,20 @@
     <div class="nav-right">
         <img src="{% static 'images/MBO_Cinema_logo_breed.png' %}">
         <ul>
-            <li><a href="{% url 'index' %}">Home</a></li>
-            <li><a href="#">Films</a> <a href="#"><i class="fas fa-chevron-down"></i></a></li>
-            <li><a href="#">Events and Specials</a><a href="#"><i class="fas fa-chevron-down"></i></a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Info</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/search">Films</a> <a href="#"><i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="/events/1">Events and Specials</a><a href="#"><i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="/locations">Locations</a></li>
+            <li><a href="/info">Info</a></li>
         </ul>
     </div>
     <div class="nav-left">
-        <a><i class="fas fa-shopping-cart"></i></a>
-        <button>Register</button>
-        <button>Login</button>
+        <a href="/winkelmand"><i class="fas fa-shopping-cart"></i></a>
+        {% if user.is_authenticated %}
+        <a href="/account"><button>Mijn Account</button></a>
+        {% else %}
+        <button onclick="window.location.href='/account?register'">Register</button>
+        <button onclick="window.location.href='/account?login'">Login</button>
+        {% endif %}
     </div>
 </nav>

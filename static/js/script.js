@@ -37,3 +37,5 @@ eventsContainer.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 2;  // Beweging factor (verhoogt snelheid, kan worden aangepast)
     eventsContainer.scrollLeft = scrollLeft - walk;  // Verplaats de container op basis van de muisbeweging
 });
+
+

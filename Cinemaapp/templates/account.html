@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Inloggen / Registreren</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/style10.css' %}">
+</head>
+<body>
+<header>
+  {% include 'components/navigationbar.html' %}
+</header>
+<main>
+  <section>
+    <div class="account-title-container">
+      <h1>Mijn account</h1>
+    </div>
+    <div class="content-text-container">
+      <div class="account-content-container">
+        {% if user.is_authenticated %}
+        <h1>Welkom, {{ user.username }}!</h1>
+        <p>Hier kunt u uw accountinstellingen beheren.</p>
+
+        {% if user_profile and user_profile.birthday %}
+        <p>Uw geboortedatum: {{ user_profile.birthday }}</p>
+        {% else %}
+        <p>Uw geboortedatum is niet ingesteld.</p>
+        {% endif %}
+        <form action="{% url 'logout' %}" method="post">
+          {% csrf_token %}
+          <button type="submit">Uitloggen</button>
+        </form>
+        {% else %}
+        <div class="auth-buttons">
+          <button id="login-btn">Inloggen</button>
+          <button id="register-btn">Registreren</button>
+        </div>
+        <div id="login-form" class="form-container">
+          <form class="account-form-content" method="post">
+            {% csrf_token %}
+            <div class="label-input-container">
+              <label for="username">Gebruikersnaam:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div class="label-input-container">
+              <label for="password">Wachtwoord:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <button class="login-form-subit-button" type="submit" name="login">Inloggen</button>
+            <div class="wachtwoord-vergeten-container">
+              <a>Wachtwoord vergeten?</a>
+            </div>
+          </form>
+        </div>
+
+        <div id="register-form" class="form-container">
+          <form class="account-form-content" method="post">
+            {% csrf_token %}
+            <div class="register-form-content-container">
+              <div class="register-content-container">
+                <div class="label-input-container">
+                  <label for="gebruikersnaam">Gebruikersnaam:</label>
+                  <input type="text" id="gebruikersnaam" name="gebruikersnaam" required>
+                </div>
+                <div class="label-input-container">
+                  <label for="email">Email:</label>
+                  <input type="text" id="email" name="email" required>
+                </div>
+                <div class="label-input-container">
+                  <label for="voornaam">Voornaam:</label>
+                  <input type="text" id="voornaam" name="voornaam" required>
+                </div>
+                <div class="label-input-container">
+                  <label for="postcode">Postcode:</label>
+                  <input type="text" id="postcode" name="postcode" required>
+                </div>
+                <div class="label-input-container">
+                  <label for="wachtwoord">Wachtwoord:</label>
+                  <input type="password" id="wachtwoord" name="wachtwoord" required>
+                </div>
+                <div class="account-checkbox-container">
+                  <label for="nieuwsbrief">Nieuwsbrief</label>
+                  <input type="checkbox" id="nieuwsbrief" name="nieuwsbrief">
+                </div>
+              </div>
+              <div>
+                <div class="register-content-container">
+                  <div class="label-input-container">
+                    <label for="gender">Geslacht:</label>
+                    <select id="gender" name="gender">
+                      <option value="M">Man</option>
+                      <option value="F">Vrouw</option>
+                      <option value="O">Anders</option>
+                    </select>
+                  </div>
+                  <div class="label-input-container">
+                    <label for="telefoonnummer">Telefoonnummer (optioneel):</label>
+                    <input type="tel" id="telefoonnummer" name="telefoonnummer">
+                  </div>
+                  <div class="label-input-container">
+                    <label for="achternaam">Achternaam:</label>
+                    <input type="text" id="achternaam" name="achternaam" required>
+                  </div>
+                  <div class="label-input-container">
+                    <label for="geboortedatum">Geboortedatum:</label>
+                    <input type="date" id="geboortedatum" name="geboortedatum" required>
+
+                  </div>
+                  <div class="label-input-container">
+                    <label for="bevestigwachtwoord">Bevestig Wachtwoord:</label>
+                    <input type="password" id="bevestigwachtwoord" name="bevestigwachtwoord" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <label>Door een Mijn MBOCinema-account aan te maken stem je automatisch in met ons privacystatement.</label>
+            <button class="login-form-subit-button" type="submit" name="register">Registreren</button>
+          </form>
+        </div>
+        {% endif %}
+      </div>
+      <div class="account-text-container">
+        <h2>Wat biedt MBO Cinema?</h2>
+        <ul>
+          <li>🎟 Altijd jouw tickets binnen handbereik<br>Geen gedoe meer met papieren tickets: toon ze direct vanaf je telefoon.</li>
+          <li>⚡ Sneller en makkelijker boeken<br>Met één klik reserveer je jouw favoriete films en stoelen.</li>
+          <li>🎁 Vouchers en cadeaukaarten beheren<br>Beheer en gebruik je cadeaubonnen en kortingscodes moeiteloos.</li>
+          <li>⭐ Stel jouw persoonlijke kijklijst samen<br>Sla films op die je niet wilt missen en bekijk ze later.</li>
+          <li>🎥 Jouw beoordelingen en favorieten op één plek<br>Houd je favoriete films en reviews altijd overzichtelijk bij.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  {% include 'components/footer.html' %}
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const loginBtn = document.getElementById('login-btn');
+    const registerBtn = document.getElementById('register-btn');
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+    const textcontainer = document.querySelector('.account-text-container')
+    const formcontainer = document.querySelector('.account-form-content')
+
+    // Controleer de URL voor queryparameters
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('register')) {
+      registerForm.style.display = 'block'
+      registerBtn.style.backgroundColor = "#ff6600"
+      loginBtn.style.backgroundColor = "transparent"
+      textcontainer.classList.add('moveright')
+      loginForm.style.display = 'none'
+    } else if (urlParams.has('login')) {
+      loginForm.style.display = 'block';
+      loginBtn.style.backgroundColor = "#ff6600"
+      registerBtn.style.backgroundColor = "transparent"
+      textcontainer.classList.remove('moveright')
+      registerForm.style.display = 'none';
+    }
+
+    loginBtn.addEventListener('click', function() {
+      loginForm.style.display = 'block';
+      loginBtn.style.backgroundColor = "#ff6600"
+      registerBtn.style.backgroundColor = "transparent"
+      textcontainer.classList.remove('moveright')
+      registerForm.style.display = 'none';
+    });
+
+    registerBtn.addEventListener('click', function() {
+      registerForm.style.display = 'block'
+      registerBtn.style.backgroundColor = "#ff6600"
+      loginBtn.style.backgroundColor = "transparent"
+      textcontainer.classList.add('moveright')
+      loginForm.style.display = 'none'
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/style10.css' %}">
 </head>
 <body>
@@ -12,22 +12,55 @@
   {% include 'components/navigationbar.html' %}
 </header>
 <main>
-    <!-- Inhoud van de pagina -->
-    <div class="content">
-        <h1>Welkom op mijn website!</h1>
-        <p>Hier is een voorbeeld van een achtergrondvideo.</p>
+    <div class="event-detail-hero-image" style="background-image: url('{{ event.poster.url }}');">
+        <div class="event-detail-content-container">
+            <img src="{{ event.thumbnail.url }}">
+            <div class="event-detail-info-container">
+                <div class="titel-and-description-container">
+                    <article>
+                        <h1>{{ event.title }}</h1>
+                        <p>{{ event.date }}</p>
+                        <p>{{ event.location }}</p>
+                        <p>{{ event.zaal }}</p>
+                    </article>
+                    <p>{{ event.description }}</p>
+                </div>
+                <div class="payment-and-share-buttons-container">
+                    <ul class="share-options">
+                        <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20dit%20uit!" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="payment-and-buttons-container">
+                        <button id="event-detail-bestel-button">Bestel</button>
+                        <div class="payment-and-buttons-payment-container">
+                            <p>Prijs: {{ event.price }}</p>
+                            <div class="event-detail-afreken-button-container">
+                                <button id="event-detail-add-to-cart-button">voeg toe</button>
+                                <button id="event-detail-afrekenen-button">Afrekenen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <h1>{{ event.title }}</h1>
-    <p>{{ event.description }}</p>
-    <p>{{ event.location }} zaal: {{ event.zaal }}</p>
-    <p>{{ event.date }}</p>
-
-    <img src="{{ event.poster.url }}" alt="{{ event.title }} poster">
-
 </main>
 <footer>
   {% include 'components/footer.html' %}
 </footer>
-<script src="{% static 'js/search.js' %}"></script>
+<script src="{% static 'js/event_detail.js' %}"></script>
 </body>
 </html>

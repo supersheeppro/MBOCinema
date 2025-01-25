@@ -11,24 +11,31 @@
 <header>
   {% include 'components/navigationbar.html' %}
 </header>
-<h1>Winkelmand</h1>
+<main>
+  <section class="winkelmand-tickets-section">
+    <h1>Winkelmand</h1>
 
-{% if tickets %}
-  <ul>
-    {% for ticket in tickets %}
+    {% if tickets %}
+    <ul>
+      {% for ticket in tickets %}
       <li>
         <p>{{ ticket.film.title }} - {{ ticket.ticket_type }} - €{{ ticket.price }}</p>
         <p>Aangekocht op: {{ ticket.purchased_on|date:"D, d M Y H:i" }}</p>
-        <h3>Totaal: €{{ total_price }}</h3>
-        <button onclick="window.location.href='{% url 'checkout' %}'">Doorgaan naar afrekenen</button>
+
+        <!-- Verwijderknop -->
+        <form action="{% url 'remove_ticket' ticket.id %}" method="POST" style="display:inline;">
+          {% csrf_token %}
+          <button type="submit">Verwijder</button>
+        </form>
       </li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>Je hebt nog geen tickets in je winkelmand.</p>
-{% endif %}
-
-
+      {% endfor %}
+    </ul>
+    <button onclick="window.location.href='{% url 'checkout' %}'">Doorgaan naar afrekenen</button>
+    {% else %}
+    <p>Je hebt nog geen tickets in je winkelmand.</p>
+    {% endif %}
+  </section>
+</main>
 <footer>
   {% include 'components/footer.html' %}
 </footer>

@@ -26,6 +26,13 @@ body {
     color: #fff;
 }
 
+main {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 5vh;
+    min-height: 50vh;
+}
+
 button {
     background-color: #ff6600;
     color: white;
@@ -59,6 +66,7 @@ footer {
     padding-right: 10vw;
     padding-bottom: 3vh;
 }
+
 
 .footer-container2 {
     text-align: center;
@@ -199,7 +207,7 @@ footer {
 }
 
 nav {
-    margin-top: 10vh;
+    margin-top: 5vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -454,8 +462,6 @@ nav {
     border: none;
     outline: none;
     box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
-
-
 }
 
 .searchbar i {
@@ -714,6 +720,7 @@ nav {
 
 .wachtwoord-vergeten-container a{
     cursor: pointer;
+    color: orange;
 }
 
 .label-input-container select{
@@ -1008,8 +1015,6 @@ nav {
     width: 100%;
 }
 
-
-
 #location-detail h1{
     font-size: 2rem;
     font-family: "Open Sans", sans-serif;
@@ -1048,6 +1053,603 @@ nav {
 .location-detail-content-address-text {
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
+}
+
+.account-buttons-list {
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 5vh;
+}
+
+.account-buttons-list button{
+    margin-left: 0;
+    padding: 10px 40px;
+}
+
+.account-content-container h1{
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+#account-gegevens-button {
+    background-color: red;
+}
+
+
+#account-gegevens-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#account-tickets-container {
+    display: none;
+    flex-direction: column;
+}
+
+#account-tickets-container ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2vh;
+    margin-top: 2vh;
+}
+
+#account-tickets-container ul li{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    transition: ease 0.5s;
+}
+
+#account-tickets-container ul li:hover {
+    border: 2px solid orange;
+    scale: 1.05;
+}
+
+#account-watchlist-container ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2vh;
+    margin-top: 2vh;
+}
+
+#account-watchlist-container ul li{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    transition: ease 0.5s;
+}
+
+#account-watchlist-container ul li:hover {
+    border: 2px solid orange;
+    scale: 1.05;
+}
+
+
+#account-watchlist-container {
+    display: none;
+    flex-direction: column;
+}
+
+#account-reserveringen-container {
+    display: none;
+    flex-direction: column;
+}
+
+#account-reserveringen-container ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2vh;
+    margin-top: 2vh;
+}
+
+#account-reserveringen-container ul li{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    transition: ease 0.5s;
+}
+
+#account-reserveringen-container ul li:hover {
+    border: 2px solid orange;
+    scale: 1.05;
+}
+
+.password-container a {
+    position: relative;
+    bottom: 30%;
+    left: 90%;
+    font-size: 1.7rem;
+}
+
+.winkelmand-tickets-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.winkelmand-tickets-section button{
+    margin-left: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 15%;
+}
+
+.winkelmand-tickets-section h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 2vh;
+}
+
+.winkelmand-tickets-section h3{
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 2vh;
+}
+
+.winkelmand-tickets-section ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2vh;
+    margin-bottom: 5vh;
+}
+
+.winkelmand-tickets-section ul li{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    transition: ease 0.5s;
+    width: 30%;
+}
+
+.winkelmand-tickets-section ul li:hover {
+    border: 2px solid orange;
+    scale: 1.05;
+}
+
+/* Zorg ervoor dat de video de volledige achtergrond bedekt */
+.background-video {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 60vh;
+    object-fit: cover; /* Zorg ervoor dat de video de container volledig vult */
+    z-index: -1; /* Zet de video achter andere inhoud */
+    margin-top: 10px;
+}
+
+/* Zorg ervoor dat de inhoud boven de video wordt geplaatst */
+.content {
+    position: relative;
+    padding-top: 40vh;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.film-detail-content-container {
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 6vh;
+}
+
+.film-detail-showtimes-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1vw;
+    margin-bottom: 6vh;
+}
+
+.film-detail-showtimes-container h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 5vh;
+}
+
+.film-detail-showtimes-container h3{
+    font-size: 1.4rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.progressie-buttons-afrekenen-container ul{
+    display: flex;
+    gap: 5px;
+}
+
+.progressie-buttons-afrekenen-container ul button{
+    padding: 10px 2%;
+    border-radius: 6px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#stoel-button {
+    border: 2px solid orange;
+}
+
+#stoel-button:hover {
+    border: 2px solid orange;
+}
+
+#ticket-button {
+    border: 2px solid blue;
+}
+
+#ticket-button:hover {
+    border: 2px solid orange;
+}
+
+#gegevens-button {
+    border: 2px solid blue;
+}
+
+#gegevens-button:hover {
+    border: 2px solid orange;
+}
+
+#afrekenen-button {
+    border: 2px solid blue;
+}
+
+#afrekenen-button:hover {
+    border: 2px solid orange;
+}
+
+.film-detail-afrekenen-stoelen-container {
+    display: block;
+}
+
+.film-detail-afrekenen-tickets-container {
+    display: none;
+}
+
+.film-detail-afrekenen-gegevens-container {
+    display: none;
+}
+
+.film-detail-afrekenen-afrekenen-container {
+    display: none;
+}
+
+.film-detail-andere-films {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.film-detail-andere-films h1{
+    margin-bottom: 5vh;
+}
+
+
+.film-detail-andere-films ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.film-detail-andere-films ul li img{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 19vw;
+}
+
+.movie-info h1 {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 3vh;
+}
+
+.movie-info p {
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.film-detail-content-container img{
+    width: 25%;
+    border-radius: 10px;
+}
+
+.film-detail-andere-films h1 {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 3vh;
+}
+
+.account-gegevens-buttons {
+    display: flex;
+    gap: 1vw;
+    margin-top: 10px;
+}
+
+.account-gegevens-container-list {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    list-style: none;
+}
+
+.account-gegevens-container-list li input{
+    width: 96%;
+    padding: 10px 2%;
+    margin-top: 1vh;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+    background-color: gray;
+    color: white;
+}
+
+.account-gegevens-container-list li select{
+    width: 100%;
+    padding: 10px 2%;
+    margin-top: 1vh;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+    background-color: gray;
+    color: white;
+}
+
+.account-gegevens-container-list li label{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+}
+
+.account-gegevens-buttons button{
+    margin: 0;
+
+}
+
+.account-update-container {
+    display: flex;
+    gap: 1vw;
+}
+
+.event-detail-hero-image {
+    position: relative; /* Maak de container een positioneringsreferentie */
+    height: 60vh;
+    margin-top: 3vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.event-detail-hero-image::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 60vh;
+    width:100%;
+    background:
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 1) 120%), /* Zwart sterker naar beneden */
+            linear-gradient(to right, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.9) 100%), /* Links naar rechts sterker */
+            linear-gradient(to left, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.9) 100%); /* Rechts naar links sterker */
+
+}
+
+
+
+.event-detail-content-container {
+    z-index: 2;
+    width: 80%;
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    top: 30vh;
+}
+
+.event-detail-content-container img{
+    width: 30%;
+    height: 90%;
+}
+
+.event-detail-info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.payment-and-share-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.titel-and-description-container {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    text-align: left;
+}
+
+.titel-and-description-container article{
+    text-align: left;
+    height: 50%;
+}
+
+.titel-and-description-container article h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.titel-and-description-container article p{
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.titel-and-description-container p {
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.share-options {
+    display: flex;
+    list-style: none;
+    gap: 1vw;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.share-options li a i {
+    color: white;
+    font-size: 2rem;
+    transition: scale ease 0.5s;
+}
+
+.share-options li a i:hover {
+    color: orange;
+    scale: 1.2;
+}
+
+.payment-and-buttons-container {
+    padding: 0.5vw;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5vw;
+    height: 8%;
+    width: 6vw;
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.payment-and-buttons-container.active {
+    display: block;
+    width: 20vw;
+    height: 50%;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.payment-and-buttons-container button{
+    margin: 0;
+}
+
+.payment-and-buttons-payment-container {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#event-detail-add-to-cart-button {
+    display: none;
+}
+
+#event-detail-afrekenen-button {
+    display: none;
+}
+
+.event-detail-afreken-button-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0.5vw;
+}
+
+.wachtwoord-verander-section {
+    display: flex;
+    justify-content: center;
+}
+
+.wachtwoord-verander {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.wachtwoord-verander form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.wachtwoord-verander form label{
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.wachtwoord-verander form input{
+    width: 96%;
+    padding: 10px 2%;
+    margin-top: 1vh;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.5);
+    background-color: gray;
+    color: white;
+
+}
+
+.wachtwoord-verander form button{
+    margin: 0;
+}
+
+
+.wachtwoord-verander h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.wachtwoord-verander-section {
+    margin-bottom: 9vh;
+}
+
+.wachtwoord-verander-klaar {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.wachtwoord-verander-klaar h1{
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.wachtwoord-verander-klaar p{
+    font-size: 1.3rem;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.wachtwoord-verander-klaar a{
+    font-size: 1.3rem;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: orange;
+}
+
+
+.wachtwoord-verander-klaar-section {
+    display: flex;
+    justify-content: center;
+    height: 59vh;
 }
 
 @keyframes pop {

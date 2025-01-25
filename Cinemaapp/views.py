@@ -1,15 +1,16 @@
-from .models import NewRelease, Event, ComingSoonRelease, Movie, Watchlist, UserProfile, Ticket, Info, Location, Zaal
-from django.http import JsonResponse
+from .models import NewRelease, Event, ComingSoonRelease, Movie, Watchlist, UserProfile, Ticket, Info, Location, Zaal, Reservation, StandardEventList
+from django.http import JsonResponse, Http404
 from django.contrib.auth.decorators import login_required
 import json
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from django.contrib.auth.models import User
-from .models import StandardEventList
-from django.http import Http404
 from datetime import datetime
-
+from django.contrib.auth.views import PasswordChangeView
+from django.urls import reverse_lazy
+from .forms import CustomPasswordChangeForm
+from django.views.generic import TemplateView
 
 
 def index(request):
@@ -175,6 +176,8 @@ def event_list_detail(request, list_id):
 def movie_detail(request, movie_id):
     # Haal de gekozen film op via de ID
     movie = get_object_or_404(Movie, id=movie_id)
+    zaal = movie.zaal  # Koppel de zaal aan de film
+    rows = zaal.rows.all() if zaal else []
 
     # Haal de eerste 4 films op die niet dezelfde zijn als de gekozen film
     other_movies = Movie.objects.exclude(id=movie_id)[:4]
@@ -182,7 +185,8 @@ def movie_detail(request, movie_id):
     # Stuur de film en de andere films naar de template
     return render(request, 'film_detail.html', {
         'movie': movie,
-        'other_movies': other_movies
+        'other_movies': other_movies,
+        'rows': rows
     })
 
 def event_detail(request, event_id):
@@ -193,12 +197,60 @@ def event_detail(request, event_id):
         'event': event,
     })
 
+
+@login_required
+def update_account_details(request):
+    if request.method == "POST":
+        action = request.POST.get('action')
+        if action == 'update':
+            # Verkrijg de nieuwe gegevens van het formulier
+            new_geboortedatum = request.POST.get('geboortedatum_update')
+            new_voornaam = request.POST.get('voornaam_update')
+            new_achternaam = request.POST.get('achternaam_update')
+            new_telefoonnummer = request.POST.get('telefoonnummer_update')
+            new_postcode = request.POST.get('postcode_update')
+            new_email = request.POST.get('email_update')
+            new_gender = request.POST.get('gender_update')
+
+            # Verkrijg de gebruiker en het bijbehorende user_profile
+            user = request.user
+            user_profile = UserProfile.objects.get(user=user)
+
+            # Update de user-gegevens
+            user.first_name = new_voornaam
+            user.last_name = new_achternaam
+            user.email = new_email
+            user.save()  # Sla de wijzigingen op in het User-object
+
+            # Update de UserProfile-gegevens
+            user_profile.birthday = new_geboortedatum
+            user_profile.postcode = new_postcode
+            user_profile.phone = new_telefoonnummer
+            user_profile.gender = new_gender
+            user_profile.save()  # Sla de wijzigingen op in de UserProfile
+
+            return redirect('login_register')  # Stuur de gebruiker terug naar het account-overzicht
+
+        elif action == 'logout':
+            logout(request)
+            return redirect('/account?login')  # Verwijs naar de inlogpagina na uitloggen
+
+    return redirect('login_register')  # Redirect als de request geen POST is
+
+
 def login_register_view(request):
     if request.user.is_authenticated:
         user_profile = UserProfile.objects.filter(user=request.user).first()
+        tickets = Ticket.objects.filter(user=request.user)
+        reserveringen = Reservation.objects.filter(user=request.user)
+        watchlist = Watchlist.objects.filter(user=request.user).first()  # Gebruik 'first()' om de eerste (en enige) watchlist op te halen
+
         return render(request, 'account.html', {
             'is_authenticated': True,
             'user_profile': user_profile,  # Voeg profiel toe aan context
+            'tickets': tickets,
+            'watchlist': watchlist,
+            'reserveringen': reserveringen
         })
 
     if request.method == 'POST':
@@ -270,24 +322,25 @@ def winkelmand(request):
     tickets = Ticket.objects.filter(user=request.user)
 
     # Bereken het totale bedrag van de tickets in de winkelmand
-    total_price = sum(ticket.price for ticket in tickets)
+
 
     # Stuur de tickets en het totale bedrag naar de template
     return render(request, 'winkelmand.html', {
-        'tickets': tickets,
-        'total_price': total_price
+        'tickets': tickets
     })
 
+@login_required
 def checkout(request):
     # Als de gebruiker is ingelogd, haal dan de tickets op
     tickets = Ticket.objects.filter(user=request.user) if request.user.is_authenticated else []
-
+    total_price = sum(ticket.price for ticket in tickets)
     # Als de gebruiker niet ingelogd is, kunnen we een variabele toevoegen
     is_authenticated = request.user.is_authenticated
 
     return render(request, 'checkout.html', {
         'tickets': tickets,
         'is_authenticated': is_authenticated,
+        'total_price': total_price,
     })
 
 
@@ -310,3 +363,22 @@ def location_detail(request, location_id):
         'description': location.description,
         'photo_url': location.photo.url if location.photo else None,
     })
+
+def remove_ticket(request, ticket_id):
+    # Haal het ticket op via het ticket ID
+    try:
+        ticket = Ticket.objects.get(id=ticket_id, user=request.user)  # Veronderstelt dat tickets aan een gebruiker zijn gekoppeld
+        ticket.delete()  # Verwijder het ticket
+    except Ticket.DoesNotExist:
+        # Als het ticket niet bestaat of de gebruiker het niet heeft, geef dan een error weer of redirect naar winkelmand
+        return redirect('winkelmand')  # Stel de juiste URL voor de winkelmand in
+
+    return redirect('winkelmand')  # Redirect terug naar de winkelmandpagina
+
+class CustomPasswordChangeView(PasswordChangeView):
+    form_class = CustomPasswordChangeForm
+    template_name = 'password_change.html'
+    success_url = reverse_lazy('password_change_done')  # Redirect na succesvol wijzigen
+
+class PasswordChangeDoneView(TemplateView):
+    template_name = 'password_change_done.html'

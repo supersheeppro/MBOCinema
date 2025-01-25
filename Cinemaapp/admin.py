@@ -1,7 +1,26 @@
 from django.contrib import admin
-from .models import Movie, Event, NewRelease, ComingSoonRelease, ShowTime, Feature, UserProfile, Ticket, Watchlist, StandardEventList, Zaal, Info, Location
+from .models import Movie, Event, NewRelease, ComingSoonRelease, ShowTime, Feature, UserProfile, Ticket, Watchlist, StandardEventList, Zaal, Info, Location, Row, Seat, Reservation
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import User
+
+class SeatInline(admin.TabularInline):
+    model = Seat  # Stoelen toevoegen aan rijen
+    extra = 1  # Aantal lege velden om nieuwe stoelen toe te voegen
+
+@admin.register(Row)
+class RowAdmin(admin.ModelAdmin):
+    list_display = ('zaal', 'row_number', 'is_vip')  # Toon rijnummer, zaal en VIP-status
+    list_filter = ('zaal', 'is_vip')  # Filteren op zaal en VIP-status
+    ordering = ('zaal', 'row_number')  # Ordenen op zaal en rijnummer
+    inlines = [SeatInline]  # Stoelen kunnen toegevoegd worden in de rij-admin
+
+    def save_model(self, request, obj, form, change):
+        # Alleen als het object nieuw is (nog geen pk), genereer een automatisch rijnummer
+        if not change:  # `change` is False bij het aanmaken van een nieuw object
+            last_row = Row.objects.filter(zaal=obj.zaal).order_by('-row_number').first()
+            obj.row_number = (last_row.row_number + 1) if last_row else 1
+        super().save_model(request, obj, form, change)
+
 
 class FeatureAdmin(admin.ModelAdmin):
     list_display = ('name',)
@@ -82,9 +101,15 @@ class WatchlistAdmin(admin.ModelAdmin):
     list_display = ('user',)
     filter_horizontal = ('movie',)
 
+class RowInline(admin.TabularInline):
+    model = Row
+    extra = 1  # Aantal lege velden om nieuwe rijen toe te voegen
+    readonly_fields = ('row_number',)  # Rij wordt automatisch gegenereerd, niet handmatig invullen
+
 class ZaalAdmin(admin.ModelAdmin):
     list_display = ('title',)  # Toon de naam van de zaal
     filter_horizontal = ('films', 'events')  # Zorg ervoor dat de films en evenementen makkelijk gekozen kunnen worden
+    inlines = [RowInline]
 
 @admin.register(Location)
 class LocationAdmin(admin.ModelAdmin):
@@ -98,6 +123,7 @@ admin.site.register(Event, EventAdmin)
 admin.site.register(NewRelease, NewReleaseAdmin)
 admin.site.register(ShowTime)
 admin.site.register(Ticket)
+admin.site.register(Reservation)
 admin.site.register(Watchlist, WatchlistAdmin)
 admin.site.register(StandardEventList, StandardEventListAdmin)
 admin.site.register(Info, InfoAdmin)

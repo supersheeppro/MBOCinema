@@ -19,18 +19,122 @@
     <div class="content-text-container">
       <div class="account-content-container">
         {% if user.is_authenticated %}
-        <h1>Welkom, {{ user.username }}!</h1>
-        <p>Hier kunt u uw accountinstellingen beheren.</p>
-
-        {% if user_profile and user_profile.birthday %}
-        <p>Uw geboortedatum: {{ user_profile.birthday }}</p>
-        {% else %}
-        <p>Uw geboortedatum is niet ingesteld.</p>
-        {% endif %}
-        <form action="{% url 'logout' %}" method="post">
-          {% csrf_token %}
-          <button type="submit">Uitloggen</button>
-        </form>
+        <div class="account-buttons-list">
+          <button id="account-gegevens-button">Gegevens</button>
+          <button id="account-tickets-button">Tickets</button>
+          <button id="account-watchlist-button">Watchlist</button>
+          <button id="account-reserveringen-button">Reserveringen</button>
+        </div>
+        <div id="account-gegevens-container">
+          <h1>Mijn Gegevens</h1>
+          <form action="{% url 'update_account_details' %}" method="post">
+            {% csrf_token %}
+            <div class="account-update-container">
+              <ul class="account-gegevens-container-list">
+                <li>
+                  <label for="geboortedatum_update">Geboortedatum:</label>
+                  <input type="date" id="geboortedatum_update" name="geboortedatum_update" value="{{ user_profile.birthday|date:'Y-m-d' }}">
+                </li>
+                <li>
+                  <label for="voornaam_update">Voornaam:</label>
+                  <input type="text" id="voornaam_update" name="voornaam_update" value="{{ user.first_name }}">
+                </li>
+                <li>
+                  <label for="achternaam_update">Achternaam:</label>
+                  <input type="text" id="achternaam_update" name="achternaam_update" value="{{ user.last_name }}">
+                </li>
+                <li>
+                  <label for="telefoonnummer_update">Telefoonnummer:</label>
+                  <input type="text" id="telefoonnummer_update" name="telefoonnummer_update" value="{{ user_profile.phone }}">
+                </li>
+              </ul>
+              <ul class="account-gegevens-container-list">
+                <li>
+                  <label for="gender_update">Geslacht:</label>
+                  <select id="gender_update" name="gender_update">
+                    <option value="M" {% if user_profile.gender == "M" %}selected{% endif %}>Man</option>
+                    <option value="F" {% if user_profile.gender == "F" %}selected{% endif %}>Vrouw</option>
+                    <option value="O" {% if user_profile.gender == "O" %}selected{% endif %}>Anders</option>
+                  </select>
+                </li>
+                <li>
+                  <label for="postcode_update">Postcode:</label>
+                  <input type="text" id="postcode_update" name="postcode_update" value="{{ user_profile.postcode }}" required>
+                </li>
+                <li>
+                  <label for="email_update">Email:</label>
+                  <input type="text" id="email_update" name="email_update" value="{{ user.email }}" required>
+                </li>
+                <li class="password-container">
+                  <label for="wachtwoord_update">Wachtwoord:</label>
+                  <input type="password" id="wachtwoord_update" name="wachtwoord_update" readonly>
+                  <a href="{% url 'password_change' %}" class="reset-password-icon">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="account-gegevens-buttons">
+              <button type="submit" name="action" value="update">Gegevens bijwerken</button>
+              <button type="submit" name="action" value="logout">Uitloggen</button>
+            </div>
+          </form>
+        </div>
+        <div id="account-tickets-container">
+          <h1>Tickets</h1>
+          {% if tickets %}
+          <ul>
+            {% for ticket in tickets %}
+            <li>
+              <p>{{ ticket.film.title }} - {{ ticket.ticket_type }} - €{{ ticket.price }}</p>
+              <p>Aangekocht op: {{ ticket.purchased_on|date:"D, d M Y H:i" }}</p>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p>Je hebt nog geen tickets.</p>
+          <a href="/search"><button>Bestel tickets</button></a>
+          {% endif %}
+        </div>
+        <div id="account-watchlist-container">
+          {% if watchlist %}
+          <h1>Watchlist</h1>
+          <ul>
+            {% for movie in watchlist.movie.all %}
+            <li>
+              <p>Title: {{ movie.title }}</p>  <!-- Zorg ervoor dat het 'title' veld bestaat in je Movie model -->
+              <p>Added on: {{ movie.watchlist_set.first.added_on }}</p>  <!-- Weergave van de datum waarop de film werd toegevoegd -->
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p>Je watchlist is leeg.</p>
+          {% endif %}
+        </div>
+        <div id="account-reserveringen-container">
+          <h1>Reserveringen</h1>
+          {% if reserveringen %}
+          <ul>
+            {% for reservatie in reserveringen %}
+            <li>
+              <p>{{ reservatie.film.title }} - {{ reservatie.ticket_type }} - €{{ reservatie.price }}</p>
+              <p>Aangekocht op: {{ reservatie.purchased_on|date:"D, d M Y H:i" }}</p>
+              <p>
+                Status:
+                {% if reservatie.status %}
+                Bevestigd
+                {% else %}
+                Onbevestigd
+                {% endif %}
+              </p>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p>Je hebt nog geen tickets.</p>
+          <a href="/search"><button>Bestel tickets</button></a>
+          {% endif %}
+        </div>
         {% else %}
         <div class="auth-buttons">
           <button id="login-btn">Inloggen</button>
@@ -49,7 +153,7 @@
             </div>
             <button class="login-form-subit-button" type="submit" name="login">Inloggen</button>
             <div class="wachtwoord-vergeten-container">
-              <a>Wachtwoord vergeten?</a>
+              <a href="{% url 'password_reset' %}">Wachtwoord vergeten?</a>
             </div>
           </form>
         </div>
@@ -120,6 +224,7 @@
         </div>
         {% endif %}
       </div>
+      {% if not user.is_authenticated %}
       <div class="account-text-container">
         <h2>Wat biedt MBO Cinema?</h2>
         <ul>
@@ -130,54 +235,13 @@
           <li>🎥 Jouw beoordelingen en favorieten op één plek<br>Houd je favoriete films en reviews altijd overzichtelijk bij.</li>
         </ul>
       </div>
+      {% endif %}
     </div>
   </section>
 </main>
 <footer>
   {% include 'components/footer.html' %}
 </footer>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const loginBtn = document.getElementById('login-btn');
-    const registerBtn = document.getElementById('register-btn');
-    const loginForm = document.getElementById('login-form');
-    const registerForm = document.getElementById('register-form');
-    const textcontainer = document.querySelector('.account-text-container')
-    const formcontainer = document.querySelector('.account-form-content')
-
-    // Controleer de URL voor queryparameters
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('register')) {
-      registerForm.style.display = 'block'
-      registerBtn.style.backgroundColor = "#ff6600"
-      loginBtn.style.backgroundColor = "transparent"
-      textcontainer.classList.add('moveright')
-      loginForm.style.display = 'none'
-    } else if (urlParams.has('login')) {
-      loginForm.style.display = 'block';
-      loginBtn.style.backgroundColor = "#ff6600"
-      registerBtn.style.backgroundColor = "transparent"
-      textcontainer.classList.remove('moveright')
-      registerForm.style.display = 'none';
-    }
-
-    loginBtn.addEventListener('click', function() {
-      loginForm.style.display = 'block';
-      loginBtn.style.backgroundColor = "#ff6600"
-      registerBtn.style.backgroundColor = "transparent"
-      textcontainer.classList.remove('moveright')
-      registerForm.style.display = 'none';
-    });
-
-    registerBtn.addEventListener('click', function() {
-      registerForm.style.display = 'block'
-      registerBtn.style.backgroundColor = "#ff6600"
-      loginBtn.style.backgroundColor = "transparent"
-      textcontainer.classList.add('moveright')
-      loginForm.style.display = 'none'
-    });
-  });
-</script>
-
+<script src="{% static 'js/account.js' %}"></script>
 </body>
 </html>

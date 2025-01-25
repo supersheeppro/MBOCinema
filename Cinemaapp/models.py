@@ -1,6 +1,24 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from decimal import Decimal
+
+class Seat(models.Model):
+    row = models.ForeignKey('Row', on_delete=models.CASCADE, related_name='seats')  # Koppeling aan een rij
+    seat_number = models.PositiveIntegerField()  # Stoelnummer
+    is_reserved = models.BooleanField(default=False)  # Of de stoel al is gereserveerd
+
+    def __str__(self):
+        return f"Stoel {self.seat_number} in {self.row}"
+
+
+class Row(models.Model):
+    zaal = models.ForeignKey('Zaal', on_delete=models.CASCADE, related_name='rows')  # Koppeling aan zaal
+    row_number = models.PositiveIntegerField()  # Rijnummer
+    is_vip = models.BooleanField(default=False)  # Markeren als VIP-rij
+
+    def __str__(self):
+        return f"Rij {self.row_number} ({'VIP' if self.is_vip else 'Normaal'}) in {self.zaal.title}"
 
 
 class Zaal(models.Model):
@@ -9,7 +27,7 @@ class Zaal(models.Model):
     events = models.ManyToManyField('Event', related_name='zaals')  # Evenementen in de zaal
 
     def __str__(self):
-        return f"Zaal: {self.title}"
+        return self.title
 
 class Feature(models.Model):
     SCARY = 'Scary'
@@ -94,6 +112,7 @@ class Movie(models.Model):
     zaal = models.ForeignKey(Zaal, on_delete=models.CASCADE, related_name='movies', null=True, blank=True)
     video = models.FileField(upload_to='movies/', null=True, blank=True)
     locations = models.ManyToManyField('Location', related_name='movies', blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2, default=Decimal('10.00'))
 
     def __str__(self):
         return self.title
@@ -177,6 +196,7 @@ class Event(models.Model):
         choices=PEGI_CHOICES,
         default=PEGI_3,
     )
+    price = models.DecimalField(max_digits=6, decimal_places=2, default=Decimal('10.00'))
 
     def __str__(self):
         return f"Evenement: {self.title} - {self.date}"
@@ -206,6 +226,19 @@ class Ticket(models.Model):
     def __str__(self):
         return f"Ticket voor {self.user.username}"
 
+class Reservation(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations', blank=True, null=True)
+    film = models.ForeignKey(Movie, on_delete=models.CASCADE, blank=True, null=True)
+    event = models.ForeignKey(Event, on_delete=models.CASCADE, blank=True, null=True)
+    reserved_on = models.DateTimeField(auto_now_add=True)  # Tijdstip van reservering
+    reservation_type = models.CharField(max_length=100)  # Bijvoorbeeld: "VIP", "Standard", etc.
+    chair = models.CharField(max_length=100)  # Specifieke stoel
+    price = models.DecimalField(max_digits=10, decimal_places=2)  # Prijs voor de reservering
+    status = models.BooleanField(default=False)  # Bijv. "bevestigd" of "niet bevestigd"
+
+    def __str__(self):
+        # Teruggeven van een duidelijke stringrepresentatie van de reservering
+        return f"Reservering voor {self.user.username if self.user else 'Gast'}"
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -235,5 +268,6 @@ class Info(models.Model):
 
     def __str__(self):
         return self.title
+
 
 

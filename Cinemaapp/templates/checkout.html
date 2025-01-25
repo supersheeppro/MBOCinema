@@ -11,42 +11,42 @@
 <header>
   {% include 'components/navigationbar.html' %}
 </header>
-<h1>Checkout</h1>
+<main>
+  <section class="winkelmand-tickets-section">
+    <h1>Checkout</h1>
 
-<h3>Jouw Tickets:</h3>
-<ul>
-  {% for ticket in tickets %}
-    <li>{{ ticket.film.title }} - Ticket type: {{ ticket.ticket_type }} - €{{ ticket.price }}</li>
-  {% empty %}
-    <li>Je hebt nog geen tickets gekocht.</li>
-  {% endfor %}
-</ul>
+    <h3>Jouw Tickets:</h3>
+    <ul>
+      {% for ticket in tickets %}
+      <li>
+        {{ ticket.film.title }} - Ticket type: {{ ticket.ticket_type }} - €{{ ticket.price }}
 
-{% if not is_authenticated %}
-  <h3>Vul je gegevens in:</h3>
-  <form method="POST">
-    {% csrf_token %}
-    <label for="first_name">Voornaam:</label>
-    <input type="text" name="first_name" required><br>
+        <div class="ticket-quantity">
+          <button class="decrease" data-ticket-id="{{ ticket.id }}">-</button>
+          <input type="number" id="ticket_quantity_{{ ticket.id }}" name="ticket_quantity_{{ ticket.id }}" value="1" min="1"/>
+          <button class="increase" data-ticket-id="{{ ticket.id }}">+</button>
+        </div>
+        <!-- Voeg de ticket prijs toe als data-atribuut -->
+        <input type="hidden" class="ticket-price" id="ticket_price_{{ ticket.id }}" value="{{ ticket.price }}">
+      </li>
+      {% empty %}
+      <li>Je hebt nog geen tickets gekocht.</li>
+      {% endfor %}
+    </ul>
 
-    <label for="last_name">Achternaam:</label>
-    <input type="text" name="last_name" required><br>
+    <h3>Betaal methode</h3>
 
-    <label for="email">E-mail:</label>
-    <input type="email" name="email" required><br>
-
-    <button type="submit">Bevestig je gegevens</button>
-  </form>
-{% else %}
-  <form method="POST">
-    {% csrf_token %}
-    <button type="submit">Betalen</button>
-  </form>
-{% endif %}
-
+    <h3>Totaal: €<span id="total_price">{{ total_price }}</span></h3>
+    <form method="POST">
+      {% csrf_token %}
+      <button type="submit">Nu Afrekenen</button>
+    </form>
+  </section>
+</main>
 <footer>
   {% include 'components/footer.html' %}
 </footer>
+<script src="{% static 'js/checkout.js' %}"></script>
 </body>
 </html>
 

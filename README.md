@@ -24,7 +24,7 @@ Een complete bioscoopwebsite voor MBOCinema.
 4. **Clone de repository**  
    Voer het volgende commando uit:  
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/supersheeppro/MBOCinema.git
    ```   
 
 5. **Start de servero**  

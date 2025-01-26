@@ -3,6 +3,13 @@ from django.contrib.auth import views as auth_views
 from . import views
 from .views import PasswordChangeDoneView, CustomPasswordChangeView
 from django.contrib.auth.decorators import login_required
+from django.contrib import sitemaps
+from django.contrib.sitemaps.views import sitemap
+from Cinemaapp.sitemaps import StaticViewSitemap
+
+sitemaps = {
+    'static': StaticViewSitemap,
+}
 
 #URLConf
 urlpatterns = [
@@ -39,4 +46,5 @@ urlpatterns = [
     path('remove_tickets/', views.remove_tickets, name='remove_tickets'),
     path('create_event_ticket/', views.create_event_ticket, name='create_event_ticket'),
     path('create_event_reservation/', views.create_event_reservation, name='create_event_reservation'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]

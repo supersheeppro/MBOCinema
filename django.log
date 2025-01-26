@@ -39105,3 +39105,26 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'movie_detail' with arguments
 "GET /locations/2/ HTTP/1.1" 200 692
 "GET /media/location_photos/mbocinemas2.jpg HTTP/1.1" 200 448090
 "GET / HTTP/1.1" 200 8511
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8511
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /search HTTP/1.1" 200 12588
+"GET / HTTP/1.1" 200 8511
+"GET /search HTTP/1.1" 200 12588
+"GET /events/1/ HTTP/1.1" 200 8382
+"GET /locations/ HTTP/1.1" 200 6145
+"GET /info HTTP/1.1" 200 4699
+"GET / HTTP/1.1" 200 8511
+"GET /events/1/ HTTP/1.1" 200 8382
+"GET /locations/ HTTP/1.1" 200 6145
+"GET /info HTTP/1.1" 200 4699
+"GET / HTTP/1.1" 200 8511
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 8511
+"GET /sitemap.xml HTTP/1.1" 200 1328
+"GET /sitemap.xml HTTP/1.1" 200 1328

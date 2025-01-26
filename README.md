@@ -35,3 +35,7 @@ Een complete bioscoopwebsite voor MBOCinema.
 
 ## Sitemap
 De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
+
+## Use Case Diagram
+![Use Case Diagram](static/images/Usecasediagram.png)
+

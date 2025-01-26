@@ -1,5 +1,5 @@
 # MBOCinema  
-Een complete bioscoopwebsite voor MBO.  
+Een complete bioscoopwebsite voor MBOCinema.  
 
 ## Wireframes  
 [Bekijk de wireframes hier](https://www.figma.com/design/XghqG31kXu4kk3e8zPJWdu/MBOCinema?node-id=4-448&t=KkZGwwsESEQ4EIRx-0)  

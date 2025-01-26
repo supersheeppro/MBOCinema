@@ -31,4 +31,7 @@ Een complete bioscoopwebsite voor MBOCinema.
    Voer het volgende commando uit:  
    ```bash
    python manage.py runserver
-   ```   
+   ```
+
+## Sitemap
+De sitemap vind je op http://127.0.0.1:8000/sitemap.xml

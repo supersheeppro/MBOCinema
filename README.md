@@ -7,15 +7,28 @@ Een complete bioscoopwebsite voor MBOCinema.
 ## Installatie en Gebruik  
 
 1. **Download een IDE**  
-   PyCharm wordt aanbevolen.  
+   PyCharm wordt aanbevolen dit kan ook in pycharm community.  
 
 2. **Installeer Django**  
    Voer het volgende commando uit:  
    ```bash
    pip install django
+   ```
 
-1. download ide (pycharm recommended)
-2. install django
-3. install mysqlclient
-4. clone repository
-5. start the server witch "python manage.py runserver"
+3. **Installeer mysqlclient**  
+   Voer het volgende commando uit:  
+   ```bash
+   pip install mysqlclient
+   ```
+
+4. **Clone de repository**  
+   Voer het volgende commando uit:  
+   ```bash
+   git clone [repository-url]
+   ```   
+
+5. **Start de servero**  
+   Voer het volgende commando uit:  
+   ```bash
+   python manage.py runserver
+   ```   

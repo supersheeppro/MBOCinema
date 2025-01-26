@@ -39128,3 +39128,15 @@ Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 8511
 "GET /sitemap.xml HTTP/1.1" 200 1328
 "GET /sitemap.xml HTTP/1.1" 200 1328
+Watching for file changes with StatReloader
+"GET /sitemap.xml HTTP/1.1" 200 1328
+Not Found: /sitemap
+"GET /sitemap HTTP/1.1" 404 8876
+"GET /sitemap.xml HTTP/1.1" 200 1328
+"GET /sitemap.xml HTTP/1.1" 200 1328
+Watching for file changes with StatReloader
+"GET /sitemap.xml HTTP/1.1" 200 1328
+Not Found: /sitemap
+"GET /sitemap HTTP/1.1" 404 8876
+"GET /sitemap.xml HTTP/1.1" 200 1328
+"GET /sitemap.xml HTTP/1.1" 200 1328

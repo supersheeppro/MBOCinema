@@ -37,5 +37,6 @@ Een complete bioscoopwebsite voor MBOCinema.
 De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
 
 ## Use Case Diagram
+   Use Case Narratives vind je in het project van deze repository
 ![Use Case Diagram](static/images/Usecasediagram.png)
 

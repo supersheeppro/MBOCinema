@@ -36,6 +36,67 @@ Een complete bioscoopwebsite voor MBOCinema.
 ## Sitemap
 De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
 
+   ```xml
+      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+      <script src="chrome-extension://mfidniedemcgceagapgdekdbmanojomk/js/elephant.js"/>
+      <url>
+      <loc>http://127.0.0.1:8000/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/search</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/account/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/logout/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/login/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/winkelmand/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/checkout/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/info</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/locations/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/verander-wachtwoord/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      <url>
+      <loc>http://127.0.0.1:8000/reset-password/</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+      </url>
+      </urlset>
+   ```   
+
 ## Use Case Diagram
    Use Case Narratives vind je in het project van deze repository
 ![Use Case Diagram](static/images/Usecasediagram.png)

@@ -1,4 +1,4 @@
-from .models import NewRelease, Event, ComingSoonRelease, Movie, Watchlist, UserProfile, Ticket, Info, Location, Zaal, Reservation, StandardEventList
+from .models import NewRelease, Event, ComingSoonRelease, Movie, Watchlist, UserProfile, Ticket, Info, Location, Zaal, Reservation, StandardEventList, ShowTime
 from django.http import JsonResponse, Http404
 from django.contrib.auth.decorators import login_required
 import json
@@ -11,6 +11,10 @@ from django.contrib.auth.views import PasswordChangeView
 from django.urls import reverse_lazy
 from .forms import CustomPasswordChangeForm
 from django.views.generic import TemplateView
+from django.utils import timezone
+from django.core.mail import send_mail
+from django.urls import reverse
+from django.http import HttpResponse
 
 
 def index(request):
@@ -81,6 +85,251 @@ def search(request):
     })
 
 
+@login_required
+def create_ticket(request):
+    if request.method == 'POST':
+        tickets_data = []
+        index = 0
+        while True:
+            ticket_type = request.POST.get(f'type_{index}')
+            if ticket_type is None:
+                break  # Geen meer stoelen
+            seat = request.POST.get(f'seat_{index}')
+            seat_row = request.POST.get(f'seat_row_{index}')
+            zaal_id = request.POST.get(f'seat_room_{index}')
+            vip = request.POST.get(f'vip_{index}') == "True"  # Zet VIP om naar boolean
+            price = request.POST.get(f'price_{index}')
+            movie_id = request.POST.get(f'movie_id_{index}')
+            event_id = request.POST.get(f'event_id_{index}')
+            showtime_id = request.POST.get(f'showtime_id_{index}')
+            # Verkrijg de film en het evenement alleen als ze zijn opgegeven
+            movie = None
+            event = None
+            zaal = None
+            showTime = None
+
+            if movie_id:
+                try:
+                    movie = Movie.objects.get(id=movie_id)
+                except Movie.DoesNotExist:
+                    return JsonResponse({'error': 'Film niet gevonden'}, status=404)
+
+            if event_id:
+                try:
+                    event = Event.objects.get(id=event_id)
+                except Event.DoesNotExist:
+                    return JsonResponse({'error': 'Evenement niet gevonden'}, status=404)
+
+            if zaal_id:
+                try:
+                    zaal = Zaal.objects.get(id=zaal_id)
+                except Zaal.DoesNotExist:
+                    return JsonResponse({'error': 'Zaal niet gevonden'}, status=404)
+
+            if showtime_id:
+                try:
+                    showTime = ShowTime.objects.get(id=showtime_id)
+                except ShowTime.DoesNotExist:
+                    return JsonResponse({'error': 'ShowTime niet gevonden'}, status=404)
+
+            # Voeg de stoelgegevens toe aan de lijst
+            tickets_data.append({
+                'type': ticket_type,
+                'seat': seat,
+                'seat_row': seat_row,
+                'seat_room': zaal,
+                'vip': vip,
+                'price': price,
+                'film': movie,
+                'event': event,
+                'showTime': showTime,
+            })
+
+            index += 1
+
+        # Maak de tickets aan in de database
+        for ticket_data in tickets_data:
+            Ticket.objects.create(
+                user=request.user,  # De gebruiker die het ticket aanmaakt
+                film=ticket_data['film'],  # De film (kan None zijn)
+                event=ticket_data['event'],  # Het evenement (kan None zijn)
+                type=ticket_data['type'],  # Het type ticket
+                seat=ticket_data['seat'],  # De stoel waarvoor het ticket is
+                row=ticket_data['seat_row'],  # De rij van de stoel
+                zaal=ticket_data['seat_room'],  # De zaal
+                showtime=ticket_data['showTime'],
+                vip=ticket_data['vip'],  # VIP-status
+                price=ticket_data['price'],  # De prijs van het ticket
+                purchased_on=timezone.now()  # Tijdstip van aankoop
+            )
+
+        return redirect('/winkelmand')
+
+    return JsonResponse({'error': 'Ongeldige request methode'}, status=405)
+
+
+def create_reservation(request):
+    if request.method == 'POST':
+
+        reservations_data_data = []
+        index = 0
+        session_id = request.session.session_key  # Verkrijg de session_key
+        if not session_id:  # Als er geen sessie is, maak een nieuwe sessie
+            request.session.create()
+            session_id = request.session.session_key
+
+        while True:
+            ticket_type = request.POST.get(f'type_{index}')
+            if ticket_type is None:
+                break  # Geen meer stoelen
+
+            seat = request.POST.get(f'seat_{index}')
+            seat_row = request.POST.get(f'seat_row_{index}')
+            zaal_id = request.POST.get(f'seat_room_{index}')
+            vip = request.POST.get(f'vip_{index}') == "True"  # Zet VIP om naar boolean
+            price = request.POST.get(f'price_{index}')
+            movie_id = request.POST.get(f'movie_id_{index}')
+            event_id = request.POST.get(f'event_id_{index}')
+            showtime_id = request.POST.get(f'showtime_id_{index}')
+
+
+            # Verkrijg de film en het evenement alleen als ze zijn opgegeven
+            movie = None
+            event = None
+            zaal = None
+            showTime = None
+
+            if movie_id:
+                try:
+                    movie = Movie.objects.get(id=movie_id)
+                except Movie.DoesNotExist:
+                    return JsonResponse({'error': 'Film niet gevonden'}, status=404)
+
+            if event_id:
+                try:
+                    event = Event.objects.get(id=event_id)
+                except Event.DoesNotExist:
+                    return JsonResponse({'error': 'Evenement niet gevonden'}, status=404)
+
+            if zaal_id:
+                try:
+                    zaal = Zaal.objects.get(id=zaal_id)
+                except Zaal.DoesNotExist:
+                    return JsonResponse({'error': 'Zaal niet gevonden'}, status=404)
+
+            if showtime_id:
+                try:
+                    showTime = ShowTime.objects.get(id=showtime_id)
+                except ShowTime.DoesNotExist:
+                    return JsonResponse({'error': 'ShowTime niet gevonden'}, status=404)
+
+            # Voeg de stoelgegevens toe aan de lijst
+            reservations_data_data.append({
+                'type': ticket_type,
+                'seat': seat,
+                'seat_row': seat_row,
+                'seat_room': zaal,
+                'vip': vip,
+                'price': price,
+                'film': movie,
+                'event': event,
+                'showTime': showTime,
+            })
+
+            index += 1
+
+        # Check of de gebruiker is ingelogd
+        if request.user.is_authenticated:
+            user = request.user
+            guest_name = None
+            guest_email = None
+        else:
+            # Als de gebruiker niet ingelogd is, haal gastgegevens op
+            user = None  # Dit is belangrijk voor gastgebruikers
+            guest_name = f"{request.POST.get('voornaam')} {request.POST.get('achternaam')}"
+            guest_email = request.POST.get('email')
+
+
+        # Maak de tickets aan in de database
+        for reservation_data in reservations_data_data:
+            Reservation.objects.create(
+                user=user,  # Als ingelogd, gebruik de ingelogde gebruiker, anders None voor gast
+                film=reservation_data['film'],
+                event=reservation_data['event'],
+                type=reservation_data['type'],
+                seat=reservation_data['seat'],
+                row=reservation_data['seat_row'],
+                zaal=reservation_data['seat_room'],
+                showtime=reservation_data['showTime'],
+                vip=reservation_data['vip'],
+                price=reservation_data['price'],
+                session_id=session_id,  # Sla de session_id op voor gasten
+                guest_name=guest_name,  # Sla de naam op voor gasten
+                guest_email=guest_email,  # Sla het e-mailadres op voor gasten
+                reserved_on=timezone.now()
+            )
+
+            # Stuur een bevestigingsmail naar de gebruiker of gast
+            recipient_email = user.email if user else guest_email
+
+            # Genereer de link voor gastgebruikers
+            if not user:
+                reservations_url = reverse('guest_reservations', kwargs={'session_id': session_id})
+                reservation_link = f"http://127.0.0.1:8000{reservations_url}"
+
+                # Voeg de link toe in de e-mailbody
+                email_body = f"""
+                    Hallo {guest_name},
+
+                    Je hebt succesvol een reservering gemaakt voor de film: {reservation_data['film']}.
+
+                    Je kunt je reserveringen bekijken door de onderstaande link te volgen:
+                    {reservation_link}
+
+                    Bedankt voor je reservering!
+                """
+            else:
+                email_body = f"""
+                    Hallo {user.get_full_name()},
+
+                    Je hebt succesvol een reservering gemaakt voor de film: {reservation_data['film']}.
+
+                    Bedankt voor je reservering!
+                """
+
+            send_mail(
+                'Bevestiging van je reservering',
+                email_body,
+                'from@example.com',  # Gebruik een geldig e-mailadres
+                [recipient_email],
+                fail_silently=False,
+            )
+
+        if request.user.is_authenticated:
+            return redirect('/account')
+        else:
+            return redirect(f'/reservation_complete/{session_id}')
+
+    return JsonResponse({'error': 'Ongeldige request methode'}, status=405)
+
+
+@login_required
+def remove_from_watchlist(request, movie_id):
+    try:
+        # Verkrijg de film die je wilt verwijderen
+        movie = get_object_or_404(Movie, id=movie_id)
+
+        # Verkrijg of maak een watchlist voor de gebruiker
+        watchlist, created = Watchlist.objects.get_or_create(user=request.user)
+
+        # Verwijder de film uit de watchlist als deze aanwezig is
+        if watchlist.movie.filter(id=movie_id).exists():
+            watchlist.movie.remove(movie)
+
+        return redirect('/account')
+
+    except Movie.DoesNotExist:
+        return JsonResponse({'error': 'Film niet gevonden'}, status=404)
 
 @login_required
 def add_to_watchlist(request, movie_id):
@@ -173,9 +422,15 @@ def event_list_detail(request, list_id):
     })
 
 
-def movie_detail(request, movie_id):
+def movie_detail(request, movie_id, showtime_id=None):
     # Haal de gekozen film op via de ID
     movie = get_object_or_404(Movie, id=movie_id)
+
+    # Haal de showtime op als showtime_id meegegeven is
+    showtime = None
+    if showtime_id:
+        showtime = get_object_or_404(ShowTime, id=showtime_id)
+
     zaal = movie.zaal  # Koppel de zaal aan de film
     rows = zaal.rows.all() if zaal else []
 
@@ -186,7 +441,8 @@ def movie_detail(request, movie_id):
     return render(request, 'film_detail.html', {
         'movie': movie,
         'other_movies': other_movies,
-        'rows': rows
+        'rows': rows,
+        'showtime': showtime  # De showtime wordt meegegeven aan de template
     })
 
 def event_detail(request, event_id):
@@ -371,9 +627,194 @@ def remove_ticket(request, ticket_id):
         ticket.delete()  # Verwijder het ticket
     except Ticket.DoesNotExist:
         # Als het ticket niet bestaat of de gebruiker het niet heeft, geef dan een error weer of redirect naar winkelmand
-        return redirect('winkelmand')  # Stel de juiste URL voor de winkelmand in
+        return redirect('/winkelmand')  # Stel de juiste URL voor de winkelmand in
 
-    return redirect('winkelmand')  # Redirect terug naar de winkelmandpagina
+    return redirect('/winkelmand')  # Redirect terug naar de winkelmandpagina
+
+def remove_ticket_account(request, ticket_id):
+    # Haal het ticket op via het ticket ID
+    try:
+        ticket = Ticket.objects.get(id=ticket_id, user=request.user)  # Veronderstelt dat tickets aan een gebruiker zijn gekoppeld
+        ticket.delete()  # Verwijder het ticket
+    except Ticket.DoesNotExist:
+        # Als het ticket niet bestaat of de gebruiker het niet heeft, geef dan een error weer of redirect naar winkelmand
+        return redirect('/account?login')  # Stel de juiste URL voor de winkelmand in
+
+    return redirect('/account?login')
+
+
+@login_required
+def remove_tickets(request):
+    if request.method == 'POST':
+        # Verkrijg de ticketgegevens uit de request body
+        import json
+        data = json.loads(request.body)
+
+        tickets = data.get('tickets', [])
+        print(tickets)
+        # Maak een reservering voor elke ticket en verwijder het ticket
+        for ticket_data in tickets:
+            print(ticket_data)
+            # Verkrijg het ticket object van de gebruiker
+            ticket = Ticket.objects.get(id=ticket_data, user=request.user)
+
+            # Verwijder het ticket
+            ticket.delete()
+
+        return JsonResponse({'status': 'success'}, status=200)
+
+    return JsonResponse({'status': 'error'}, status=400)
+
+def remove_reservation(request, ticket_id):
+    # Haal het ticket op via het ticket ID
+    try:
+        reservation = Reservation.objects.get(id=ticket_id, user=request.user)  # Veronderstelt dat tickets aan een gebruiker zijn gekoppeld
+        reservation.delete()  # Verwijder het ticket
+    except Reservation.DoesNotExist:
+        # Als het ticket niet bestaat of de gebruiker het niet heeft, geef dan een error weer of redirect naar winkelmand
+        return redirect('/account?login')  # Stel de juiste URL voor de winkelmand in
+
+    return redirect('/account?login')
+
+def remove_reservation_guest(request, ticket_id):
+    # Haal het ticket op via het ticket ID
+    reservation = Reservation.objects.get(id=ticket_id)  # Veronderstelt dat tickets aan een gebruiker zijn gekoppeld
+    reservation.delete()  # Verwijder het ticket
+
+    return HttpResponse(status=204)
+
+def reservation_complete(request, session_id):
+    reservations = Reservation.objects.filter(session_id=session_id)
+    return render(request, 'reservation_complete.html', {'reservations': reservations})
+
+def guest_reservations(request, session_id):
+    reservations = Reservation.objects.filter(session_id=session_id)
+    return render(request, 'guest_reservations.html', {'reservations': reservations})
+
+@login_required
+def create_event_ticket(request):
+    if request.method == 'POST':
+        zaal_id = request.POST.get(f'room')
+        price = request.POST.get(f'price')
+        event_id = request.POST.get(f'event_id')
+        # Verkrijg de film en het evenement alleen als ze zijn opgegeven
+        event = None
+        zaal = None
+
+        if event_id:
+            try:
+                event = Event.objects.get(id=event_id)
+            except Event.DoesNotExist:
+                return JsonResponse({'error': 'Evenement niet gevonden'}, status=404)
+
+        if zaal_id:
+            try:
+                zaal = Zaal.objects.get(id=zaal_id)
+            except Zaal.DoesNotExist:
+                return JsonResponse({'error': 'Zaal niet gevonden'}, status=404)
+
+        Ticket.objects.create(
+            user=request.user,  # De gebruiker die het ticket aanmaakt
+            event=event,  # Het evenement (kan None zijn)
+            zaal=zaal,  # De zaal
+            price=price,  # De prijs van het ticket
+            purchased_on=timezone.now()  # Tijdstip van aankoop
+        )
+
+        return redirect('/winkelmand')
+
+    return JsonResponse({'error': 'Ongeldige request methode'}, status=405)
+
+
+def create_event_reservation(request):
+    if request.method == 'POST':
+        zaal_id = request.POST.get(f'room')
+        price = request.POST.get(f'price')
+        event_id = request.POST.get(f'event_id')
+        # Verkrijg de film en het evenement alleen als ze zijn opgegeven
+        event = None
+        zaal = None
+
+        session_id = request.session.session_key  # Verkrijg de session_key
+        if not session_id:  # Als er geen sessie is, maak een nieuwe sessie
+            request.session.create()
+            session_id = request.session.session_key
+
+        if event_id:
+            try:
+                event = Event.objects.get(id=event_id)
+            except Event.DoesNotExist:
+                return JsonResponse({'error': 'Evenement niet gevonden'}, status=404)
+
+        if zaal_id:
+            try:
+                zaal = Zaal.objects.get(id=zaal_id)
+            except Zaal.DoesNotExist:
+                return JsonResponse({'error': 'Zaal niet gevonden'}, status=404)
+
+        if request.user.is_authenticated:
+            user = request.user
+            guest_name = None
+            guest_email = None
+        else:
+            # Als de gebruiker niet ingelogd is, haal gastgegevens op
+            user = None  # Dit is belangrijk voor gastgebruikers
+            guest_name = f"{request.POST.get('voornaam')} {request.POST.get('achternaam')}"
+            guest_email = request.POST.get('email')
+
+        Reservation.objects.create(
+            user=user,  # Als ingelogd, gebruik de ingelogde gebruiker, anders None voor gast
+            event=event,
+            zaal=zaal,
+            price=price,
+            session_id=session_id,  # Sla de session_id op voor gasten
+            guest_name=guest_name,  # Sla de naam op voor gasten
+            guest_email=guest_email,  # Sla het e-mailadres op voor gasten
+            reserved_on=timezone.now()
+        )
+
+        # Stuur een bevestigingsmail naar de gebruiker of gast
+        recipient_email = user.email if user else guest_email
+
+        # Genereer de link voor gastgebruikers
+        if not user:
+            reservations_url = reverse('guest_reservations', kwargs={'session_id': session_id})
+            reservation_link = f"http://127.0.0.1:8000{reservations_url}"
+
+            # Voeg de link toe in de e-mailbody
+            email_body = f"""
+                Hallo {guest_name},
+
+                Je hebt succesvol een reservering gemaakt voor het event: {event}.
+
+                Je kunt je reserveringen bekijken door de onderstaande link te volgen:
+                {reservation_link}
+
+                Bedankt voor je reservering!
+            """
+        else:
+            email_body = f"""
+                Hallo {user.get_full_name()},
+
+                Je hebt succesvol een reservering gemaakt voor het event: {event}.
+
+                Bedankt voor je reservering!
+            """
+
+        send_mail(
+            'Bevestiging van je reservering',
+            email_body,
+            'from@example.com',  # Gebruik een geldig e-mailadres
+            [recipient_email],
+            fail_silently=False,
+        )
+
+        if request.user.is_authenticated:
+            return redirect('/account')
+        else:
+            return redirect(f'/reservation_complete/{session_id}')
+
+    return JsonResponse({'error': 'Ongeldige request methode'}, status=405)
 
 class CustomPasswordChangeView(PasswordChangeView):
     form_class = CustomPasswordChangeForm

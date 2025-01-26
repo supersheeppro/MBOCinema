@@ -12,7 +12,7 @@
   {% include 'components/navigationbar.html' %}
 </header>
 <main>
-    <div class="event-detail-hero-image" style="background-image: url('{{ event.poster.url }}');">
+    <section class="event-detail-hero-image" style="background-image: url('{{ event.poster.url }}');">
         <div class="event-detail-content-container">
             <img src="{{ event.thumbnail.url }}">
             <div class="event-detail-info-container">
@@ -46,17 +46,51 @@
                     <div class="payment-and-buttons-container">
                         <button id="event-detail-bestel-button">Bestel</button>
                         <div class="payment-and-buttons-payment-container">
-                            <p>Prijs: {{ event.price }}</p>
+                            <div class="payment-and-buttons-content-container">
+                                <h2>Prijs: {{ event.price }}</h2>
+                                <div class="betaalmethode">
+                                    <div class="payment-option" data-method="visa">
+                                        <img src="{% static 'images/visa.png' %}" alt="Visa">
+                                    </div>
+                                    <div class="payment-option" data-method="mastercard">
+                                        <img src="{% static 'images/mastercard.png' %}" alt="MasterCard">
+                                    </div>
+                                    <div class="payment-option" data-method="paypal">
+                                        <img src="{% static 'images/paypal.png' %}" alt="PayPal">
+                                    </div>
+                                    <div class="payment-option" data-method="applepay">
+                                        <img src="{% static 'images/applepay.png' %}" alt="Apple Pay">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="event-detail-afreken-button-container">
-                                <button id="event-detail-add-to-cart-button">voeg toe</button>
-                                <button id="event-detail-afrekenen-button">Afrekenen</button>
+                                {% if user.is_authenticated %}
+                                <!-- Ingelogd: Voeg tickets toe aan winkelwagen -->
+                                <form method="POST" action="{% url 'create_event_ticket' %}" id="ticket-form">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="room" value="{{ event.zaal.id }}">
+                                    <input type="hidden" name="price" value="{{ event.price }}">
+                                    <input type="hidden" name="event_id" value="{{ event.id }}">
+
+                                    <button type="submit" id="event-submit-ticket">Ticket Aanmaken</button>
+                                </form>
+                                {% endif %}
+                                <!-- Knop voor afrekenen -->
+                                <form method="POST" action="{% url 'create_event_reservation' %}" id="checkout-form">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="room" value="{{ event.zaal.id }}">
+                                    <input type="hidden" name="price" value="{{ event.price }}">
+                                    <input type="hidden" name="event_id" value="{{ event.id }}">
+
+                                    <button type="submit" id="submit-checkout">Nu Afrekenen</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </main>
 <footer>
   {% include 'components/footer.html' %}

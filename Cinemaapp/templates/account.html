@@ -86,8 +86,27 @@
           <ul>
             {% for ticket in tickets %}
             <li>
-              <p>{{ ticket.film.title }} - {{ ticket.ticket_type }} - €{{ ticket.price }}</p>
-              <p>Aangekocht op: {{ ticket.purchased_on|date:"D, d M Y H:i" }}</p>
+              <div class="account-tickets-list-container">
+                <img src="{{ ticket.film.poster.url }}{{ ticket.event.thumbnail.url }}" alt="{{ ticket.film.title }}">
+                <div class="account-tickets-list-info-container">
+                  <div class="film-info">
+                    <h1>{{ ticket.film.title }}{{ ticket.event.title }}</h1>
+                    <p>Genre: {{ ticket.film.genre }}{{ ticket.event.genre }}</p>
+                    <p>Zaal: {{ ticket.zaal }}</p>
+                    <p>Gereserveerd op: {{ ticket.reserved_on }}</p>
+                    <p>Tijdstip: {{ ticket.showtime }}</p>
+                    <p>Rij: {{ ticket.row }}</p>
+                    <p>Plaats: {{ ticket.seat }}</p>
+                    <p>Vip: {{ ticket.vip }}</p>
+                    <p>Type: {{ ticket.type }}</p>
+                    <p>Prijs: {{ ticket.price }}</p>
+                  </div>
+                  <form action="{% url 'remove_ticket_account' ticket.id %}" method="POST" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">Verwijder</button>
+                  </form>
+                </div>
+              </div>
             </li>
             {% endfor %}
           </ul>
@@ -102,8 +121,20 @@
           <ul>
             {% for movie in watchlist.movie.all %}
             <li>
-              <p>Title: {{ movie.title }}</p>  <!-- Zorg ervoor dat het 'title' veld bestaat in je Movie model -->
-              <p>Added on: {{ movie.watchlist_set.first.added_on }}</p>  <!-- Weergave van de datum waarop de film werd toegevoegd -->
+              <div class="account-tickets-list-container">
+                <img src="{{ movie.poster.url }}" alt="{{ movie.title }}">
+                <div class="account-tickets-list-info-container">
+                  <div class="film-info">
+                    <h1>{{ movie.title }}</h1>
+                    <p>Genre: {{ movie.genre }}</p>
+                    <p>Zaal: {{ movie.zaal }}</p>
+                  </div>
+                  <form method="POST" action="{% url 'remove_from_watchlist' movie.id %}">
+                    {% csrf_token %}
+                    <button type="submit">Verwijder</button>
+                  </form>
+                </div>
+              </div>
             </li>
             {% endfor %}
           </ul>
@@ -117,21 +148,32 @@
           <ul>
             {% for reservatie in reserveringen %}
             <li>
-              <p>{{ reservatie.film.title }} - {{ reservatie.ticket_type }} - €{{ reservatie.price }}</p>
-              <p>Aangekocht op: {{ reservatie.purchased_on|date:"D, d M Y H:i" }}</p>
-              <p>
-                Status:
-                {% if reservatie.status %}
-                Bevestigd
-                {% else %}
-                Onbevestigd
-                {% endif %}
-              </p>
+              <div class="account-tickets-list-container">
+                <img src="{{ reservatie.film.poster.url }}{{ reservatie.event.thumbnail.url }}" alt="{{ reservatie.film.title }}">
+                <div class="account-tickets-list-info-container">
+                  <div class="film-info">
+                    <h1>{{ reservatie.film.title }}{{ reservatie.event.title }}</h1>
+                    <p>Genre: {{ reservatie.film.genre }}{{ reservatie.event.genre }}</p>
+                    <p>Zaal: {{ reservatie.zaal }}</p>
+                    <p>Gereserveerd op: {{ reservatie.reserved_on }}</p>
+                    <p>Tijdstip: {{ reservatie.showtime }}</p>
+                    <p>Rij: {{ reservatie.row }}</p>
+                    <p>Plaats: {{ reservatie.seat }}</p>
+                    <p>Vip: {{ reservatie.vip }}</p>
+                    <p>Type: {{ reservatie.type }}</p>
+                    <p>Prijs: {{ reservatie.price }}</p>
+                  </div>
+                  <form action="{% url 'remove_reservation' reservatie.id %}" method="POST" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">Verwijder</button>
+                  </form>
+                </div>
+              </div>
             </li>
             {% endfor %}
           </ul>
           {% else %}
-          <p>Je hebt nog geen tickets.</p>
+          <p>Je hebt nog geen reserveringen.</p>
           <a href="/search"><button>Bestel tickets</button></a>
           {% endif %}
         </div>

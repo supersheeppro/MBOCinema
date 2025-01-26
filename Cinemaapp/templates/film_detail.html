@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="{% static 'css/style10.css' %}">
 </head>
 <body>
+<input type="hidden" id="movie_id" value="{{ movie.id }}">
+<input type="hidden" id="showtime_id" value="{{ showtime.id }}">
 <header>
   {% include 'components/navigationbar.html' %}
 </header>
@@ -19,10 +21,44 @@
     </video>
     <section class="content">
         <div class="film-detail-content-container">
-            <img src="{{ movie.poster.url }}" alt="{{ movie.title }} poster">
-            <div class="movie-info">
-                <h1>{{ movie.title }}</h1>
-                <p>{{ movie.description }}</p>
+            <div class="film-detail-content-container-image-description">
+                <img src="{{ movie.poster.url }}" alt="{{ movie.title }} poster">
+                <div class="titel-and-description-container">
+                    <div class="titel-and-description-container-detail-content">
+                        <article>
+                            <h1>{{ movie.title }}</h1>
+                            <p>{{ movie.zaal }}</p>
+                            <p>{{ showtime }}</p>
+                        </article>
+                        <div class="genre-features-pegi-container">
+                            <div class="movie-pegi-rating">
+                                {% if movie.pegi_rating == '3' %}
+                                <button><i class="fas fa">3</i></button>
+                                {% elif movie.pegi_rating == '7' %}
+                                <button><i class="fas fa">7</i></button>
+                                {% elif movie.pegi_rating == '12' %}
+                                <button><i class="fas fa">12</i></button>
+                                {% elif movie.pegi_rating == '16' %}
+                                <button><i class="fas fa">16</i></button>
+                                {% elif movie.pegi_rating == '18' %}
+                                <button><i class="fas fa">18</i></button>
+                                {% endif %}
+                                {% for feature in movie.features.all %}
+                                {% if feature.name == 'Scary' %}
+                                <button><i class="fas fa-ghost"></i></button>
+                                {% elif feature.name == 'Sex' %}
+                                <button><i class="fas fa-bed"></i></button>
+                                {% elif feature.name == 'Violence' %}
+                                <button><i class="fas fa-fist-raised"></i></button>
+                                {% elif feature.name == 'Language' %}
+                                <button><i class="fas fa-comment-dots"></i></button>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <p>{{ movie.description }}</p>
+                </div>
             </div>
             <div>
                 <ul class="share-options">
@@ -57,20 +93,25 @@
             </div>
             <div class="=film-detail-afrekenen-container">
                 <div class="film-detail-afrekenen-stoelen-container">
-                    <h3>Stoelen: {{ movie.zaal }}</h3>
+                    <h2>Stoelen</h2>
+                    <img src="{% static 'images/filmscherm.png' %}">
                     <div class="film-detail-stoelen-container">
-                        <ul>
+                        <ul class="film-detail-stoelen-container-row-ul">
                             {% for row in rows %}
-                            <li>Rij {{ row.row_number }} - {% if row.is_vip %}VIP{% else %}Normaal{% endif %}
-                                <ul>
+                            <li>
+                                <ul class="film-detail-stoelen-container-seat-ul">
                                     {% for seat in row.seats.all %}
                                     <li>
-                                        Stoel {{ seat.seat_number }} -
-                                        {% if seat.is_reserved %}
-                                        <span style="color: red;">Gereserveerd</span>
-                                        {% else %}
-                                        <span style="color: green;">Beschikbaar</span>
-                                        {% endif %}
+                                        <button
+                                                class="seat-btn"
+                                                data-seat-id="{{ seat.id }}"
+                                                data-seat-number="{{ seat.seat_number }}"
+                                                data-row="{{ seat.row }}"
+                                                data-is-reserved="{{ seat.is_reserved }}"
+                                                data-seat-room="{{ movie.zaal.id }}"
+                                                style="border-color: {% if seat.is_reserved %} red {% else %} green {% endif %};">
+                                            {{ seat.seat_number }}
+                                        </button>
                                     </li>
                                     {% endfor %}
                                 </ul>
@@ -81,25 +122,22 @@
                 </div>
                 <div class="film-detail-afrekenen-tickets-container">
                     <h3>Tickets</h3>
-                    <p>stoel 3 rij 3</p>
-                    <label for="ticket-type">Selecteer type ticket:</label>
-                    <select id="ticket-type" name="ticket_type">
-                        <option value="ouder">Ouderen</option>
-                        <option value="kind">Kind</option>
-                        <option value="tiener">Tiener</option>
-                    </select>
+                    <div id="tickets-container"></div> <!-- Dit is waar we de tickets gaan laden -->
                 </div>
                 <div class="film-detail-afrekenen-gegevens-container">
-                    <h3>Gegevens</h3>
+                    <h2>Gegevens</h2>
 
                     {% if user.is_authenticated %}
-                    <!-- Als de gebruiker ingelogd is, toon de naam van de gebruiker -->
-                    <p>Welkom, {{ user.get_full_name }}!</p>
-                    <a>Inloggen met een ander account</a>
-                    {% else %}
-                    <!-- Als de gebruiker niet ingelogd is, toon een formulier voor naam, email, enz. -->
-                    <form method="post">
+
+                    <h4>Je bent ingelogd als:</h4>
+                    <p>{{ user.get_full_name }}!</p>
+                    <form action="{% url 'update_account_details' %}" method="post">
                         {% csrf_token %}
+                        <button type="submit" name="action" value="logout">Inloggen met een ander account</button>
+                    </form>
+                    {% else %}
+                    <div class="gast-info-container">
+                        <!-- Als de gebruiker niet ingelogd is, toon een formulier voor naam, email, enz. -->
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" required><br>
 
@@ -108,53 +146,31 @@
 
                         <label for="last_name">Achternaam:</label>
                         <input type="text" id="last_name" name="last_name" required><br>
-
-                        <button type="submit">Afrekenen</button>
-                    </form>
-
-                    <p>Of <a href="/account?login">log in</a> of <a href="/account?register">registreer</a> om sneller af te rekenen.</p>
+                        <p>Of <a href="/account?login">log in</a> of <a href="/account?register">registreer</a> om sneller af te rekenen.</p>
+                    </div>
                     {% endif %}
                 </div>
                 <div class="film-detail-afrekenen-afrekenen-container">
-                    <h3>Afrekenen</h3>
+                    <h2>Afrekenen</h2>
 
                     <!-- Stoeleninformatie -->
-                    <div class="stoelen-info">
-                        <p>Stoel 3, Rij 3 - Totaal: €17,00</p>
-                    </div>
+                    <div id="stoelen-container"></div>
 
-                    <!-- Betalingsmethode radiobuttons -->
-                    <div class="betalingsmethoden">
-                        <h4>Kies je betalingsmethode:</h4>
-                        <label>
-                            <input type="radio" name="payment_method" value="credit_card" id="credit_card">
-                            Credit Card
-                        </label>
-                        <label>
-                            <input type="radio" name="payment_method" value="paypal" id="paypal">
-                            PayPal
-                        </label>
-                        <label>
-                            <input type="radio" name="payment_method" value="bank_transfer" id="bank_transfer">
-                            Bankoverschrijving
-                        </label>
-                    </div>
-
+                    <h2>Betaalmethode</h2>
                     <!-- Grid voor betaalmethoden -->
                     <div class="betalen-grid">
-                        <h4>Betaalmethode</h4>
-                        <div class="grid">
-                            <div class="item">
-                                <img src="/path/to/credit_card_logo.png" alt="Credit Card">
-                                <p>Credit Card</p>
+                        <div class="betaalmethode-film">
+                            <div class="payment-option" data-method="visa">
+                                <img src="{% static 'images/visa.png' %}" alt="Visa">
                             </div>
-                            <div class="item">
-                                <img src="/path/to/paypal_logo.png" alt="PayPal">
-                                <p>PayPal</p>
+                            <div class="payment-option" data-method="mastercard">
+                                <img src="{% static 'images/mastercard.png' %}" alt="MasterCard">
                             </div>
-                            <div class="item">
-                                <img src="/path/to/bank_logo.png" alt="Bank Transfer">
-                                <p>Bankoverschrijving</p>
+                            <div class="payment-option" data-method="paypal">
+                                <img src="{% static 'images/paypal.png' %}" alt="PayPal">
+                            </div>
+                            <div class="payment-option" data-method="applepay">
+                                <img src="{% static 'images/applepay.png' %}" alt="Apple Pay">
                             </div>
                         </div>
                     </div>
@@ -163,10 +179,20 @@
                     <div class="afreken-buttons">
                         {% if user.is_authenticated %}
                         <!-- Ingelogd: Voeg tickets toe aan winkelwagen -->
-                        <button id="add-to-cart">Voeg tickets toe aan winkelwagen</button>
+                        <form method="POST" action="{% url 'create_ticket' %}" id="ticket-form">
+                            {% csrf_token %}
+                            <!-- Deze velden worden dynamisch ingevuld door JavaScript -->
+                            <!-- De tickets voor de geselecteerde stoelen zullen hier worden toegevoegd -->
+                            <button type="submit" id="submit-ticket">Ticket Aanmaken</button>
+                        </form>
                         {% endif %}
                         <!-- Knop voor afrekenen -->
-                        <button id="checkout">Nu Afrekenen</button>
+                        <form method="POST" action="{% url 'create_reservation' %}" id="checkout-form">
+                            {% csrf_token %}
+                            <!-- Deze velden worden dynamisch ingevuld door JavaScript -->
+                            <!-- De tickets voor de geselecteerde stoelen zullen hier worden toegevoegd -->
+                            <button type="submit" id="submit-checkout">Nu Afrekenen</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -176,7 +202,7 @@
             <ul>
                 {% for other_movie in other_movies %}
                 <li>
-                    <a href="{% url 'movie_detail' other_movie.id %}">
+                    <a href="{% url 'movie_detail' other_movie.id showtime.id %}">
                         <img src="{{ other_movie.poster.url }}" alt="{{ other_movie.title }} poster">
                     </a>
                 </li>
@@ -190,6 +216,10 @@
 <footer>
   {% include 'components/footer.html' %}
 </footer>
+<script>
+    var userAuthStatus = {{ user.is_authenticated|yesno:"true,false" }};
+</script>
 <script src="{% static 'js/film_detail.js' %}"></script>
+
 </body>
 </html>

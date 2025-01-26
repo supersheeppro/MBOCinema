@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{% static 'css/style10.css' %}">
+</head>
+<body data-is-authenticated="{{ user.is_authenticated|yesno:'true,false' }}">
+<header>
+  {% include 'components/navigationbar.html' %}
+</header>
+<main>
+    <section class="guest-reserveringen-container">
+        {% if reservations %}
+        <h1>Je reserveringen:</h1>
+        <ul>
+            {% for reservation in reservations %}
+            <li>
+                <div class="account-tickets-list-container">
+                    <img src="{{ reservation.film.poster.url }}{{ reservation.event.thumbnail.url }}" alt="{{ reservatie.film.title }}">
+                    <div class="account-tickets-list-info-container">
+                        <div class="film-info">
+                            <h1>{{ reservation.film.title }}{{ reservatie.event.title }}</h1>
+                            <p>Genre: {{ reservation.film.genre }}{{ reservatie.event.genre }}</p>
+                            <p>Zaal: {{ reservation.zaal }}</p>
+                            <p>Gereserveerd op: {{ reservation.reserved_on }}</p>
+                            <p>Tijdstip: {{ reservation.showtime }}</p>
+                            <p>Rij: {{ reservation.row }}</p>
+                            <p>Plaats: {{ reservation.seat }}</p>
+                            <p>Vip: {{ reservation.vip }}</p>
+                            <p>Type: {{ reservation.type }}</p>
+                            <p>Prijs: {{ reservation.price }}</p>
+                        </div>
+                        <form action="{% url 'remove_reservation_guest' reservation.id %}" method="POST" id="remove-form-{{ reservation.id }}">
+                            {% csrf_token %}
+                            <button type="button" class="remove-button" data-reservation-id="{{ reservation.id }}">Verwijder</button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>Je hebt nog geen reserveringen gemaakt. Ga terug naar de homepage om een reservering te maken.</p>
+        <a href="/search"><button>Bestel tickets</button></a>
+        {% endif %}
+    </section>
+</main>
+<footer>
+    {% include 'components/footer.html' %}
+</footer>
+<script src="{% static 'js/guest_reservation.js' %}"></script>
+</body>
+</html>

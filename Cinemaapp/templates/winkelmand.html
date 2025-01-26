@@ -19,18 +19,31 @@
     <ul>
       {% for ticket in tickets %}
       <li>
-        <p>{{ ticket.film.title }} - {{ ticket.ticket_type }} - €{{ ticket.price }}</p>
-        <p>Aangekocht op: {{ ticket.purchased_on|date:"D, d M Y H:i" }}</p>
-
-        <!-- Verwijderknop -->
-        <form action="{% url 'remove_ticket' ticket.id %}" method="POST" style="display:inline;">
-          {% csrf_token %}
-          <button type="submit">Verwijder</button>
-        </form>
+        <div class="account-tickets-list-container">
+          <img src="{{ ticket.film.poster.url }}{{ ticket.event.thumbnail.url }}" alt="{{ ticket.film.title }}">
+          <div class="account-tickets-list-info-container">
+            <div class="film-info">
+              <h1>{{ ticket.film.title }}{{ ticket.event.title }}</h1>
+              <p>Genre: {{ ticket.film.genre }}{{ ticket.event.genre }}</p>
+              <p>Zaal: {{ ticket.zaal }}</p>
+              <p>Gereserveerd op: {{ ticket.reserved_on }}</p>
+              <p>Tijdstip: {{ ticket.showtime }}</p>
+              <p>Rij: {{ ticket.row }}</p>
+              <p>Plaats: {{ ticket.seat }}</p>
+              <p>Vip: {{ ticket.vip }}</p>
+              <p>Type: {{ ticket.type }}</p>
+              <p>Prijs: {{ ticket.price }}</p>
+            </div>
+            <form action="{% url 'remove_ticket' ticket.id %}" method="POST" style="display:inline;">
+              {% csrf_token %}
+              <button type="submit">Verwijder</button>
+            </form>
+          </div>
+        </div>
       </li>
       {% endfor %}
     </ul>
-    <button onclick="window.location.href='{% url 'checkout' %}'">Doorgaan naar afrekenen</button>
+    <button class="winkelmand-checkout-button" onclick="window.location.href='{% url 'checkout' %}'">Doorgaan naar afrekenen</button>
     {% else %}
     <p>Je hebt nog geen tickets in je winkelmand.</p>
     {% endif %}

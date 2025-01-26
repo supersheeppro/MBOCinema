@@ -216,25 +216,78 @@ class ShowTime(models.Model):
 
 class Ticket(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='tickets', blank=True, null=True)
-    film = models.ForeignKey(Movie, on_delete=models.CASCADE, blank=True, null=True)
-    event = models.ForeignKey(Event, on_delete=models.CASCADE, blank=True, null=True)
+    film = models.ForeignKey('Movie', on_delete=models.CASCADE, blank=True, null=True)
+    event = models.ForeignKey('Event', on_delete=models.CASCADE, blank=True, null=True)
+    showtime = models.ForeignKey(  # Nieuwe ForeignKey naar ShowTime
+        'ShowTime',
+        on_delete=models.CASCADE,
+        related_name='tickets',
+        blank=True,
+        null=True
+    )
+    zaal = models.ForeignKey(  # Nieuwe ForeignKey naar Zaal
+        'Zaal',
+        on_delete=models.CASCADE,
+        related_name='tickets',
+        blank=True,
+        null=True
+    )
     purchased_on = models.DateTimeField(auto_now_add=True)
-    ticket_type = models.CharField(max_length=100)  # Bijvoorbeeld: "VIP", "Standard", etc.
-    chair = models.CharField(max_length=100)
+    row = models.CharField(max_length=100, blank=True, null=True)  # Rij van de stoel
+    seat = models.CharField(max_length=100, blank=True, null=True)  # Stoelnummer
+    vip = models.BooleanField(default=False)  # Of de ticket VIP is
+    type = models.CharField(  # Type van ticket
+        max_length=10,
+        choices=[
+            ('child', 'Child'),
+            ('teen', 'Teen'),
+            ('adult', 'Adult'),
+        ],
+        default='adult'  # Standaardwaarde op "Adult"
+    )
+    # Prijs behouden
     price = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
-        return f"Ticket voor {self.user.username}"
+        return f"Ticket voor {self.user.username} - Stoel {self.row}-{self.seat}"
 
 class Reservation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations', blank=True, null=True)
-    film = models.ForeignKey(Movie, on_delete=models.CASCADE, blank=True, null=True)
-    event = models.ForeignKey(Event, on_delete=models.CASCADE, blank=True, null=True)
-    reserved_on = models.DateTimeField(auto_now_add=True)  # Tijdstip van reservering
-    reservation_type = models.CharField(max_length=100)  # Bijvoorbeeld: "VIP", "Standard", etc.
-    chair = models.CharField(max_length=100)  # Specifieke stoel
-    price = models.DecimalField(max_digits=10, decimal_places=2)  # Prijs voor de reservering
+    film = models.ForeignKey('Movie', on_delete=models.CASCADE, blank=True, null=True)
+    event = models.ForeignKey('Event', on_delete=models.CASCADE, blank=True, null=True)
+    showtime = models.ForeignKey(  # Nieuwe ForeignKey naar ShowTime
+        'ShowTime',
+        on_delete=models.CASCADE,
+        related_name='reservations',
+        blank=True,
+        null=True
+    )
+    zaal = models.ForeignKey(  # Nieuwe ForeignKey naar Zaal
+        'Zaal',
+        on_delete=models.CASCADE,
+        related_name='reservations',
+        blank=True,
+        null=True
+    )
+    reserved_on = models.DateTimeField(auto_now_add=True)
+    row = models.CharField(max_length=100, blank=True, null=True)  # Rij van de stoel
+    seat = models.CharField(max_length=100)  # Stoelnummer
+    vip = models.BooleanField(default=False)  # Of de ticket VIP is
+    type = models.CharField(  # Type van ticket
+        max_length=10,
+        choices=[
+            ('child', 'Child'),
+            ('teen', 'Teen'),
+            ('adult', 'Adult'),
+        ],
+        default='adult'  # Standaardwaarde op "Adult"
+    )
+    # Prijs behouden
+    price = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.BooleanField(default=False)  # Bijv. "bevestigd" of "niet bevestigd"
+    session_id = models.CharField(max_length=255, blank=True, null=True)  # Koppeling met sessie
+    guest_name = models.CharField(max_length=255, blank=True, null=True)  # Gast naam (optioneel)
+    guest_email = models.EmailField(blank=True, null=True)  # Gast e-mail (optioneel)
 
     def __str__(self):
         # Teruggeven van een duidelijke stringrepresentatie van de reservering

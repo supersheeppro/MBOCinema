@@ -19,27 +19,53 @@
     <ul>
       {% for ticket in tickets %}
       <li>
-        {{ ticket.film.title }} - Ticket type: {{ ticket.ticket_type }} - €{{ ticket.price }}
-
-        <div class="ticket-quantity">
-          <button class="decrease" data-ticket-id="{{ ticket.id }}">-</button>
-          <input type="number" id="ticket_quantity_{{ ticket.id }}" name="ticket_quantity_{{ ticket.id }}" value="1" min="1"/>
-          <button class="increase" data-ticket-id="{{ ticket.id }}">+</button>
+        <div class="account-tickets-list-container">
+          <img src="{{ ticket.film.poster.url }}" alt="{{ ticket.film.title }}">
+          <div class="account-tickets-list-info-container">
+            <div class="film-info">
+              <h1>{{ ticket.film.title }}{{ ticket.event.title }}</h1>
+              <p>Genre: {{ ticket.film.genre }}{{ ticket.event.genre }}</p>
+              <p>Zaal: {{ ticket.zaal }}</p>
+              <p>Gereserveerd op: {{ ticket.reserved_on }}</p>
+              <p>Tijdstip: {{ ticket.showtime }}</p>
+              <p>Rij: {{ ticket.row }}</p>
+              <p>Plaats: {{ ticket.seat }}</p>
+              <p>Vip: {{ ticket.vip }}</p>
+              <p>Type: {{ ticket.type }}</p>
+              <p>Prijs: {{ ticket.price }}</p>
+            </div>
+            <div class="ticket-quantity">
+              <button class="decrease" data-ticket-id="{{ ticket.id }}">-</button>
+              <input type="number" id="ticket_quantity_{{ ticket.id }}" name="ticket_quantity_{{ ticket.id }}" value="1" min="1"/>
+              <button class="increase" data-ticket-id="{{ ticket.id }}">+</button>
+            </div>
+            <input type="hidden" class="ticket-price" id="ticket_price_{{ ticket.id }}" value="{{ ticket.price }}">
+          </div>
         </div>
-        <!-- Voeg de ticket prijs toe als data-atribuut -->
-        <input type="hidden" class="ticket-price" id="ticket_price_{{ ticket.id }}" value="{{ ticket.price }}">
+        <!-- Voeg hidden data attributen toe die we in JS kunnen uitlezen -->
+        <div class="ticket-type" style="display:none;">{{ ticket.type }}</div>
+        <div class="ticket-seat-number" style="display:none;">{{ ticket.seat }}</div>
+        <div class="ticket-seat-row" style="display:none;">{{ ticket.row }}</div>
+        <div class="ticket-seat-room" style="display:none;">{{ ticket.zaal.id }}</div>
+        <div class="ticket-vip" style="display:none;">{{ ticket.vip }}</div>
+        <div class="ticket-movie-id" style="display:none;">{{ ticket.film.id }}</div>
+        <div class="ticket-event-id" style="display:none;">{{ ticket.event.id }}</div>
+        <div class="ticket-showtime-id" style="display:none;">{{ ticket.showtime.id }}</div>
       </li>
       {% empty %}
       <li>Je hebt nog geen tickets gekocht.</li>
       {% endfor %}
     </ul>
 
+
     <h3>Betaal methode</h3>
 
     <h3>Totaal: €<span id="total_price">{{ total_price }}</span></h3>
-    <form method="POST">
+    <form method="POST" action="{% url 'create_reservation' %}" id="checkout-form">
       {% csrf_token %}
-      <button type="submit">Nu Afrekenen</button>
+      <!-- Deze velden worden dynamisch ingevuld door JavaScript -->
+      <!-- De tickets voor de geselecteerde stoelen zullen hier worden toegevoegd -->
+      <button type="submit" id="submit-checkout">Nu Afrekenen</button>
     </form>
   </section>
 </main>
@@ -50,6 +76,3 @@
 </body>
 </html>
 
-<!--
-Make the chair chosing and that things in the film detail
--->

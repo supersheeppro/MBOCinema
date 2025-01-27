@@ -214,7 +214,6 @@ nav {
     justify-content: space-between;
 }
 
-/* Dropdown menu styling */
 .nav-right .dropdown {
     position: relative;
     display: inline-block;
@@ -245,7 +244,6 @@ nav {
     background-color: #333333;
 }
 
-/* Show the dropdown when clicked */
 .nav-right .dropdown.open .dropdown-menu {
     display: block;
 }
@@ -789,7 +787,7 @@ nav {
 
 .flatpickr-calendar {
     left: auto !important;
-    right: 0 !important; /* Zorg dat de kalender rechts opent */
+    right: 0 !important;
 }
 
 .account-checkbox-container {
@@ -840,7 +838,7 @@ nav {
 }
 
 .event-hero-image {
-    position: relative; /* Maak de container een positioneringsreferentie */
+    position: relative;
     height: 40vh;
     margin-top: 3vh;
     background-size: cover;
@@ -882,17 +880,17 @@ nav {
 }
 
 .event-hero-image article {
-    position: relative; /* Maak de tekst zichtbaar boven de pseudo-element */
+    position: relative;
     z-index: 2;
-    color: white; /* Tekst wit voor contrast */
+    color: white;
     text-align: center;
-    margin: 0; /* Optioneel, afhankelijk van gewenste plaatsing */
-    padding: 10px; /* Voor wat afstand van de randen */
+    margin: 0;
+    padding: 10px;
 }
 
 .event-hero-image h1 {
     margin: 0;
-    padding-top: 20%; /* Pas aan naar wens om de tekst te centreren */
+    padding-top: 20%;
 }
 
 #filters-container2 {
@@ -1577,7 +1575,7 @@ nav {
 }
 
 .event-detail-hero-image {
-    position: relative; /* Maak de container een positioneringsreferentie */
+    position: relative;
     height: 60vh;
     margin-top: 3vh;
     background-size: cover;
@@ -1954,8 +1952,8 @@ nav {
 
 .betaalmethode-film {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolommen */
-    gap: 20px; /* Ruimte tussen de blokken */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     max-width: 600px;
     width: 100%;
     margin: 2vh 0;
@@ -1963,36 +1961,36 @@ nav {
 
 .betaalmethode {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolommen */
-    gap: 20px; /* Ruimte tussen de blokken */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     max-width: 600px;
     width: 100%;
-    margin: 0 auto; /* Centraal uitlijnen */
+    margin: 0 auto;
 }
 
 .payment-option {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #ccc; /* Grijze rand */
-    border-radius: 10px; /* Afgeronde hoeken */
+    border: 2px solid #ccc;
+    border-radius: 10px;
     padding: 10px;
-    cursor: pointer; /* Cursor verandert naar pointer */
-    transition: border-color 0.3s ease, transform 0.2s ease; /* Animaties */
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.2s ease;
 }
 
 .payment-option img {
-    width: 100%; /* Maximale grootte van de afbeelding */
+    width: 100%;
     height: auto;
 }
 
 .payment-option:hover {
-    border-color: #007BFF; /* Kleur veranderen bij hover */
-    transform: scale(1.05); /* Een klein beetje vergroten */
+    border-color: #007BFF;
+    transform: scale(1.05);
 }
 
 .payment-option.selected {
-    border-color: #28a745; /* Groene rand als geselecteerd */
+    border-color: #28a745;
 }
 
 .payment-and-buttons-content-container {

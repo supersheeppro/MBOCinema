@@ -7,7 +7,6 @@ class SeatInline(admin.TabularInline):
     model = Seat  # Stoelen toevoegen aan rijen
     extra = 1  # Aantal lege velden om nieuwe stoelen toe te voegen
 
-@admin.register(Row)
 class RowAdmin(admin.ModelAdmin):
     list_display = ('zaal', 'row_number', 'is_vip')  # Toon rijnummer, zaal en VIP-status
     list_filter = ('zaal', 'is_vip')  # Filteren op zaal en VIP-status
@@ -21,10 +20,8 @@ class RowAdmin(admin.ModelAdmin):
             obj.row_number = (last_row.row_number + 1) if last_row else 1
         super().save_model(request, obj, form, change)
 
-
 class FeatureAdmin(admin.ModelAdmin):
     list_display = ('name',)
-
 
 class ShowTimeInline(admin.TabularInline):
     model = ShowTime
@@ -67,7 +64,6 @@ class EventAdmin(admin.ModelAdmin):
     list_filter = ('date', 'movie')
     ordering = ('date',)
 
-
 class NewReleaseAdmin(admin.ModelAdmin):
     list_display = ('movie', 'release_date', 'is_featured')
     search_fields = ('movie__title',)
@@ -96,7 +92,6 @@ admin.site.unregister(User)
 class CustomUserAdmin(UserAdmin):
     inlines = (UserProfileInline,)
 
-
 class WatchlistAdmin(admin.ModelAdmin):
     list_display = ('user',)
     filter_horizontal = ('movie',)
@@ -111,7 +106,6 @@ class ZaalAdmin(admin.ModelAdmin):
     filter_horizontal = ('films', 'events')  # Zorg ervoor dat de films en evenementen makkelijk gekozen kunnen worden
     inlines = [RowInline]
 
-@admin.register(Location)
 class LocationAdmin(admin.ModelAdmin):
     list_display = ('name', 'address', 'description' )
 
@@ -127,4 +121,5 @@ admin.site.register(Reservation)
 admin.site.register(Watchlist, WatchlistAdmin)
 admin.site.register(StandardEventList, StandardEventListAdmin)
 admin.site.register(Info, InfoAdmin)
-
+admin.site.register(Row, RowAdmin)
+admin.site.register(Location, LocationAdmin)

@@ -40015,3 +40015,863 @@ ValueError: The 'poster' attribute has no file associated with it.
 "GET /locations/2/ HTTP/1.1" 200 692
 "GET /locations/1/ HTTP/1.1" 200 797
 "GET / HTTP/1.1" 200 9656
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9656
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault_1.jpg HTTP/1.1" 304 0
+"GET /media/events/download.jpg HTTP/1.1" 304 0
+"GET /media/events/opera.jpg HTTP/1.1" 304 0
+"GET /media/events/download_1.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /search HTTP/1.1" 200 13371
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 8818
+"GET /media/event_thumbnails/woezelenpip.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 304 0
+"GET /media/event_thumbnails/becomingled.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/pools.jpg HTTP/1.1" 304 0
+"GET /locations/ HTTP/1.1" 200 6710
+"GET /info HTTP/1.1" 200 5264
+"GET /account/ HTTP/1.1" 200 30803
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9656
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/css/style10.css HTTP/1.1" 200 39831
+"GET /static/images/hero-slide1.png HTTP/1.1" 200 575680
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/posters/padington.jpg HTTP/1.1" 200 25394
+"GET /media/posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /static/js/script.js HTTP/1.1" 200 1583
+"GET /static/images/comingsoon.png HTTP/1.1" 200 581552
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 200 182883
+"GET /media/events/opera.jpg HTTP/1.1" 200 196790
+"GET /media/events/maxresdefault_1.jpg HTTP/1.1" 200 181821
+"GET /media/events/download.jpg HTTP/1.1" 200 10578
+"GET /media/events/download_1.jpg HTTP/1.1" 200 9466
+"GET /media/coming_soon_posters/thumb_9zWu3AL.png HTTP/1.1" 200 96972
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 200 25394
+"GET /static/images/StockCakeFamilyMovieNight.jpg HTTP/1.1" 200 220782
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 200 19570
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 13371
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 200 63599
+"GET /static/js/search.js HTTP/1.1" 200 14262
+"GET /film/1/showtime/1/ HTTP/1.1" 200 25446
+"GET /static/images/visa.png HTTP/1.1" 200 5799
+"GET /static/images/filmscherm.png HTTP/1.1" 200 7788
+"GET /static/images/applepay.png HTTP/1.1" 200 31614
+"GET /static/images/paypal.png HTTP/1.1" 200 4808
+"GET /static/images/mastercard.png HTTP/1.1" 200 179893
+"GET /static/js/film_detail.js HTTP/1.1" 200 20325
+"GET /media/movies/Babygirl__Official_Trailer_HD__A24.mp4 HTTP/1.1" 200 9873898
+"GET /events/1 HTTP/1.1" 301 0
+"GET /events/1/ HTTP/1.1" 200 8818
+"GET /media/event_thumbnails/woezelenpip.jpg HTTP/1.1" 200 18342
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 200 15300
+"GET /media/event_thumbnails/becomingled.jpg HTTP/1.1" 200 12482
+"GET /media/event_thumbnails/pools.jpg HTTP/1.1" 200 20132
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 200 74637
+"GET /static/js/events.js HTTP/1.1" 200 3984
+"GET /media/event_lists/Header_Mini_Moring_Bing_en_zijn_Vriendjes.jpg HTTP/1.1" 200 2641651
+"GET /locations HTTP/1.1" 301 0
+"GET /locations/ HTTP/1.1" 200 6710
+"GET /locations/1/ HTTP/1.1" 200 797
+"GET /media/location_photos/mbocinemas1.jpg HTTP/1.1" 200 450501
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /media/location_photos/mbocinemas2.jpg HTTP/1.1" 200 448090
+"GET /info HTTP/1.1" 200 5264
+"GET /media/images/mbocinemas_standaartcover_aJLpYPD.jpg HTTP/1.1" 200 129492
+"GET /locations/ HTTP/1.1" 200 6710
+"GET /events/1/ HTTP/1.1" 200 8818
+"GET / HTTP/1.1" 200 9656
+"GET / HTTP/1.1" 200 12563
+"GET /static/css/style.css HTTP/1.1" 404 1798
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET / HTTP/1.1" 200 12563
+"GET /static/css/style.css HTTP/1.1" 404 1798
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET / HTTP/1.1" 200 12563
+"GET /static/css/style.css HTTP/1.1" 404 1798
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET / HTTP/1.1" 200 12563
+"GET /static/css/style.css HTTP/1.1" 404 1798
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/images/hero-slide1.png HTTP/1.1" 200 575680
+"GET /static/js/script.js HTTP/1.1" 200 1583
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /media/posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /media/posters/padington.jpg HTTP/1.1" 200 25394
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/events/download.jpg HTTP/1.1" 200 10578
+"GET /media/events/download_1.jpg HTTP/1.1" 200 9466
+"GET /media/events/maxresdefault_1.jpg HTTP/1.1" 200 181821
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 200 182883
+"GET /media/coming_soon_posters/thumb_9zWu3AL.png HTTP/1.1" 200 96972
+"GET /media/events/opera.jpg HTTP/1.1" 200 196790
+"GET /static/images/comingsoon.png HTTP/1.1" 200 581552
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 200 25394
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /static/images/StockCakeFamilyMovieNight.jpg HTTP/1.1" 200 220782
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET / HTTP/1.1" 200 12563
+"GET /static/css/style.css HTTP/1.1" 200 39831
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?pegi_rating=3,7 HTTP/1.1" 200 9019
+"GET /search HTTP/1.1" 200 13371
+"GET /search HTTP/1.1" 200 13371
+"GET /search HTTP/1.1" 200 15530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET / HTTP/1.1" 200 12563
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"POST /add-to-watchlist/2/ HTTP/1.1" 200 44
+"POST /add-to-watchlist/2/ HTTP/1.1" 200 44
+"GET /film/1/showtime/1/ HTTP/1.1" 200 25446
+"GET /search HTTP/1.1" 200 15530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /static/css/style.css HTTP/1.1" 200 39831
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 200 63599
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /media/posters/padington.jpg HTTP/1.1" 200 25394
+"GET /media/posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /static/js/search.js HTTP/1.1" 200 14262
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+"GET /static/css/style.css HTTP/1.1" 200 39831
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /static/js/search.js HTTP/1.1" 200 14262
+"GET /media/posters/padington.jpg HTTP/1.1" 200 25394
+"GET /media/posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 200 63599
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+"GET /static/css/style.css HTTP/1.1" 200 39831
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /static/js/search.js HTTP/1.1" 200 14262
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /media/posters/padington.jpg HTTP/1.1" 200 25394
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 200 63599
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/css/style.css HTTP/1.1" 200 39831
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/posters/padington.jpg HTTP/1.1" 200 25394
+"GET /static/js/search.js HTTP/1.1" 200 14262
+"GET /media/posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 200 63599
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+"GET /static/css/style.css HTTP/1.1" 200 39831
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/posters/padington.jpg HTTP/1.1" 200 25394
+"GET /media/posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /static/js/search.js HTTP/1.1" 200 14262
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 200 63599
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?datum=2025-01-27 HTTP/1.1" 200 9982
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?datum=2025-01-28 HTTP/1.1" 200 9982
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?datum=2025-01-29 HTTP/1.1" 200 9982
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?datum=2025-02-01 HTTP/1.1" 200 9982
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?datum=2025-01-31 HTTP/1.1" 200 9982
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?datum=2025-01-30 HTTP/1.1" 200 9982
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?datum=2025-02-02 HTTP/1.1" 200 9982
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?genre=&pegi_rating=18&rating=&zaal=&location= HTTP/1.1" 200 11045
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search?genre=&pegi_rating=&rating=&zaal=&location= HTTP/1.1" 200 15530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET / HTTP/1.1" 200 12563
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET / HTTP/1.1" 200 12563
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /search HTTP/1.1" 200 15530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /events/1/ HTTP/1.1" 200 8818
+"GET /events/1/ HTTP/1.1" 200 11181
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+"GET /events/1/ HTTP/1.1" 200 11181
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+"GET /events/1/ HTTP/1.1" 200 11181
+"GET /static/css/style.css HTTP/1.1" 200 39831
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /media/event_thumbnails/woezelenpip.jpg HTTP/1.1" 200 18342
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 200 74637
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 200 15300
+"GET /media/event_thumbnails/pools.jpg HTTP/1.1" 200 20132
+"GET /media/event_thumbnails/becomingled.jpg HTTP/1.1" 200 12482
+"GET /static/js/events.js HTTP/1.1" 200 3984
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+"GET /media/event_lists/Header_Mini_Moring_Bing_en_zijn_Vriendjes.jpg HTTP/1.1" 200 2641651
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+"GET /events/1/?genre=&pegi_rating=&rating=1&zaal= HTTP/1.1" 200 10223
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+"GET /events/1/?genre=&pegi_rating=&rating=&zaal= HTTP/1.1" 200 11181
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+"GET /event/3 HTTP/1.1" 301 0
+"GET /event/3/ HTTP/1.1" 200 9254
+"GET /static/js/event_detail.js HTTP/1.1" 200 1422
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /events/2 HTTP/1.1" 301 0
+"GET /events/2/ HTTP/1.1" 200 11749
+Not Found: /events/2/favicon.ico
+"GET /events/2/favicon.ico HTTP/1.1" 404 8915
+"GET /media/event_lists/meetthecast.png HTTP/1.1" 200 189700
+Not Found: /events/2/favicon.ico
+"GET /events/2/favicon.ico HTTP/1.1" 404 8915
+"GET /events/1/ HTTP/1.1" 200 11181
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+"GET /locations/ HTTP/1.1" 200 6710
+"GET /events/1/ HTTP/1.1" 200 11181
+Not Found: /events/1/favicon.ico
+"GET /events/1/favicon.ico HTTP/1.1" 404 8915
+"GET /locations/ HTTP/1.1" 200 6710
+"GET /locations/ HTTP/1.1" 200 7994
+"GET /static/js/locations.js HTTP/1.1" 200 1374
+Not Found: /locations/favicon.ico
+"GET /locations/favicon.ico HTTP/1.1" 404 8918
+Not Found: /locations/favicon.ico
+"GET /locations/favicon.ico HTTP/1.1" 404 8918
+"GET /locations/1/ HTTP/1.1" 200 797
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /locations/1/ HTTP/1.1" 200 797
+"GET /locations/ HTTP/1.1" 200 7994
+"GET /static/js/locations.js HTTP/1.1" 304 0
+Not Found: /locations/favicon.ico
+"GET /locations/favicon.ico HTTP/1.1" 404 8918
+"GET /locations/1/ HTTP/1.1" 200 797
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /locations/1/ HTTP/1.1" 200 797
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /info HTTP/1.1" 200 5264
+"GET /info HTTP/1.1" 200 7000
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /locations/ HTTP/1.1" 200 7996
+"GET /static/js/locations.js HTTP/1.1" 304 0
+Not Found: /locations/mbocinema.ico
+"GET /locations/mbocinema.ico HTTP/1.1" 404 8924
+Not Found: /locations/mbocinema.ico
+"GET /locations/mbocinema.ico HTTP/1.1" 404 8924
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /info HTTP/1.1" 200 7000
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /locations/ HTTP/1.1" 200 7996
+Not Found: /locations/mbocinema.ico
+"GET /locations/mbocinema.ico HTTP/1.1" 404 8924
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET / HTTP/1.1" 200 12565
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /winkelmand HTTP/1.1" 301 0
+"GET /winkelmand/ HTTP/1.1" 200 7186
+"GET /winkelmand/ HTTP/1.1" 200 9560
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+"GET /winkelmand/ HTTP/1.1" 200 9560
+"GET /static/css/style.css HTTP/1.1" 200 39831
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 200 15300
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+"POST /remove_ticket/100/ HTTP/1.1" 302 0
+"GET /winkelmand HTTP/1.1" 301 0
+"GET /winkelmand/ HTTP/1.1" 200 8616
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+"GET /checkout/ HTTP/1.1" 200 8118
+"GET /static/js/checkout.js HTTP/1.1" 200 8561
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /checkout/ HTTP/1.1" 200 8183
+Internal Server Error: /remove_tickets/
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 659, in remove_tickets
+    ticket = Ticket.objects.get(id=ticket_data, user=request.user)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Cinemaapp.models.Ticket.DoesNotExist: Ticket matching query does not exist.
+"POST /remove_tickets/ HTTP/1.1" 500 83611
+Internal Server Error: /remove_tickets/
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 659, in remove_tickets
+    ticket = Ticket.objects.get(id=ticket_data, user=request.user)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+Cinemaapp.models.Ticket.DoesNotExist: Ticket matching query does not exist.
+"POST /remove_tickets/ HTTP/1.1" 500 83369
+"GET /checkout/ HTTP/1.1" 200 4861
+"GET /account HTTP/1.1" 301 0
+"GET /account/ HTTP/1.1" 200 27562
+"GET /static/js/account.js HTTP/1.1" 200 5013
+"GET /winkelmand/ HTTP/1.1" 200 6616
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 25446
+"POST /create-ticket/ HTTP/1.1" 302 0
+"GET /winkelmand HTTP/1.1" 301 0
+"GET /winkelmand/ HTTP/1.1" 200 9542
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+"GET /checkout/ HTTP/1.1" 200 9779
+"GET /checkout/ HTTP/1.1" 200 11656
+Not Found: /checkout/mbocinema.ico
+"GET /checkout/mbocinema.ico HTTP/1.1" 404 8921
+Not Found: /checkout/mbocinema.ico
+"GET /checkout/mbocinema.ico HTTP/1.1" 404 8921
+"POST /remove_tickets/ HTTP/1.1" 200 21
+"POST /create_reservation/ HTTP/1.1" 302 0
+"GET /account HTTP/1.1" 301 0
+"GET /account/ HTTP/1.1" 200 30912
+"POST /remove_reservation/136/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 29795
+"POST /remove_reservation/116/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 28678
+"POST /remove_reservation/119/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 27562
+"POST /remove_reservation/122/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 26445
+"POST /remove_reservation/123/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 25329
+"POST /remove_reservation/124/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 24213
+"POST /remove_reservation/127/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 23097
+"POST /remove_reservation/128/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 21980
+"POST /remove_reservation/130/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 20863
+"POST /remove_reservation/126/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 19746
+"POST /remove_reservation/137/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 18629
+"POST /remove_reservation/138/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 17512
+"POST /remove_reservation/139/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 16395
+"POST /remove_reservation/142/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 15278
+"POST /remove_reservation/143/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 14161
+"POST /remove_reservation/144/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 13045
+"GET /winkelmand/ HTTP/1.1" 200 6616
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+"GET /info HTTP/1.1" 200 7000
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /locations/ HTTP/1.1" 200 7996
+"GET /static/js/locations.js HTTP/1.1" 304 0
+Not Found: /locations/mbocinema.ico
+"GET /locations/mbocinema.ico HTTP/1.1" 404 8924
+Not Found: /locations/mbocinema.ico
+"GET /locations/mbocinema.ico HTTP/1.1" 404 8924
+"GET / HTTP/1.1" 200 12565
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /locations/ HTTP/1.1" 200 7996
+Not Found: /locations/mbocinema.ico
+"GET /locations/mbocinema.ico HTTP/1.1" 404 8924
+"GET /info HTTP/1.1" 200 7000
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /winkelmand/ HTTP/1.1" 200 6616
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+"GET /account/ HTTP/1.1" 200 13045
+"POST /update_account_details/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 9778
+"GET /account?register HTTP/1.1" 301 0
+"GET /account/?register HTTP/1.1" 200 9778
+"GET /account/?login HTTP/1.1" 200 9778
+"POST /account/?login HTTP/1.1" 302 0
+"GET /account/ HTTP/1.1" 200 13045
+"GET /account/ HTTP/1.1" 200 14933
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"POST /update_account_details/ HTTP/1.1" 302 0
+"GET /account/ HTTP/1.1" 200 14935
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"GET /account/ HTTP/1.1" 200 14935
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"POST /update_account_details/ HTTP/1.1" 302 0
+"GET /account/ HTTP/1.1" 200 14933
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"GET /account/ HTTP/1.1" 200 14933
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"GET /verander-wachtwoord/ HTTP/1.1" 200 5333
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 25446
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27280
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27280
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27280
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27280
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /event/3/ HTTP/1.1" 200 9254
+"GET /event/3/ HTTP/1.1" 200 9254
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27280
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /event/3/ HTTP/1.1" 200 9254
+"GET /event/3/ HTTP/1.1" 200 11168
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /event/3/ HTTP/1.1" 200 11168
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /event/3/ HTTP/1.1" 200 11168
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27280
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /event/3/ HTTP/1.1" 200 11168
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /event/3/ HTTP/1.1" 200 11201
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27280
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27283
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /event/3/ HTTP/1.1" 200 11201
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /event/3/ HTTP/1.1" 200 11315
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /event/3/ HTTP/1.1" 200 11315
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /search HTTP/1.1" 200 15532
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27253
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /events/1/ HTTP/1.1" 200 11183
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /event/3/ HTTP/1.1" 200 11315
+Not Found: /event/3/mbocinema.ico
+"GET /event/3/mbocinema.ico HTTP/1.1" 404 8918
+"GET /account/ HTTP/1.1" 200 14933
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"POST /update_account_details/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 11666
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"GET /search HTTP/1.1" 200 15614
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27029
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"POST /create_reservation/ HTTP/1.1" 302 0
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2 HTTP/1.1" 301 0
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 7336
+"GET /static/js/guest_reservation.js HTTP/1.1" 200 1942
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 7336
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 7336
+"GET /search HTTP/1.1" 200 15614
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27029
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"GET /film/2/showtime/2/ HTTP/1.1" 200 15370
+Not Found: /film/2/showtime/2/mbocinema.ico
+"GET /film/2/showtime/2/mbocinema.ico HTTP/1.1" 404 8948
+"GET /media/movies/The_Woman_In_The_Yard__Official_Trailer_wX6zTKV.mp4 HTTP/1.1" 200 5440318
+Not Found: /film/2/showtime/2/mbocinema.ico
+"GET /film/2/showtime/2/mbocinema.ico HTTP/1.1" 404 8948
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27029
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"POST /create_reservation/ HTTP/1.1" 302 0
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2 HTTP/1.1" 301 0
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 9926
+"GET /guest_reservations/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 11552
+Not Found: /guest_reservations/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico
+"GET /guest_reservations/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico HTTP/1.1" 404 9050
+Not Found: /guest_reservations/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico
+"GET /guest_reservations/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico HTTP/1.1" 404 9050
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 11790
+Not Found: /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico HTTP/1.1" 404 9056
+Not Found: /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico HTTP/1.1" 404 9056
+"POST /remove_reservation_guest/145/ HTTP/1.1" 204 0
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 10495
+Not Found: /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico HTTP/1.1" 404 9056
+"POST /remove_reservation_guest/148/ HTTP/1.1" 204 0
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 9200
+Not Found: /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico HTTP/1.1" 404 9056
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/ HTTP/1.1" 200 9200
+Not Found: /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico
+"GET /reservation_complete/78fsre65wc3tmlt8um7vbv5utir27zl2/mbocinema.ico HTTP/1.1" 404 9056
+"GET / HTTP/1.1" 200 12668
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /account/?login HTTP/1.1" 200 11666
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"GET /reset-password/ HTTP/1.1" 200 5106
+"GET /reset-password/ HTTP/1.1" 200 7443
+Not Found: /reset-password/mbocinema.ico
+"GET /reset-password/mbocinema.ico HTTP/1.1" 404 8939
+Not Found: /reset-password/mbocinema.ico
+"GET /reset-password/mbocinema.ico HTTP/1.1" 404 8939
+"POST /reset-password/ HTTP/1.1" 302 0
+"GET /reset-password-done/ HTTP/1.1" 200 4691
+"GET /reset-password-done/ HTTP/1.1" 200 4691
+"GET /reset-password-done/ HTTP/1.1" 200 4691
+"GET /reset-password-done/ HTTP/1.1" 200 4691
+"GET /reset-password-done/ HTTP/1.1" 200 4691
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/css/style10.css HTTP/1.1" 404 1804
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /reset-password-done/ HTTP/1.1" 200 4691
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/css/style10.css HTTP/1.1" 404 1804
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /reset-password-done/ HTTP/1.1" 200 4691
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/css/style10.css HTTP/1.1" 404 1804
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /reset-password-done/ HTTP/1.1" 200 4692
+"GET /static/css/style10.css HTTP/1.1" 404 1804
+"GET /reset-password-done/ HTTP/1.1" 200 7170
+Not Found: /reset-password-done/mbocinema.ico
+"GET /reset-password-done/mbocinema.ico HTTP/1.1" 404 8954
+Not Found: /reset-password-done/mbocinema.ico
+"GET /reset-password-done/mbocinema.ico HTTP/1.1" 404 8954
+"GET /reset-password-done/ HTTP/1.1" 200 7103
+Not Found: /reset-password-done/mbocinema.ico
+"GET /reset-password-done/mbocinema.ico HTTP/1.1" 404 8954
+"GET /reset/MTI/ckb008-30e54c2fe58f4b0e980ef5d6407a50a3/ HTTP/1.1" 302 0
+"GET /reset/MTI/set-password/ HTTP/1.1" 200 5615
+"GET /static/css/style10.css HTTP/1.1" 404 1804
+"GET /reset/MTI/set-password/ HTTP/1.1" 200 8076
+Not Found: /reset/MTI/set-password/mbocinema.ico
+"GET /reset/MTI/set-password/mbocinema.ico HTTP/1.1" 404 8963
+Not Found: /reset/MTI/set-password/mbocinema.ico
+"GET /reset/MTI/set-password/mbocinema.ico HTTP/1.1" 404 8963
+"GET /reset/MTI/set-password/ HTTP/1.1" 200 8076
+Not Found: /reset/MTI/set-password/mbocinema.ico
+"GET /reset/MTI/set-password/mbocinema.ico HTTP/1.1" 404 8963
+"POST /reset/MTI/set-password/ HTTP/1.1" 302 0
+"GET /reset-password-complete/ HTTP/1.1" 200 7196
+Not Found: /reset-password-complete/favicon.ico
+"GET /reset-password-complete/favicon.ico HTTP/1.1" 404 8960
+Not Found: /reset-password-complete/favicon.ico
+"GET /reset-password-complete/favicon.ico HTTP/1.1" 404 8960
+"GET /account/?login HTTP/1.1" 200 11666
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"POST /account/?login HTTP/1.1" 302 0
+"GET /account/ HTTP/1.1" 200 14933
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"GET /verander-wachtwoord/ HTTP/1.1" 200 5333
+"GET /static/css/style10.css HTTP/1.1" 404 1804
+"GET /verander-wachtwoord/ HTTP/1.1" 200 7832
+Not Found: /verander-wachtwoord/mbocinema.ico
+"GET /verander-wachtwoord/mbocinema.ico HTTP/1.1" 404 8954
+Not Found: /verander-wachtwoord/mbocinema.ico
+"GET /verander-wachtwoord/mbocinema.ico HTTP/1.1" 404 8954
+"POST /verander-wachtwoord/ HTTP/1.1" 302 0
+"GET /verander-wachtwoord-klaar/ HTTP/1.1" 200 7130
+Not Found: /verander-wachtwoord-klaar/mbocinema.ico
+"GET /verander-wachtwoord-klaar/mbocinema.ico HTTP/1.1" 404 8972
+Not Found: /verander-wachtwoord-klaar/mbocinema.ico
+"GET /verander-wachtwoord-klaar/mbocinema.ico HTTP/1.1" 404 8972
+"GET / HTTP/1.1" 200 12565
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /account/ HTTP/1.1" 200 14933
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"GET /account/?login HTTP/1.1" 200 14956
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"POST /update_account_details/ HTTP/1.1" 302 0
+"GET /account?login HTTP/1.1" 301 0
+"GET /account/?login HTTP/1.1" 200 11689
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"POST /account/?login HTTP/1.1" 302 0
+"GET /account/ HTTP/1.1" 200 14956
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /account/ HTTP/1.1" 200 14956
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918
+"GET / HTTP/1.1" 200 12539
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /search HTTP/1.1" 200 15555
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /events/1/ HTTP/1.1" 200 11206
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+Not Found: /events/1/mbocinema.ico
+"GET /events/1/mbocinema.ico HTTP/1.1" 404 8921
+"GET /locations/ HTTP/1.1" 200 8019
+"GET /static/js/locations.js HTTP/1.1" 304 0
+"GET /static/css/style10.css HTTP/1.1" 404 1804
+Not Found: /locations/mbocinema.ico
+"GET /locations/mbocinema.ico HTTP/1.1" 404 8924
+Not Found: /locations/mbocinema.ico
+"GET /locations/mbocinema.ico HTTP/1.1" 404 8924
+"GET /info HTTP/1.1" 200 7023
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /search HTTP/1.1" 200 15555
+Not Found: /mbocinema.ico
+"GET /mbocinema.ico HTTP/1.1" 404 8894
+"GET /film/1/showtime/1/ HTTP/1.1" 200 27275
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+Not Found: /film/1/showtime/1/mbocinema.ico
+"GET /film/1/showtime/1/mbocinema.ico HTTP/1.1" 404 8948
+"POST /create-ticket/ HTTP/1.1" 302 0
+"GET /winkelmand HTTP/1.1" 301 0
+"GET /winkelmand/ HTTP/1.1" 200 8623
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+Not Found: /winkelmand/mbocinema.ico
+"GET /winkelmand/mbocinema.ico HTTP/1.1" 404 8927
+"GET /account/ HTTP/1.1" 200 17085
+Not Found: /account/mbocinema.ico
+"GET /account/mbocinema.ico HTTP/1.1" 404 8918

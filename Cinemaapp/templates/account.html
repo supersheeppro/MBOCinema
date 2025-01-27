@@ -2,10 +2,43 @@
 {% load static %}
 <html lang="nl">
 <head>
+  <!-- Basic meta information: charset, viewport settings, and title -->
   <meta charset="UTF-8">
-  <title>Inloggen / Registreren</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBOCinema - Account</title>
+  <meta name="description" content="Beheer je MBOCinema-account: pas je gegevens aan, bekijk je bestellingen, stel voorkeuren in en beheer je lidmaatschap eenvoudig.">
+  <meta name="author" content="MBOCinema Team">
+  <meta name="keywords" content="account, profiel, MBOCinema account, bestellingen bekijken, lidmaatschap beheren, voorkeuren aanpassen, wachtwoord wijzigen, persoonlijke gegevens">
+
+  <!-- Canonical link: informs search engines of the preferred URL for this page -->
+  <link rel="canonical" href="https://mbocinema.com/account">
+
+  <!-- Open Graph meta data: improves social media sharing and visibility -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MBOCinema - Account">
+  <meta property="og:description" content="Beheer eenvoudig je MBOCinema-account. Bekijk je bestellingen, pas je persoonlijke gegevens aan en stel je voorkeuren in.">
+  <meta property="og:url" content="https://mbocinema.com/account">
+  <meta property="og:site_name" content="MBOCinema">
+  <meta property="og:image" content="https://mbocinema.com/assets/account-banner.jpg">
+  <meta property="og:locale" content="nl_NL">
+
+  <!-- Robots meta tags: instruct search engines to avoid indexing this page -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  <!-- Favicon and Apple Touch Icon for mobile devices -->
+  <link rel="icon" href="mbocinema.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="mbocinema.png">
+
+  <!-- Security and performance-related meta tags -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Linking to external CSS for styling -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="{% static 'css/style10.css' %}">
+
+  <!-- Linking to an external JavaScript file for functionality -->
+  <script src="{% static 'js/account.js' %}" defer></script>
 </head>
 <body>
 <header>
@@ -284,6 +317,5 @@
 <footer>
   {% include 'components/footer.html' %}
 </footer>
-<script src="{% static 'js/account.js' %}"></script>
 </body>
 </html>

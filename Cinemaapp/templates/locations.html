@@ -2,6 +2,62 @@
 {% load static %}
 <html lang="nl">
 <head>
+    <!-- Basic meta information: charset, viewport settings, and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBOCinema - Locaties</title>
+    <meta name="description" content="Vind een MBOCinema-locatie bij jou in de buurt. Bekijk adressen, openingstijden en contactgegevens van onze bioscopen.">
+    <meta name="author" content="MBOCinema Team">
+    <meta name="keywords" content="locaties, bioscopen, MBOCinema locaties, adressen, openingstijden, contact, bioscoop in de buurt">
+
+    <!-- Canonical link: informs search engines of the preferred URL for this page -->
+    <link rel="canonical" href="https://mbocinema.com/locaties">
+
+    <!-- Open Graph meta data: improves social media sharing and visibility -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MBOCinema - Locaties">
+    <meta property="og:description" content="Vind de dichtstbijzijnde MBOCinema en bekijk adressen, openingstijden en meer.">
+    <meta property="og:url" content="https://mbocinema.com/locaties">
+    <meta property="og:site_name" content="MBOCinema">
+    <meta property="og:image" content="https://mbocinema.com/assets/locaties-banner.jpg">
+    <meta property="og:locale" content="nl_NL">
+
+    <!-- Robots meta tags: instruct search engines to index this page and follow the links -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Favicon and Apple Touch Icon for mobile devices -->
+    <link rel="icon" href="mbocinema.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="mbocinema.png">
+
+    <!-- Security and performance-related meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Structured data: Adds a JSON-LD script for search engines to understand the website's context -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MovieTheater",
+            "name": "MBOCinema",
+            "url": "https://mbocinema.com/locaties",
+            "description": "Bekijk alle MBOCinema-locaties met adressen en openingstijden.",
+            "branchOf": {
+                "@type": "Organization",
+                "name": "MBOCinema",
+                "url": "https://mbocinema.com"
+            }
+        }
+    </script>
+
+    <!-- Linking to external CSS for styling -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Linking to an external JavaScript file for functionality -->
+    <script src="{% static 'js/locations.js' %}" defer></script>
+</head>
+
+<head>
     <meta charset="UTF-8">
     <title>Inloggen / Registreren</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -41,40 +97,8 @@
         </div>
     </section>
 </main>
-<script>
-    // AJAX functie om locatiegegevens te laden
-    $(document).ready(function(){
-        $('.location-item').on('click', function() {
-            var locationId = $(this).data('id');  // Verkrijg het ID van de geselecteerde locatie
-
-            // Voer een AJAX-aanroep uit naar de server om locatiegegevens op te halen
-            $.ajax({
-                url: '/locations/' + locationId + '/',
-                method: 'GET',
-                success: function(data) {
-                    // Werk de linkerkolom bij met de gegevens van de locatie
-                    $('#location-detail').html(
-                        '<div class="location-detail-content-container">' +
-                        '<div>' +
-                        '<h1>' + data.name + '</h1>' +
-                        '<p class="location-detail-content-address-text">' + data.address + '</p>' +
-                        '</div>' +
-                        '<p class="location-detail-content-text">' + data.description + '</p>' +
-                        '</div>' +
-                        '<div class="location-image-button-container">' +
-                        (data.photo_url ? '<img src="' + data.photo_url + '" alt="Foto" style="max-width: 100%; height: auto;">' : '') +
-                        '<a href="/search?location=' + data.name + '"><button>Zie Films</button></a>' +
-                        '</div>'
-
-                    );
-                }
-            });
-        });
-    });
-</script>
 <footer>
     {% include 'components/footer.html' %}
 </footer>
-
 </body>
 </html>

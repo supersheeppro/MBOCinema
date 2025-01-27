@@ -16,7 +16,6 @@ from django.core.mail import send_mail
 from django.urls import reverse
 from django.http import HttpResponse
 
-
 def index(request):
     new_releases = NewRelease.objects.all().order_by('-release_date')[:4]
 
@@ -31,7 +30,6 @@ def index(request):
         'events': events,
         'coming_soon_releases': coming_soon_releases
     })
-
 
 def search(request):
     # Haal de filterwaarden uit de query string
@@ -83,7 +81,6 @@ def search(request):
         'zalen': zalen,  # Voeg de zalen toe aan de context
         'locaties': locaties,  # Voeg de locaties toe aan de context
     })
-
 
 @login_required
 def create_ticket(request):
@@ -166,7 +163,6 @@ def create_ticket(request):
         return redirect('/winkelmand')
 
     return JsonResponse({'error': 'Ongeldige request methode'}, status=405)
-
 
 def create_reservation(request):
     if request.method == 'POST':
@@ -312,7 +308,6 @@ def create_reservation(request):
 
     return JsonResponse({'error': 'Ongeldige request methode'}, status=405)
 
-
 @login_required
 def remove_from_watchlist(request, movie_id):
     try:
@@ -372,8 +367,6 @@ def add_to_watchlist(request, movie_id):
 
     return JsonResponse({'error': 'Ongeldige request methode'}, status=405)
 
-
-
 def event_list_detail(request, list_id):
     # Haal de specifieke StandardEventList op
     event_list = StandardEventList.objects.get(id=list_id)
@@ -421,7 +414,6 @@ def event_list_detail(request, list_id):
         'zalen':zalen,
     })
 
-
 def movie_detail(request, movie_id, showtime_id=None):
     # Haal de gekozen film op via de ID
     movie = get_object_or_404(Movie, id=movie_id)
@@ -452,7 +444,6 @@ def event_detail(request, event_id):
     return render(request, 'event_detail.html', {
         'event': event,
     })
-
 
 @login_required
 def update_account_details(request):
@@ -492,7 +483,6 @@ def update_account_details(request):
             return redirect('/account?login')  # Verwijs naar de inlogpagina na uitloggen
 
     return redirect('login_register')  # Redirect als de request geen POST is
-
 
 def login_register_view(request):
     if request.user.is_authenticated:
@@ -571,7 +561,6 @@ def login_register_view(request):
 
     return render(request, 'account.html', {'is_authenticated': False})
 
-
 @login_required
 def winkelmand(request):
     # Haal alle tickets op die bij de ingelogde gebruiker horen
@@ -598,7 +587,6 @@ def checkout(request):
         'is_authenticated': is_authenticated,
         'total_price': total_price,
     })
-
 
 def info(request):
     # Haal het eerste Info-object op uit de database
@@ -641,7 +629,6 @@ def remove_ticket_account(request, ticket_id):
         return redirect('/account?login')  # Stel de juiste URL voor de winkelmand in
 
     return redirect('/account?login')
-
 
 @login_required
 def remove_tickets(request):
@@ -724,7 +711,6 @@ def create_event_ticket(request):
         return redirect('/winkelmand')
 
     return JsonResponse({'error': 'Ongeldige request methode'}, status=405)
-
 
 def create_event_reservation(request):
     if request.method == 'POST':

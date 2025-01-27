@@ -27,13 +27,13 @@ Een complete bioscoopwebsite voor MBOCinema.
    git clone https://github.com/supersheeppro/MBOCinema.git
    ```
    
-5. **Maak een database genaamd mbo_cinema**
+5. **Maak een database genaamd mbo_cinema** 
    Voer het volgende commando uit:  
     ```sql
    CREATE DATABASE mbo_cinema;
    ```
     
-7. **Importeer `mbocinema.sql`(optioneel)**
+7. **Importeer `mbocinema.sql`(optioneel)** 
    Importeer mbocinema.sql in MySQL Workbench.
    Let op: Als je deze stap uitvoert, kun je stap 8, 9 en 10 overslaan.
     
@@ -43,7 +43,7 @@ Een complete bioscoopwebsite voor MBOCinema.
    Cinemaapp/migrations
    ```
 
-9. **kijk in de `settings.py` of je de juiste parameters hebt**
+9. **kijk in de `settings.py` of je de juiste parameters hebt** 
    Zorg ervoor dat je de juiste databaseparameters gebruikt:
    ```python
    DATABASES = {
@@ -57,13 +57,13 @@ Een complete bioscoopwebsite voor MBOCinema.
        },
    }
    ```
-10. **Maak de migrations**
+10. **Maak de migrations** 
     Voer het volgende commando uit:  
   ```bash
    python manage.py makemigrations
    ```
 
-10. **Voer de migrations uit**
+10. **Voer de migrations uit** 
    Voer het volgende commando uit:  
   ```bash
    python manage.py migrate

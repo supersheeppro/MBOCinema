@@ -28,7 +28,6 @@ Een complete bioscoopwebsite voor MBOCinema.
    ```
    
 5. **Maak een database genaamd mbo_cinema**
-   
    Voer het volgende commando uit:  
     ```sql
    CREATE DATABASE mbo_cinema;

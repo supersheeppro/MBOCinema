@@ -32,18 +32,18 @@ Een complete bioscoopwebsite voor MBOCinema.
    CREATE DATABASE mbo_cinema;
    ```
     
-6. **Importeer mbocinema.sql(optioneel)**
-   Importeer mbocinema.sql in mysqlworkbench.
-   Let op: Als je dit doet kan je stap 8, 9 en 10 overslaan
+6. **Importeer `mbocinema.sql`(optioneel)**
+   Importeer mbocinema.sql in MySQL Workbench.
+   Let op: Als je deze stap uitvoert, kun je stap 8, 9 en 10 overslaan.
     
 7. **Verwijder migratie bestanden**
    Verwijder de content uit het volgende mapje:  
-    ```sql
-   migrations
+    ```bash
+   Cinemaapp/migrations
    ```
 
-8. **kijk in de settings.py of je de juiste parameters hebt**
-   Check de volgende code:  
+8. **kijk in de `settings.py` of je de juiste parameters hebt**
+   Zorg ervoor dat je de juiste databaseparameters gebruikt:
    ```python
    DATABASES = {
        'default': {
@@ -62,7 +62,7 @@ Een complete bioscoopwebsite voor MBOCinema.
    python manage.py makemigrations
    ```
 
-10. **Migrate**
+10. **Voer de migrations uit**
    Voer het volgende commando uit:  
   ```bash
    python manage.py migrate

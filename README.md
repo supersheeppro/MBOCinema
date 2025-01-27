@@ -26,8 +26,38 @@ Een complete bioscoopwebsite voor MBOCinema.
    ```bash
    git clone https://github.com/supersheeppro/MBOCinema.git
    ```   
+5. **Maak een database genaamd mbo_cinema
+   Voer het volgende commando uit:  
+    ```sql
+   CREATE DATABASE mbo_cinema;
+   ```   
+6. **kijk in de settings.py of je de juiste parameters hebt**
+   Check de volgende code:  
+   ```python
+   DATABASES = {
+       'default': {
+           'ENGINE': 'django.db.backends.mysql',
+           'NAME': 'mbo_cinema',
+           'USER': 'root',
+           'PASSWORD': 'D@vi7596',
+           'HOST': 'localhost',  # of een andere host als je database extern staat
+           'PORT': '3306',  # of een andere poort als je MySQL op een andere poort draait
+       },
+   }
+   ```
+7. **Maak de migrations**
+    Voer het volgende commando uit:  
+  ```bash
+   python manage.py makemigrations
+   ```
 
-5. **Start de servero**  
+8. **Migrate**
+   Voer het volgende commando uit:  
+  ```bash
+   python manage.py migrate
+   ```
+
+9. **Start de server**  
    Voer het volgende commando uit:  
    ```bash
    python manage.py runserver

@@ -139,16 +139,16 @@ De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
    | StandardEventList   |   |   ShowTime        |   |      Ticket        |
    +---------------------+   +-------------------+   +--------------------+
    | title               | 1 * | movie (FK)        | 1  * | user (FK)         |
-   | description         |     | start_time        |     | film (FK)         |
-   | image               |     | end_time          |     | event (FK)        |
-   | events              |     | date              |     | showtime (FK)     |
-   +---------------------+     +-------------------+     | zaal (FK)         |
-                                                       | row               |
-                                                       | seat              |
-                                                       | vip               |
-                                                       | type              |
-                                                       | price             |
-                                                       +--------------------+
+   | description         |     | start_time        |      | film (FK)         |
+   | image               |     | end_time          |      | event (FK)        |
+   | events              |     | date              |      | showtime (FK)     |
+   +---------------------+     +-------------------+      | zaal (FK)         |
+                                                          | row               |
+                                                          | seat              |
+                                                          | vip               |
+                                                          | type              |
+                                                          | price             |
+                                                          +--------------------+
                                                                |
                                                                |
                                                                v

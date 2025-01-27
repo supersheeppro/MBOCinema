@@ -209,4 +209,4 @@ De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
 
 
 ## Screenshots
-![Homepage](static/images/Schermafbeelding 2025-01-27 031305.png)
+![Homepage](static/images/screenshot1.png)

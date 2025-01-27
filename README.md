@@ -101,3 +101,110 @@ De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
    Use Case Narratives vind je in het project van deze repository
 ![Use Case Diagram](static/images/Usecasediagram.png)
 
+
+## UML Class Diagram(Text)
+
+   ```sql
+   +-----------------+        +-------------------+        +--------------------+
+   |     Seat       |        |       Row         |        |       Zaal         |
+   +-----------------+        +-------------------+        +--------------------+
+   | row            | 1     * | zaal              | 1     * | title              |
+   | seat_number    |        | row_number        |        | films              |
+   | is_reserved    |        | is_vip            |        | events             |
+   +-----------------+        +-------------------+        +--------------------+
+           |                        | 1                      | 1
+           |                        |                        |
+           |                        |                        |
+           v                        v                        v
+   +----------------+       +--------------------+    +--------------------+
+   |    Movie      |       |     Feature        |    |      Event         |
+   +----------------+       +--------------------+    +--------------------+
+   | title          | 1   * | name               | 1  *| title              |
+   | description    |       |                    |     | description        |
+   | release_date   |       +--------------------+     | date               |
+   | duration       |                                  | rating             |
+   | poster         |                                  | poster             |
+   | rating         |                                  | location           |
+   | genre          |                                  | movie (FK)         |
+   | pegi_rating    |                                  | thumbnail          |
+   | features       |                                  | zaal (FK)          |
+   | zaal (FK)      |                                  | genre              |
+   | video          |                                  | pegi_rating        |
+   | locations      |                                  | price              |
+   | price          |                                  +--------------------+
+   +----------------+                                            |
+            |                                                    |
+            v                                                    v
+   +---------------------+   +-------------------+   +--------------------+
+   | StandardEventList   |   |   ShowTime        |   |      Ticket        |
+   +---------------------+   +-------------------+   +--------------------+
+   | title               | 1 * | movie (FK)        | 1  * | user (FK)         |
+   | description         |     | start_time        |     | film (FK)         |
+   | image               |     | end_time          |     | event (FK)        |
+   | events              |     | date              |     | showtime (FK)     |
+   +---------------------+     +-------------------+     | zaal (FK)         |
+                                                       | row               |
+                                                       | seat              |
+                                                       | vip               |
+                                                       | type              |
+                                                       | price             |
+                                                       +--------------------+
+                                                               |
+                                                               |
+                                                               v
+                                                     +------------------+
+                                                     |  Reservation     |
+                                                     +------------------+
+                                                     | user (FK)        |
+                                                     | film (FK)        |
+                                                     | event (FK)       |
+                                                     | showtime (FK)    |
+                                                     | zaal (FK)        |
+                                                     | reserved_on      |
+                                                     | row              |
+                                                     | seat             |
+                                                     | vip              |
+                                                     | type             |
+                                                     | price            |
+                                                     | status           |
+                                                     | session_id       |
+                                                     | guest_name       |
+                                                     | guest_email      |
+                                                     +------------------+
+                                                               |
+                                                               |
+                                                               v
+                                                      +-------------------+
+                                                      | UserProfile       |
+                                                      +-------------------+
+                                                      | user (FK)         |
+                                                      | birthday          |
+                                                      | phone             |
+                                                      | mail_subscribed   |
+                                                      | gender            |
+                                                      | postcode          |
+                                                      +-------------------+
+                                                               |
+                                                               |
+                                                               v
+                                                      +-------------------+
+                                                      | Watchlist         |
+                                                      +-------------------+
+                                                      | user (FK)         |
+                                                      | movie (ManyToMany)|
+                                                      | added_on          |
+                                                      +-------------------+
+                                                               |
+                                                               |
+                                                               v
+                                                      +-------------------+
+                                                      | Info              |
+                                                      +-------------------+
+                                                      | title             |
+                                                      | info              |
+                                                      | image             |
+                                                      +-------------------+
+
+   ```   
+
+

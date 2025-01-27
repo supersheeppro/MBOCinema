@@ -25,13 +25,55 @@ Een complete bioscoopwebsite voor MBOCinema.
    Voer het volgende commando uit:  
    ```bash
    git clone https://github.com/supersheeppro/MBOCinema.git
-   ```   
-
-5. **Start de servero**  
-   Voer het volgende commando uit:  
-   ```bash
-   python manage.py runserver
    ```
+   
+5. **Maak een database genaamd mbo_cinema**  
+   Voer het volgende commando uit:  
+    ```sql
+   CREATE DATABASE mbo_cinema;
+   ```
+    
+6. **Importeer `mbocinema.sql`(optioneel)**   
+   Importeer mbocinema.sql in MySQL Workbench.  
+   Let op: Als je deze stap uitvoert, kun je stap 8, 9 en 10 overslaan.
+    
+7. **Verwijder migratie bestanden**  
+   Verwijder de content uit het volgende mapje:  
+    ```bash
+   Cinemaapp/migrations
+   ```
+
+8. **kijk in de `settings.py` of je de juiste parameters hebt**  
+   Zorg ervoor dat je de juiste databaseparameters gebruikt:  
+   ```python
+   DATABASES = {
+       'default': {
+           'ENGINE': 'django.db.backends.mysql',
+           'NAME': 'mbo_cinema',
+           'USER': 'root',
+           'PASSWORD': 'D@vi7596',
+           'HOST': 'localhost',  # of een andere host als je database extern staat
+           'PORT': '3306',  # of een andere poort als je MySQL op een andere poort draait
+       },
+   }
+   ```
+9. **Maak de migrations**  
+    Voer het volgende commando uit:  
+    ```bash
+    python manage.py makemigrations
+    ```
+
+10. **Voer de migrations uit**  
+    Voer het volgende commando uit:  
+    ```bash
+    python manage.py migrate
+    ```
+
+11. **Start de server**   
+    Voer het volgende commando uit:   
+    ```bash
+    python manage.py runserver
+    ```
 
 ## Sitemap
 De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
@@ -208,3 +250,10 @@ De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
    ```   
 
 
+## Screenshots
+![Homepage](static/images/screenshot1.png)
+![Filmspage](static/images/screenshot2.png)
+![Eventspage](static/images/screenshot3.png)
+![Lactionspage](static/images/screenshot4.png)
+![Infopage](static/images/screenshot5.png)
+![Accountpage](static/images/screenshot6.png)

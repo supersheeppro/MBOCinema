@@ -59,21 +59,21 @@ Een complete bioscoopwebsite voor MBOCinema.
    ```
 9. **Maak de migrations**  
     Voer het volgende commando uit:  
-  ```bash
-   python manage.py makemigrations
-   ```
+    ```bash
+    python manage.py makemigrations
+    ```
 
 10. **Voer de migrations uit**  
-   Voer het volgende commando uit:  
-  ```bash
-   python manage.py migrate
-   ```
+    Voer het volgende commando uit:  
+    ```bash
+    python manage.py migrate
+    ```
 
 11. **Start de server**   
-   Voer het volgende commando uit:   
-   ```bash
-   python manage.py runserver
-   ```
+    Voer het volgende commando uit:   
+    ```bash
+    python manage.py runserver
+    ```
 
 ## Sitemap
 De sitemap vind je op http://127.0.0.1:8000/sitemap.xml

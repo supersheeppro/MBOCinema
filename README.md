@@ -210,3 +210,8 @@ De sitemap vind je op http://127.0.0.1:8000/sitemap.xml
 
 ## Screenshots
 ![Homepage](static/images/screenshot1.png)
+![Filmspage](static/images/screenshot2.png)
+![Eventspage](static/images/screenshot3.png)
+![Lactionspage](static/images/screenshot4.png)
+![Infopage](static/images/screenshot5.png)
+![Accountpage](static/images/screenshot6.png)

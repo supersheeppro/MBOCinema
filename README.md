@@ -26,7 +26,7 @@ Een complete bioscoopwebsite voor MBOCinema.
    ```bash
    git clone https://github.com/supersheeppro/MBOCinema.git
    ```   
-5. **Maak een database genaamd mbo_cinema
+5. **Maak een database genaamd mbo_cinema**
    Voer het volgende commando uit:  
     ```sql
    CREATE DATABASE mbo_cinema;

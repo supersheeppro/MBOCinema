@@ -39140,3 +39140,878 @@ Not Found: /sitemap
 "GET /sitemap HTTP/1.1" 404 8876
 "GET /sitemap.xml HTTP/1.1" 200 1328
 "GET /sitemap.xml HTTP/1.1" 200 1328
+"GET / HTTP/1.1" 200 8511
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /sitemap.xml HTTP/1.1" 200 1328
+"GET / HTTP/1.1" 200 8511
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/css/style10.css HTTP/1.1" 200 39139
+"GET /media/events/download_AQE6yw3.png HTTP/1.1" 200 75362
+"GET /media/events/download_foaLNxc.png HTTP/1.1" 200 75362
+"GET /media/events/download_HBc4z8G.png HTTP/1.1" 200 75362
+"GET /media/events/download_nd0GhIP.png HTTP/1.1" 200 75362
+"GET /media/events/download_r0dTtyO.png HTTP/1.1" 200 75362
+"GET /static/images/hero-slide1.png HTTP/1.1" 200 575680
+"GET /media/events/download_DI0VxiH.png HTTP/1.1" 200 75362
+"GET /media/coming_soon_posters/thumb_9zWu3AL.png HTTP/1.1" 200 96972
+"GET /static/images/StockCakeFamilyMovieNight.jpg HTTP/1.1" 200 220782
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /static/images/comingsoon.png HTTP/1.1" 200 581552
+"GET /static/js/script.js HTTP/1.1" 200 1583
+"GET /account HTTP/1.1" 301 0
+"GET /account/ HTTP/1.1" 200 30105
+"GET /media/posters/thumb_UnGq3Hx.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb.png HTTP/1.1" 200 96972
+"GET /static/js/account.js HTTP/1.1" 200 5013
+"GET / HTTP/1.1" 200 8511
+"GET /search HTTP/1.1" 200 12588
+"GET /media/posters/thumb_tBwG0Lb.png HTTP/1.1" 200 96972
+"GET /media/posters/thumb_9sIsZ1g.png HTTP/1.1" 200 96972
+"GET /static/js/search.js HTTP/1.1" 200 14262
+"GET /media/posters/thumb_YjP3VG9.png HTTP/1.1" 200 96972
+"GET /events/1 HTTP/1.1" 301 0
+"GET /events/1/ HTTP/1.1" 200 8382
+"GET /media/event_thumbnails/thumb_A8WWNUQ.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_iH8hNKh.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_gdcJMzb.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_mn52b8C.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_X0DEmqc.png HTTP/1.1" 200 96972
+"GET /static/js/events.js HTTP/1.1" 200 3984
+"GET /media/event_lists/Header_Mini_Moring_Bing_en_zijn_Vriendjes.jpg HTTP/1.1" 200 2641651
+"GET / HTTP/1.1" 200 8511
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/images/hero-slide1.png HTTP/1.1" 200 575680
+"GET /static/css/style10.css HTTP/1.1" 200 39139
+"GET /media/events/download_HBc4z8G.png HTTP/1.1" 200 75362
+"GET /media/events/download_foaLNxc.png HTTP/1.1" 200 75362
+"GET /media/events/download_AQE6yw3.png HTTP/1.1" 200 75362
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/events/download_r0dTtyO.png HTTP/1.1" 200 75362
+"GET /media/events/download_nd0GhIP.png HTTP/1.1" 200 75362
+"GET /media/events/download_DI0VxiH.png HTTP/1.1" 200 75362
+"GET /static/js/script.js HTTP/1.1" 200 1583
+"GET /media/coming_soon_posters/thumb_9zWu3AL.png HTTP/1.1" 200 96972
+"GET /static/images/StockCakeFamilyMovieNight.jpg HTTP/1.1" 200 220782
+"GET /static/images/comingsoon.png HTTP/1.1" 200 581552
+"GET / HTTP/1.1" 200 8480
+"GET / HTTP/1.1" 200 8735
+"GET / HTTP/1.1" 200 8735
+"GET / HTTP/1.1" 200 8735
+"GET / HTTP/1.1" 200 8735
+"GET / HTTP/1.1" 200 8735
+"GET / HTTP/1.1" 200 8735
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/css/style10.css HTTP/1.1" 200 39761
+"GET /static/images/hero-slide1.png HTTP/1.1" 200 575680
+"GET /static/js/script.js HTTP/1.1" 200 1583
+"GET /media/events/download_AQE6yw3.png HTTP/1.1" 200 75362
+"GET /media/events/download_foaLNxc.png HTTP/1.1" 200 75362
+"GET /media/events/download_HBc4z8G.png HTTP/1.1" 200 75362
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /media/events/download_nd0GhIP.png HTTP/1.1" 200 75362
+"GET /media/events/download_r0dTtyO.png HTTP/1.1" 200 75362
+"GET /media/events/download_DI0VxiH.png HTTP/1.1" 200 75362
+"GET /media/coming_soon_posters/thumb_9zWu3AL.png HTTP/1.1" 200 96972
+"GET /static/images/StockCakeFamilyMovieNight.jpg HTTP/1.1" 200 220782
+"GET /static/images/comingsoon.png HTTP/1.1" 200 581552
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET /events/1 HTTP/1.1" 301 0
+"GET /events/1/ HTTP/1.1" 200 8606
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/event_thumbnails/thumb.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_A8WWNUQ.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_gdcJMzb.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_mn52b8C.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_iH8hNKh.png HTTP/1.1" 200 96972
+"GET /media/event_thumbnails/thumb_X0DEmqc.png HTTP/1.1" 200 96972
+"GET /media/event_lists/Header_Mini_Moring_Bing_en_zijn_Vriendjes.jpg HTTP/1.1" 200 2641651
+"GET /static/js/events.js HTTP/1.1" 200 3984
+"GET /events/1/ HTTP/1.1" 200 8606
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 8606
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9035
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9035
+"GET /static/images/MBO_Cinema_logo_breed.png HTTP/1.1" 200 44690
+"GET /static/css/style10.css HTTP/1.1" 200 39761
+"GET /static/images/hero-slide1.png HTTP/1.1" 200 575680
+"GET /static/js/script.js HTTP/1.1" 200 1583
+"GET /media/events/download_foaLNxc.png HTTP/1.1" 200 75362
+"GET /media/events/download_HBc4z8G.png HTTP/1.1" 200 75362
+"GET /media/events/download_AQE6yw3.png HTTP/1.1" 200 75362
+"GET /media/posters/thumb_hrIAeoN.png HTTP/1.1" 200 96972
+"GET /static/images/comingsoon.png HTTP/1.1" 200 581552
+"GET /media/events/download_nd0GhIP.png HTTP/1.1" 200 75362
+"GET /media/events/download_DI0VxiH.png HTTP/1.1" 200 75362
+"GET /media/events/download_r0dTtyO.png HTTP/1.1" 200 75362
+"GET /media/coming_soon_posters/thumb_9zWu3AL.png HTTP/1.1" 200 96972
+"GET /static/images/StockCakeFamilyMovieNight.jpg HTTP/1.1" 200 220782
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 8888
+"GET / HTTP/1.1" 200 9035
+"GET /static/css/style10.css HTTP/1.1" 200 39778
+"GET / HTTP/1.1" 200 9035
+"GET /static/css/style10.css HTTP/1.1" 200 39807
+"GET /events/1/ HTTP/1.1" 200 8906
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9035
+"GET /static/css/style10.css HTTP/1.1" 200 39830
+"GET /events/1/ HTTP/1.1" 200 8906
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9035
+"GET /static/css/style10.css HTTP/1.1" 200 39830
+"GET / HTTP/1.1" 200 9035
+"GET /static/css/style10.css HTTP/1.1" 200 39830
+"GET / HTTP/1.1" 200 9035
+"GET /static/css/style10.css HTTP/1.1" 200 39830
+"GET /events/1/ HTTP/1.1" 200 8906
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 8906
+"GET /static/css/style10.css HTTP/1.1" 200 39831
+"GET /events/1/ HTTP/1.1" 200 8906
+"GET /static/css/style10.css HTTP/1.1" 200 39832
+"GET /events/1/ HTTP/1.1" 200 8906
+"GET /static/css/style10.css HTTP/1.1" 200 39801
+"GET /events/1/ HTTP/1.1" 200 8906
+"GET /static/css/style10.css HTTP/1.1" 200 39831
+C:\Users\deviv\PycharmProjects\MBOCinema\Cinema\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /events/1/ HTTP/1.1" 200 8922
+"GET /static/css/style10.css HTTP/1.1" 304 0
+Not Found: /events/1/1
+"GET /events/1/1 HTTP/1.1" 404 8885
+Not Found: /events/1/1
+"GET /events/1/1 HTTP/1.1" 404 8885
+"GET /events/1/ HTTP/1.1" 200 8922
+"GET /events/1/ HTTP/1.1" 200 8922
+Not Found: /events/1/2
+"GET /events/1/2 HTTP/1.1" 404 8885
+"GET /events/1/ HTTP/1.1" 200 8921
+"GET /static/css/style10.css HTTP/1.1" 304 0
+Not Found: /events/1/1
+"GET /events/1/1 HTTP/1.1" 404 8885
+Not Found: /events/1/2
+"GET /events/1/2 HTTP/1.1" 404 8885
+"GET /events/1/ HTTP/1.1" 200 8938
+"GET /events/1/ HTTP/1.1" 200 8938
+"GET /events/2 HTTP/1.1" 301 0
+"GET /events/2/ HTTP/1.1" 200 9108
+"GET /media/event_lists/Header_Mini_Moring_Bing_en_zijn_Vriendjes_o09y1Ru.jpg HTTP/1.1" 200 2641651
+"GET /events/1/ HTTP/1.1" 200 8938
+"GET /events/2/ HTTP/1.1" 200 9108
+"GET /events/1/ HTTP/1.1" 200 8938
+"GET /events/2/ HTTP/1.1" 200 9108
+"GET / HTTP/1.1" 200 9067
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/base.css HTTP/1.1" 200 21310
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17677
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/Cinemaapp/movie/2/change/ HTTP/1.1" 200 38749
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+"POST /admin/Cinemaapp/movie/2/change/ HTTP/1.1" 200 40181
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/movie/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/add/ HTTP/1.1" 200 30817
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET / HTTP/1.1" 200 9067
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /search HTTP/1.1" 200 13142
+"GET /media/posters/thumb_tBwG0Lb.png HTTP/1.1" 200 96972
+"GET /media/posters/thumb_UnGq3Hx.png HTTP/1.1" 200 96972
+"GET /media/posters/thumb_YjP3VG9.png HTTP/1.1" 200 96972
+"GET /media/posters/thumb_9sIsZ1g.png HTTP/1.1" 200 96972
+"GET /static/js/search.js HTTP/1.1" 200 14262
+"GET /film/2/showtime/2/ HTTP/1.1" 200 25690
+"GET /static/images/filmscherm.png HTTP/1.1" 200 7788
+"GET /static/images/visa.png HTTP/1.1" 200 5799
+"GET /static/images/applepay.png HTTP/1.1" 200 31614
+"GET /static/images/mastercard.png HTTP/1.1" 200 179893
+"GET /static/images/paypal.png HTTP/1.1" 200 4808
+"GET /static/js/film_detail.js HTTP/1.1" 200 20325
+"GET /media/movies/The_Woman_In_The_Yard__Official_Trailer_wX6zTKV.mp4 HTTP/1.1" 200 5440318
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/zaal/ HTTP/1.1" 200 12588
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/zaal/add/ HTTP/1.1" 200 18194
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/zaal/ HTTP/1.1" 200 12588
+"GET /admin/Cinemaapp/zaal/1/change/ HTTP/1.1" 200 20404
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/zaal/ HTTP/1.1" 200 12588
+"GET /admin/Cinemaapp/zaal/add/ HTTP/1.1" 200 18194
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/zaal/add/ HTTP/1.1" 200 18418
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/zaal/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/zaal/ HTTP/1.1" 200 12989
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17676
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/2/change/ HTTP/1.1" 200 40002
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/movie/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17877
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9067
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9067
+"GET /search HTTP/1.1" 200 13208
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 200 33676
+"GET / HTTP/1.1" 200 9067
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17676
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/1/change/ HTTP/1.1" 200 36704
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/movie/1/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17881
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/5/change/ HTTP/1.1" 200 35103
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/movie/5/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17940
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9075
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /search HTTP/1.1" 200 13268
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 200 25394
+"GET /film/5/showtime/7/ HTTP/1.1" 200 25028
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/movies/The_Woman_In_The_Yard__Official_Trailer_FaSNA1B.mp4 HTTP/1.1" 200 5440318
+"GET /search HTTP/1.1" 200 13268
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17708
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/4/change/ HTTP/1.1" 200 35063
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/movie/4/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17976
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/movie/3/change/ HTTP/1.1" 200 35124
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/movie/3/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/movie/ HTTP/1.1" 200 17979
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9075
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9075
+"GET /search HTTP/1.1" 200 13362
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /search HTTP/1.1" 200 13362
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 200 63599
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 14904
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /admin/Cinemaapp/comingsoonrelease/1/change/ HTTP/1.1" 200 15435
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/comingsoonrelease/1/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 15155
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 200 14943
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 15552
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9272
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 200 14594
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 15282
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 200 14943
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 15957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 200 14943
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 15675
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 200 14943
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/comingsoonrelease/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/comingsoonrelease/ HTTP/1.1" 200 16356
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9692
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 200 19570
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 200 25394
+"GET /locations HTTP/1.1" 301 0
+"GET /locations/ HTTP/1.1" 200 6701
+"GET /locations/1/ HTTP/1.1" 200 158
+"GET /media/location_photos/mbocinemas1.jpg HTTP/1.1" 200 450501
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /media/location_photos/mbocinemas2.jpg HTTP/1.1" 200 448090
+"GET /info HTTP/1.1" 200 5255
+"GET /media/images/mbocinemas_standaartcover_aJLpYPD.jpg HTTP/1.1" 200 129492
+"GET /locations/ HTTP/1.1" 200 6701
+"GET /search HTTP/1.1" 200 13362
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9692
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /account HTTP/1.1" 301 0
+"GET /account/ HTTP/1.1" 200 30728
+"GET /static/js/account.js HTTP/1.1" 200 5013
+"GET / HTTP/1.1" 200 9692
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 15789
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/newrelease/4/change/ HTTP/1.1" 200 15101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 15789
+"GET /admin/Cinemaapp/newrelease/3/change/ HTTP/1.1" 200 15101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/newrelease/3/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 16025
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/newrelease/2/change/ HTTP/1.1" 200 15101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/newrelease/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 16061
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/newrelease/1/change/ HTTP/1.1" 200 15109
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/newrelease/1/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 16108
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9734
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 15836
+"GET /admin/Cinemaapp/newrelease/3/change/ HTTP/1.1" 200 15095
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/newrelease/3/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 16136
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/newrelease/3/change/ HTTP/1.1" 200 15188
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 15867
+"GET /admin/Cinemaapp/newrelease/3/change/ HTTP/1.1" 200 15188
+"GET /admin/Cinemaapp/newrelease/ HTTP/1.1" 200 15867
+"GET / HTTP/1.1" 200 9758
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 8997
+"GET /events/1/ HTTP/1.1" 200 8997
+"GET /events/1/ HTTP/1.1" 200 8997
+"GET /events/2/ HTTP/1.1" 200 9167
+"GET / HTTP/1.1" 200 9758
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 13828
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 200 29394
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 14065
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9758
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /events/2/ HTTP/1.1" 200 9129
+"GET /media/event_lists/meetthecast.png HTTP/1.1" 200 189700
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 13828
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 200 29318
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 14283
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9767
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /events/2/ HTTP/1.1" 200 8197
+"GET /media/event_lists/meetthecast.png HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 9006
+"GET / HTTP/1.1" 200 9767
+"GET /search?pegi_rating=3,7 HTTP/1.1" 200 9019
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 9006
+"GET / HTTP/1.1" 200 9767
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 17223
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/event/ HTTP/1.1" 200 12366
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/Cinemaapp/event/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16207
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9259
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 8125
+"GET /events/2/ HTTP/1.1" 200 7952
+"GET /media/event_lists/meetthecast.png HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 14037
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 200 23576
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16071
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9259
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16071
+"GET /admin/Cinemaapp/event/1/change/ HTTP/1.1" 200 22821
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/event/1/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16362
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9281
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 200 182883
+"GET /events/1/ HTTP/1.1" 200 9243
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 200 15300
+"GET /event/1 HTTP/1.1" 301 0
+"GET /event/1/ HTTP/1.1" 200 9998
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /static/js/event_detail.js HTTP/1.1" 200 1422
+"GET /events/2/ HTTP/1.1" 200 9070
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 304 0
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/event_lists/meetthecast.png HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 9243
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16096
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/2/change/ HTTP/1.1" 200 22838
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/event/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16353
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9278
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/events/opera.jpg HTTP/1.1" 200 196790
+"GET /events/1/ HTTP/1.1" 200 9272
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 200 74637
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 14037
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 200 23708
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 14283
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9278
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/events/opera.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 9272
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 304 0
+"GET /events/2/ HTTP/1.1" 200 8342
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 304 0
+"GET /media/event_lists/meetthecast.png HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9278
+"GET /media/events/opera.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16104
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/3/change/ HTTP/1.1" 200 22832
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/event/3/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16419
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 14037
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 200 23856
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/standardeventlist/2/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 14283
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/1/change/ HTTP/1.1" 200 24059
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/standardeventlist/1/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/standardeventlist/ HTTP/1.1" 200 14283
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/standardeventlist/1/change/ HTTP/1.1" 200 24061
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9314
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /media/events/opera.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault_1.jpg HTTP/1.1" 200 181821
+"GET /events/1/ HTTP/1.1" 200 8566
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/woezelenpip.jpg HTTP/1.1" 200 18342
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 304 0
+"GET /events/2/ HTTP/1.1" 200 9134
+"GET /media/event_thumbnails/woezelenpip.jpg HTTP/1.1" 304 0
+"GET /media/event_lists/meetthecast.png HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16141
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/add/ HTTP/1.1" 200 21851
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/event/add/ HTTP/1.1" 200 23237
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/event/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16801
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 29, in index
+    return render(request, 'index.html', {
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'poster' attribute has no file associated with it.
+"GET / HTTP/1.1" 500 165691
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16558
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 29, in index
+    return render(request, 'index.html', {
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'poster' attribute has no file associated with it.
+"GET / HTTP/1.1" 500 165691
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\deviv\PycharmProjects\MBOCinema\Cinemaapp\views.py", line 29, in index
+    return render(request, 'index.html', {
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\Users\deviv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'poster' attribute has no file associated with it.
+"GET / HTTP/1.1" 500 165417
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16558
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16558
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/7/change/ HTTP/1.1" 200 23387
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/event/7/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16807
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9479
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/events/opera.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault_1.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/events/download.jpg HTTP/1.1" 200 10578
+"GET /events/1/ HTTP/1.1" 200 8684
+"GET /media/event_thumbnails/woezelenpip.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 304 0
+"GET /media/event_thumbnails/pools.jpg HTTP/1.1" 200 20132
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 16562
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/event/add/ HTTP/1.1" 200 21851
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/event/add/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/event/ HTTP/1.1" 200 17217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9656
+"GET /media/posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault_1.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/denofthieves.jpg HTTP/1.1" 304 0
+"GET /media/events/opera.jpg HTTP/1.1" 304 0
+"GET /media/events/download.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/padington.jpg HTTP/1.1" 304 0
+"GET /media/coming_soon_posters/mufasa.jpg HTTP/1.1" 304 0
+"GET /media/events/download_1.jpg HTTP/1.1" 200 9466
+"GET /events/1/ HTTP/1.1" 200 8818
+"GET /media/event_thumbnails/woezelenpip.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/meetthecastk3.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/Schermafbeelding_2025-01-27_030048.png HTTP/1.1" 304 0
+"GET /media/event_thumbnails/pools.jpg HTTP/1.1" 304 0
+"GET /media/event_thumbnails/becomingled.jpg HTTP/1.1" 200 12482
+"GET /events/2/ HTTP/1.1" 200 9386
+"GET /media/event_thumbnails/becomingled.jpg HTTP/1.1" 304 0
+"GET /media/event_lists/meetthecast.png HTTP/1.1" 304 0
+"GET /events/1/ HTTP/1.1" 200 8818
+"GET /media/event_thumbnails/becomingled.jpg HTTP/1.1" 304 0
+"GET /locations/ HTTP/1.1" 200 6710
+"GET /locations/1/ HTTP/1.1" 200 158
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /locations/1/ HTTP/1.1" 200 158
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /locations/1/ HTTP/1.1" 200 158
+"GET /search HTTP/1.1" 200 13371
+"GET /media/posters/wicked-thumbnail.jpg HTTP/1.1" 304 0
+"GET /media/posters/padington.jpg HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9656
+"GET /media/events/maxresdefault_1.jpg HTTP/1.1" 304 0
+"GET /media/events/download.jpg HTTP/1.1" 304 0
+"GET /media/events/download_1.jpg HTTP/1.1" 304 0
+"GET /info HTTP/1.1" 200 5264
+"GET /account/ HTTP/1.1" 200 30803
+"GET /locations/ HTTP/1.1" 200 6710
+"GET /locations/1/ HTTP/1.1" 200 158
+"GET / HTTP/1.1" 200 9656
+"GET /media/events/download_1.jpg HTTP/1.1" 304 0
+"GET /admin/Cinemaapp/ticket/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/location/ HTTP/1.1" 200 13887
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Cinemaapp/location/1/change/ HTTP/1.1" 200 14694
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Cinemaapp/location/1/change/ HTTP/1.1" 302 0
+"GET /admin/Cinemaapp/location/ HTTP/1.1" 200 14735
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 9656
+"GET /static/css/style10.css HTTP/1.1" 304 0
+"GET /media/events/download_1.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault.jpg HTTP/1.1" 304 0
+"GET /media/events/maxresdefault_1.jpg HTTP/1.1" 304 0
+"GET /media/events/opera.jpg HTTP/1.1" 304 0
+"GET /media/events/download.jpg HTTP/1.1" 304 0
+"GET /locations/ HTTP/1.1" 200 6710
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /locations/1/ HTTP/1.1" 200 797
+"GET /locations/2/ HTTP/1.1" 200 692
+"GET /locations/1/ HTTP/1.1" 200 797
+"GET / HTTP/1.1" 200 9656

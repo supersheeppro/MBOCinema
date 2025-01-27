@@ -214,6 +214,41 @@ nav {
     justify-content: space-between;
 }
 
+/* Dropdown menu styling */
+.nav-right .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.nav-right .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #272727;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.nav-right .dropdown-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-right .dropdown-menu a:hover {
+    background-color: #333333;
+}
+
+/* Show the dropdown when clicked */
+.nav-right .dropdown.open .dropdown-menu {
+    display: block;
+}
 
 .nav-right {
     display: flex;

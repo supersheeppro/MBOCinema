@@ -4,8 +4,15 @@
         <img src="{% static 'images/MBO_Cinema_logo_breed.png' %}">
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/search">Films</a> <a href="#"><i class="fas fa-chevron-down"></i></a></li>
-            <li><a href="/events/1">Events and Specials</a><a href="#"><i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="/search">Films</a></li>
+            <li class="dropdown">
+                <a href="/events/1">Events and Specials</a><a href="#" class="dropdown-toggle"><i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    {% for event_list in event_lists %}
+                    <a href="/events/{{ event_list.id }}">{{ event_list.title }}</a>
+                    {% endfor %}
+                </div>
+            </li>
             <li><a href="/locations">Locations</a></li>
             <li><a href="/info">Info</a></li>
         </ul>
@@ -20,3 +27,12 @@
         {% endif %}
     </div>
 </nav>
+<script>
+    document.querySelectorAll('.dropdown-toggle').forEach(function(dropdownToggle) {
+        dropdownToggle.addEventListener('click', function(event) {
+            var dropdown = event.target.closest('.dropdown');
+            dropdown.classList.toggle('open');
+        });
+    });
+
+</script>
